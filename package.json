@@ -1,4 +1,7 @@
 {
+  "name": "vitesse-enterstarter",
+  "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production vite-ssg build",
