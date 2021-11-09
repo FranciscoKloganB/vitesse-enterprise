@@ -36,6 +36,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.0",
+    "imagemin-lint-staged": "^0.4.0",
+    "lint-staged": "^11.2.6",
     "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.2.1",
     "pnpm": "^6.20.3",
