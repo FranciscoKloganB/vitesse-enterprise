@@ -16,7 +16,11 @@ const toggleLocales = () => {
       <carbon-campsite />
     </router-link>
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
+    <button
+      class="icon-btn mx-2 !outline-none"
+      :title="t('button.toggle_dark')"
+      @click="toggleDark()"
+    >
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />
     </button>
@@ -29,7 +33,13 @@ const toggleLocales = () => {
       <carbon-dicom-overlay />
     </router-link>
 
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+    <a
+      class="icon-btn mx-2"
+      rel="noreferrer"
+      href="https://github.com/antfu/vitesse"
+      target="_blank"
+      title="GitHub"
+    >
       <carbon-logo-github />
     </a>
   </nav>
