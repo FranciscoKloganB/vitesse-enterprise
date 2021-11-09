@@ -1,11 +1,17 @@
 {
   "recommendations": [
+    "andrew-codes.cypress-snippets",
     "antfu.vite",
+    "csstools.postcss",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "hwencc.html-tag-wrapper",
+    "pkief.material-icon-theme",
     "johnsoncodehk.volar",
     "lokalise.i18n-ally",
     "antfu.iconify",
     "dbaeumer.vscode-eslint",
     "voorjaar.windicss-intellisense",
-    "csstools.postcss"
+    "wix.vscode-import-cost",
   ]
 }
