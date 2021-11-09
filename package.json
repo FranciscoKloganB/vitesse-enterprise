@@ -50,6 +50,6 @@
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.15.6",
-    "vue-tsc": "^0.28.10"
+    "vue-tsc": "^0.29.0"
   }
 }
