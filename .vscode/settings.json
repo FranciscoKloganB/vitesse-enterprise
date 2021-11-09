@@ -1,15 +1,26 @@
 {
   "cSpell.words": ["Vitesse"],
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.localesPaths": "locales",
-  "i18n-ally.sortKeys": true,
-  "prettier.enable": false,
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "css.validate": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
+  "editor.formatOnSave": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "files.associations": {
     "*.css": "postcss",
+    ".husky/commit-msg": "shellscript",
+    ".husky/pre-commit": "shellscript",
+    ".husky/pre-push": "shellscript",
+    ".importsortrc": "json",
+    ".markdownlintignore": "ignore"
   },
-  "editor.formatOnSave": false,
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": "locales",
+  "i18n-ally.sortKeys": true,
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "prettier.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.iconTheme": "material-icon-theme",
 }

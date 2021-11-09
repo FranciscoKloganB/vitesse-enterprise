@@ -122,7 +122,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17) - Like Vitesse but with TailwindCSS
 - [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext) by [@xiaoluoboding](https://github.com/xiaoluoboding) - ⚡️ Modernized Chrome Extension Manifest V3 Vite Starter Template
 
-## Try it now!
+## Try it now
 
 ### GitHub Template
 
@@ -155,7 +155,7 @@ And, enjoy :)
 
 ### Development
 
-Just run and visit http://localhost:3333
+Just run and visit <http://localhost:4000>
 
 ```bash
 pnpm dev
