@@ -10,6 +10,11 @@
     "test": "cypress open",
     "preview": "vite preview",
     "preview-https": "serve dist",
+    "test:e2e": "cypress open",
+    "test:components": "cypress open-ct",
+    "test:ci:e2e": "cypress run --headless",
+    "test:ci:components": "cypress run-ct",
+    "test:ci": "run-s test:ci:*",
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
