@@ -43,6 +43,7 @@
     "lint-staged": "^11.2.6",
     "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.2.1",
+    "markdownlint-cli": "^0.29.0",
     "pnpm": "^6.20.3",
     "prettier": "^2.4.1",
     "stylelint": "^14.0.1",
