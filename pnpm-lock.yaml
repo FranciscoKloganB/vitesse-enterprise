@@ -4,6 +4,8 @@ specifiers:
   '@antfu/eslint-config': ^0.10.0
   '@commitlint/cli': ^14.1.0
   '@commitlint/config-conventional': ^14.1.0
+  '@cypress/vite-dev-server': ^2.2.0
+  '@cypress/vue': ^3.0.3
   '@iconify-json/carbon': ^1.0.9
   '@intlify/vite-plugin-vue-i18n': ^3.0.0
   '@types/markdown-it-link-attributes': ^3.0.1
@@ -16,6 +18,7 @@ specifiers:
   critters: ^0.0.14
   cross-env: ^7.0.3
   cypress: ^8.7.0
+  daisyui: ^1.16.2
   eslint: ^8.2.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-cypress: ^2.12.1
@@ -76,6 +79,8 @@ devDependencies:
   '@antfu/eslint-config': 0.10.0_eslint@8.2.0+typescript@4.4.4
   '@commitlint/cli': 14.1.0
   '@commitlint/config-conventional': 14.1.0
+  '@cypress/vite-dev-server': 2.2.0_vite@2.6.13
+  '@cypress/vue': 3.0.3_cypress@8.7.0+vue@3.2.21
   '@iconify-json/carbon': 1.0.9
   '@intlify/vite-plugin-vue-i18n': 3.0.0
   '@types/markdown-it-link-attributes': 3.0.1
@@ -86,6 +91,7 @@ devDependencies:
   critters: 0.0.14
   cross-env: 7.0.3
   cypress: 8.7.0
+  daisyui: 1.16.2
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0_eslint@8.2.0
   eslint-plugin-cypress: 2.12.1_eslint@8.2.0
@@ -1496,6 +1502,10 @@ packages:
       chalk: 4.1.2
     dev: true
 
+  /@cypress/mount-utils/1.0.2:
+    resolution: {integrity: sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==}
+    dev: true
+
   /@cypress/request/2.88.6:
     resolution: {integrity: sha512-z0UxBE/+qaESAHY9p9sM2h8Y4XqtsbDCt0/DPOrqA/RZgKi4PkxdpXyK4wCCnSk1xHqWHZZAE+gV6aDAR6+caQ==}
     engines: {node: '>= 6'}
@@ -1519,6 +1529,38 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 8.3.2
+    dev: true
+
+  /@cypress/vite-dev-server/2.2.0_vite@2.6.13:
+    resolution: {integrity: sha512-iN2KyBN1RFaceLfjjicUYaFVM/MuIOw5KXfAYmzcaFkSYYXL/Ko1g++PvqakWUHFlyOCC4PQ6ZSuTJcvMBoKnA==}
+    peerDependencies:
+      vite: '>= 2.1.3'
+    dependencies:
+      debug: 4.3.2
+      get-port: 5.1.1
+      vite: 2.6.13
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@cypress/vue/3.0.3_cypress@8.7.0+vue@3.2.21:
+    resolution: {integrity: sha512-Im8xCQDt4Dr4mcCaweNGCF+O5gNMZAdMlzQlkbhkER9YnJEVD9+ZWecJOJLmUUJPBSj7AMyz7OX82yldPjUIrA==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      '@cypress/webpack-dev-server': '*'
+      babel-loader: '*'
+      cypress: '>=7.0.0'
+      vue: '>=3.0.0'
+    peerDependenciesMeta:
+      '@cypress/webpack-dev-server':
+        optional: true
+      babel-loader:
+        optional: true
+    dependencies:
+      '@cypress/mount-utils': 1.0.2
+      '@vue/test-utils': 2.0.0-rc.16_vue@3.2.21
+      cypress: 8.7.0
+      vue: 3.2.21
     dev: true
 
   /@cypress/xvfb/1.2.4:
@@ -2184,6 +2226,14 @@ packages:
 
   /@vue/shared/3.2.21:
     resolution: {integrity: sha512-5EQmIPK6gw4UVYUbM959B0uPsJ58+xoMESCZs3N89XyvJ9e+fX4pqEPrOGV8OroIk3SbEvJcC+eYc8BH9JQrHA==}
+
+  /@vue/test-utils/2.0.0-rc.16_vue@3.2.21:
+    resolution: {integrity: sha512-TubikDVkI2LuRKRPSLv3lYpbpvvucT2DIcGqfBVpvYs4W19u0EBTJEdmfwmSuLY7H1TyAr9Stur3PI1sWWvTGQ==}
+    peerDependencies:
+      vue: ^3.0.1
+    dependencies:
+      vue: 3.2.21
+    dev: true
 
   /@vueuse/core/6.7.6_vue@3.2.21:
     resolution: {integrity: sha512-oVyqARXnTvhf4m6xf/sHw+SNJWcRYJn8+L4TZTFBU9POf9GIzBN7iHD2Oc4K4rTWXGQzXfoFHgbrXyeMFCRoqA==}
@@ -3581,6 +3631,10 @@ packages:
       untildify: 4.0.0
       url: 0.11.0
       yauzl: 2.10.0
+    dev: true
+
+  /daisyui/1.16.2:
+    resolution: {integrity: sha512-kHoTvq3/eU8tPbu3U3Nwq7yy0I5zauqAYRSvw1x+t8g9FBjFm3jNtUQO/vBjUZsU7ABIf5aaT58iBF2NeusCUA==}
     dev: true
 
   /dargs/7.0.0:
@@ -5305,6 +5359,11 @@ packages:
 
   /get-own-enumerable-property-symbols/3.0.2:
     resolution: {integrity: sha512-I0UBV/XOz1XkIJHEUDMZAbzCThU/H8DxmSfmdGcKPnVhu2VfFqr34jr9777IyaTYvxjedWhqVIilEDsCdP5G6g==}
+    dev: true
+
+  /get-port/5.1.1:
+    resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
+    engines: {node: '>=8'}
     dev: true
 
   /get-proxy/2.1.0:
