@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
     "@iconify-json/carbon": "^1.0.9",
     "@intlify/vite-plugin-vue-i18n": "^3.0.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
