@@ -1,0 +1,16 @@
+{
+  ".js, .jsx, .es6, .es": {
+    "parser": "babylon",
+    "style": "eslint",
+    "options": {}
+  },
+  ".ts, .tsx": {
+    "parser": "typescript",
+    "style": "eslint",
+    "options": {}
+  },
+  ".vue": {
+    "parser": "import-sort-parser-babel-vue",
+    "style": "eslint"
+  }
+}
