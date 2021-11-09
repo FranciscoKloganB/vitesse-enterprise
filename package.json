@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production vite-ssg build",
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --port 4000 --open",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "test": "cypress open",
     "preview": "vite preview",
