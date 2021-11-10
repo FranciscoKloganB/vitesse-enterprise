@@ -11,6 +11,7 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
+    '@typescript-eslint/no-namespace': ['error', { 'allowDeclarations': true }],
     '@typescript-eslint/no-explicit-any': rulesSeverityOff,
     '@typescript-eslint/no-unused-vars': [
       'error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
