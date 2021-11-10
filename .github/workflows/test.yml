@@ -50,20 +50,14 @@ jobs:
       - name: Type Check
         run: pnpm run typecheck
 
-      - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
-
-      - name: Cypress Component Test Runner
-        run: pnpm test:ci:components
-
       - name: Build Distribution
         run: pnpm build
 
-      - name: Start HTTP Preview
-        run: pnpm preview
-
-      # - name: Cypress Component Test Runner
-      #   run: pnpm test:ci:e2e
+      - name: Cypress PNPM Patch
+        run: cp pnpm-lock.yaml package-lock.json
+        
+      - name: Cypress Component Test Runner
+        run: pnpm test:ci:components
 
       - name: Cypress E2E Test Runner
         uses: cypress-io/github-action@v2
