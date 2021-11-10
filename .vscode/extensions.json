@@ -1,7 +1,6 @@
 {
   "recommendations": [
     "andrew-codes.cypress-snippets",
-    "antfu.vite",
     "csstools.postcss",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
@@ -12,6 +11,6 @@
     "antfu.iconify",
     "dbaeumer.vscode-eslint",
     "voorjaar.windicss-intellisense",
-    "wix.vscode-import-cost",
+    "wix.vscode-import-cost"
   ]
 }
