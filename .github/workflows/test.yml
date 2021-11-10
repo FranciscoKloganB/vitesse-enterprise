@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - master
 
   pull_request:
     branches:
       - main
+      - master
 
 jobs:
   build:
@@ -48,11 +50,14 @@ jobs:
       - name: Type Check
         run: pnpm run typecheck
 
+      - name: Build Distribution
+        run: pnpm build
+
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json
-
-      # - name: Cypress Component Test Runner
-      #   run: yarn test:ci:components
+        
+      - name: Cypress Component Test Runner
+        run: pnpm test:ci:components
 
       - name: Cypress E2E Test Runner
         uses: cypress-io/github-action@v2
