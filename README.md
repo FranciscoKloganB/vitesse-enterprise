@@ -166,7 +166,7 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build
+pnpm build:ssg
 ```
 
 And you will see the generated file in `dist` that ready to be served.
