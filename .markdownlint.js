@@ -5,7 +5,7 @@ module.exports = {
   MD013: {
     code_block_line_length: 100,
     heading_line_length: 40,
-    line_length: 88,
+    line_length: 100,
   },
   'no-multiple-blanks': false,
 }
