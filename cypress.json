@@ -8,7 +8,7 @@
   "component": {
     "componentFolder": "tests/component",
     "supportFile": "tests/component/cypress/support/index.ts",
-    "testFiles": "*.test.{js,jsx,ts,tsx}"
+    "testFiles": "*.spec.{js,jsx,ts,tsx}"
   },
   "e2e": {
     "integrationFolder": "tests/e2e",
