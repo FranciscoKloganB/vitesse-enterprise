@@ -1,17 +1,16 @@
 module.exports = {
   extends: [
-    // Use the Standard config as the base
+    // Enables parsing of vue files. Required since Stylelint 14 (along with postcss-html)
+    'stylelint-config-html/vue',
+    // Extends both the standard css as well as standard scss configs (includes both packages)
     'stylelint-config-standard-scss',
     // Enforce a standard order for CSS properties
     'stylelint-config-recess-order',
-    // Override rules that would interfere with Prettier
-    'stylelint-config-prettier',
-    // Override rules to allow linting of CSS modules
+    // Tweaks stylelint rules to accept css modules specific syntax.
     'stylelint-config-css-modules',
+    // Turns of all the rules that would interfere with Prettier
+    'stylelint-config-prettier'
   ],
-  plugins: ['stylelint-scss'],
-  // add your custom config here
-  // https://stylelint.io/user-guide/configuration
   rules: {
     'max-line-length': [
       100,
@@ -22,11 +21,10 @@ module.exports = {
         ],
       },
     ],
-    // Allow newlines inside class attribute values
-    'string-no-newline': null,
-    // Limit the number of universal selectors in a selector, avoids slow selectors
+    'at-rule-no-unknown': null,
     'selector-max-universal': 1,
-    // Disallow allow global element/type selectors in scoped modules
+    'string-no-newline': null,
+    'scss/at-rule-no-unknown': true,
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
     'scss/dollar-variable-no-missing-interpolation': true,
@@ -35,8 +33,5 @@ module.exports = {
     'scss/operator-no-newline-before': true,
     'scss/operator-no-unspaced': true,
     'scss/selector-no-redundant-nesting-selector': true,
-    // Allow SCSS and CSS module keywords beginning with `@`
-    'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
   },
 }
