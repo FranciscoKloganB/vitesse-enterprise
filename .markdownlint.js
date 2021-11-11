@@ -2,6 +2,7 @@ module.exports = {
   // Enables all default rules
   default: true,
   'list-marker-space': false,
+  MD033: false,
   MD013: {
     code_block_line_length: 100,
     heading_line_length: 40,
