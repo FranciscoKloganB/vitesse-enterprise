@@ -99,13 +99,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
   - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite)
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
-  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense)
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [VS Code Extensions](./.vscode/extensions.json) - IDE-like experience on VSCode
 
 ## Variations
 
