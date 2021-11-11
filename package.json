@@ -18,7 +18,7 @@
     "lint:md": "markdownlint --config .markdownlint.js --fix \"**/*.md\"",
     "lint:prettier": "prettier --write --loglevel error \"**/*.{js,ts,json,css,scss,vue,html,md}\"",
     "postinstall": "husky install && chmod ug+x .husky/*",
-    "preinstall": "npx only-allow npm",
+    "preinstall": "npx only-allow pnpm",
     "preview": "vite preview",
     "preview:https": "serve dist",
     "test": "cypress open",
