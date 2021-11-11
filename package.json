@@ -104,5 +104,22 @@
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.15.6",
     "vue-tsc": "^0.29.0"
+  },
+  "engines": {
+    "node": ">=14.18.1",
+    "pnpm": ">=6.0"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
   }
 }
