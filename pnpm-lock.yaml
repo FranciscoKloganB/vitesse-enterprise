@@ -48,6 +48,7 @@ specifiers:
   pnpm: ^6.20.3
   postcss-html: ^1.2.0
   prettier: ^2.4.1
+  prettier-plugin-import-sort: ^0.0.7
   prism-theme-vars: ^0.2.2
   sass: ^1.43.4
   stylelint: ^14.0.1
@@ -129,6 +130,7 @@ devDependencies:
   pnpm: 6.20.3
   postcss-html: 1.2.0
   prettier: 2.4.1
+  prettier-plugin-import-sort: 0.0.7_prettier@2.4.1
   sass: 1.43.4
   stylelint: 14.0.1
   stylelint-config-css-modules: 2.3.0_stylelint@14.0.1
@@ -8451,6 +8453,20 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: 1.2.0
+    dev: true
+
+  /prettier-plugin-import-sort/0.0.7_prettier@2.4.1:
+    resolution: {integrity: sha512-O0KlUSq+lwvh+UiN3wZDT6wWkf7TNxTVv2/XXE5KqpRNbFJq3nRg2ftzBYFFO8QGpdWIrOB0uCTCtFjIxmVKQw==}
+    peerDependencies:
+      prettier: '>= 2.0'
+    dependencies:
+      import-sort: 6.0.0
+      import-sort-config: 6.0.0
+      import-sort-parser-babylon: 6.0.0
+      import-sort-parser-typescript: 6.0.0
+      prettier: 2.4.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /prettier/2.4.1:
