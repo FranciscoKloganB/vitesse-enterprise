@@ -28,6 +28,7 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    // Delegates import sorting order to import-sort plugin
     'import/order': 'off',
   },
   globals: {
