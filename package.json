@@ -107,18 +107,5 @@
   },
   "engines": {
     "node": ">=14.18.1"
-  },
-  "release": {
-    "analyzeCommits": "simple-commit-message"
-  },
-  "config": {
-    "pre-git": {
-      "commit-msg": "simple",
-      "pre-commit": [],
-      "pre-push": [],
-      "post-commit": [],
-      "post-checkout": [],
-      "post-merge": []
-    }
   }
 }
