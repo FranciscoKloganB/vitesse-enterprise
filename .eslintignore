@@ -1,7 +1,9 @@
 .github/
 .husky/
 .vscode/
+**/coverage/
 dist/
 locales/
 node_modules/
-**/coverage/
+src/components.d.ts
+src/auto-imports.d.ts

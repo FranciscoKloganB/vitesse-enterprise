@@ -1,7 +1,7 @@
 .github/
 .husky/
 .vscode/
+**/coverage/
 dist/
 locales/
 node_modules/
-**/coverage/
