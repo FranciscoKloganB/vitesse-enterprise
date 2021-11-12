@@ -1,7 +1,4 @@
 {
-  "cSpell.words": [
-    "Vitesse"
-  ],
   "css.validate": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true,
@@ -27,6 +24,8 @@
     ".importsortrc": "json",
     ".markdownlintignore": "ignore"
   },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
