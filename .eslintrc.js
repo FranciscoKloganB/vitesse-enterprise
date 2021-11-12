@@ -6,7 +6,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['@antfu', 'prettier'],
+  extends: ['@antfu', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 2020,
   },
