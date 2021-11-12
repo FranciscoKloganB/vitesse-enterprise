@@ -30,6 +30,8 @@ module.exports = {
     ],
     // Delegates import sorting order to import-sort plugin
     'import/order': 'off',
+    // Delegates curly brace spacing to prettier
+    'object-curly-spacing': 'off',
   },
   globals: {
     defineProps: 'readonly',
