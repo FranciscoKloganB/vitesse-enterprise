@@ -21,12 +21,12 @@ specifiers:
   critters: ^0.0.14
   cross-env: ^7.0.3
   cypress: ^8.7.0
-  daisyui: ^1.16.2
   eslint: ^8.2.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-cypress: ^2.12.1
   eslint-plugin-import: ^2.25.2
   eslint-plugin-node: ^11.1.0
+  eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.0.3
   https-localhost: ^4.7.0
   husky: ^7.0.4
@@ -45,9 +45,10 @@ specifiers:
   npm-run-all: ^4.1.5
   nprogress: ^0.2.0
   pinia: ^2.0.2
-  pnpm: ^6.20.3
+  pnpm: ^6.21.1
   postcss-html: ^1.2.0
   prettier: ^2.4.1
+  prettier-plugin-import-sort: ^0.0.7
   prism-theme-vars: ^0.2.2
   sass: ^1.43.4
   stylelint: ^14.0.1
@@ -104,12 +105,12 @@ devDependencies:
   critters: 0.0.14
   cross-env: 7.0.3
   cypress: 8.7.0
-  daisyui: 1.16.2
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0_eslint@8.2.0
   eslint-plugin-cypress: 2.12.1_eslint@8.2.0
   eslint-plugin-import: 2.25.2_eslint@8.2.0
   eslint-plugin-node: 11.1.0_eslint@8.2.0
+  eslint-plugin-prettier: 4.0.0_307f015733298e29da9050ea0cee5b9e
   eslint-plugin-vue: 8.0.3_eslint@8.2.0
   https-localhost: 4.7.0
   husky: 7.0.4
@@ -126,9 +127,10 @@ devDependencies:
   markdown-it-prism: 2.2.1
   markdownlint-cli: 0.29.0
   npm-run-all: 4.1.5
-  pnpm: 6.20.3
+  pnpm: 6.21.1
   postcss-html: 1.2.0
   prettier: 2.4.1
+  prettier-plugin-import-sort: 0.0.7_prettier@2.4.1
   sass: 1.43.4
   stylelint: 14.0.1
   stylelint-config-css-modules: 2.3.0_stylelint@14.0.1
@@ -3711,10 +3713,6 @@ packages:
       yauzl: 2.10.0
     dev: true
 
-  /daisyui/1.16.2:
-    resolution: {integrity: sha512-kHoTvq3/eU8tPbu3U3Nwq7yy0I5zauqAYRSvw1x+t8g9FBjFm3jNtUQO/vBjUZsU7ABIf5aaT58iBF2NeusCUA==}
-    dev: true
-
   /dargs/7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}
     engines: {node: '>=8'}
@@ -4516,6 +4514,23 @@ packages:
       semver: 6.3.0
     dev: true
 
+  /eslint-plugin-prettier/4.0.0_307f015733298e29da9050ea0cee5b9e:
+    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.2.0
+      eslint-config-prettier: 8.3.0_eslint@8.2.0
+      prettier: 2.4.1
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
   /eslint-plugin-promise/5.1.0_eslint@8.2.0:
     resolution: {integrity: sha512-NGmI6BH5L12pl7ScQHbg7tvtk4wPxxj8yPHH47NvSmMtFneC077PSeY3huFj06ZWZvtbfxSPt3RuOQD5XcR4ng==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -5083,6 +5098,10 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: true
+
+  /fast-diff/1.2.0:
+    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
   /fast-glob/2.2.7:
@@ -8320,8 +8339,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.20.3:
-    resolution: {integrity: sha512-t16XiTxKTO+QdpsT3hBnlNN33T1JDCi+dtcVrT8ckJHt8bDQW4ax9hOYe4jtz9tUIxT0JhzYeDiyd5fiGMnu+w==}
+  /pnpm/6.21.1:
+    resolution: {integrity: sha512-cekH8bFgZbHerGsmW4JYY5bi0jYyi/K7WZpSf8TQFlP3Kxc50KhCwNWPUzgLVImYyX8SCJcVhyNOoYQKDnmYCw==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
@@ -8427,6 +8446,27 @@ packages:
   /prepend-http/2.0.0:
     resolution: {integrity: sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=}
     engines: {node: '>=4'}
+    dev: true
+
+  /prettier-linter-helpers/1.0.0:
+    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      fast-diff: 1.2.0
+    dev: true
+
+  /prettier-plugin-import-sort/0.0.7_prettier@2.4.1:
+    resolution: {integrity: sha512-O0KlUSq+lwvh+UiN3wZDT6wWkf7TNxTVv2/XXE5KqpRNbFJq3nRg2ftzBYFFO8QGpdWIrOB0uCTCtFjIxmVKQw==}
+    peerDependencies:
+      prettier: '>= 2.0'
+    dependencies:
+      import-sort: 6.0.0
+      import-sort-config: 6.0.0
+      import-sort-parser-babylon: 6.0.0
+      import-sort-parser-typescript: 6.0.0
+      prettier: 2.4.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /prettier/2.4.1:

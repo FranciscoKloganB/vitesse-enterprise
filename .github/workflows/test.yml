@@ -33,7 +33,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.15.1
+          version: 6.21.1
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -44,11 +44,8 @@ jobs:
 
       - run: pnpm install
 
-      - name: Lint all files
+      - name: Static Analysis
         run: pnpm lint
-
-      - name: Type Check
-        run: pnpm typecheck
 
       - name: Build Distribution
         run: pnpm build:ssg

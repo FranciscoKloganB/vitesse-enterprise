@@ -6,7 +6,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['@antfu', 'prettier'],
+  extends: ['@antfu', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 2020,
   },
@@ -17,10 +17,10 @@ module.exports = {
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
+    'comma-dangle': ['error', 'only-multiline'],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
-    'comma-dangle': ['error', 'only-multiline'],
     'max-len': [
       'error',
       {
@@ -28,6 +28,10 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    // Delegates import sorting order to import-sort plugin
+    'import/order': 'off',
+    // Delegates curly brace spacing to prettier
+    'object-curly-spacing': 'off',
   },
   globals: {
     defineProps: 'readonly',
