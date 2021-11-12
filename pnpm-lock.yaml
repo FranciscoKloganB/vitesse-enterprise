@@ -21,7 +21,6 @@ specifiers:
   critters: ^0.0.14
   cross-env: ^7.0.3
   cypress: ^8.7.0
-  daisyui: ^1.16.2
   eslint: ^8.2.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-cypress: ^2.12.1
@@ -104,7 +103,6 @@ devDependencies:
   critters: 0.0.14
   cross-env: 7.0.3
   cypress: 8.7.0
-  daisyui: 1.16.2
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0_eslint@8.2.0
   eslint-plugin-cypress: 2.12.1_eslint@8.2.0
@@ -3709,10 +3707,6 @@ packages:
       untildify: 4.0.0
       url: 0.11.0
       yauzl: 2.10.0
-    dev: true
-
-  /daisyui/1.16.2:
-    resolution: {integrity: sha512-kHoTvq3/eU8tPbu3U3Nwq7yy0I5zauqAYRSvw1x+t8g9FBjFm3jNtUQO/vBjUZsU7ABIf5aaT58iBF2NeusCUA==}
     dev: true
 
   /dargs/7.0.0:
