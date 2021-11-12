@@ -1,10 +1,24 @@
 {
-  "cSpell.words": ["Vitesse"],
+  "cSpell.words": [
+    "Vitesse"
+  ],
   "css.validate": false,
-  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "source.fixAll.markdownlint": true,
+    "source.fixAll.prettier": true
+  },
   "editor.quickSuggestions": {
     "strings": true
   },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
   "files.associations": {
     "*.css": "postcss",
     ".husky/commit-msg": "shellscript",
@@ -13,12 +27,26 @@
     ".importsortrc": "json",
     ".markdownlintignore": "ignore"
   },
-
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
   "material-icon-theme.activeIconPack": "vue_vuex",
-  "prettier.enable": false,
+  "prettier.enable": true,
+  "prettier.configPath": ".prettierrc.js",
+  "sort-imports.languages": [
+    "typescript",
+    "javascript",
+    "vue"
+  ],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

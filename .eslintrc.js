@@ -17,10 +17,10 @@ module.exports = {
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
+    'comma-dangle': ['error', 'only-multiline'],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
-    'comma-dangle': ['error', 'only-multiline'],
     'max-len': [
       'error',
       {
@@ -28,6 +28,7 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    'import/order': 'off',
   },
   globals: {
     defineProps: 'readonly',
