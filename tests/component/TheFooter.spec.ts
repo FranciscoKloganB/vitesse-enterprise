@@ -6,8 +6,8 @@ describe('TheFooter', () => {
   beforeEach(() => {
     mount(TheFooter, {
       global: {
-        plugins: [i18n]
-      }
+        plugins: [i18n],
+      },
     })
   })
 

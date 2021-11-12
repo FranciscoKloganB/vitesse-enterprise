@@ -1,14 +1,12 @@
 <script setup lang="ts">
-/** 
- * https://github.com/vueuse/head 
+/**
+ * https://github.com/vueuse/head
  * Allows you to manipulate the document head in any components they will be
  * rendered correctly in the html results with vite-ssg
  */
 useHead({
   title: 'Vitesse Enterprise Starter',
-  meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
-  ],
+  meta: [{ name: 'description', content: 'Opinionated Vite Starter Template' }],
 })
 </script>
 

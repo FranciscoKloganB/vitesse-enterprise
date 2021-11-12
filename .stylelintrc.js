@@ -9,7 +9,7 @@ module.exports = {
     // Tweaks stylelint rules to accept css modules specific syntax.
     'stylelint-config-css-modules',
     // Turns of all the rules that would interfere with Prettier
-    'stylelint-config-prettier'
+    'stylelint-config-prettier',
   ],
   rules: {
     'max-line-length': [
