@@ -39,7 +39,7 @@
   - [Eslint](https://eslint.org/), [Stylelint](https://stylelint.io/),
   [Markdownlint](https://github.com/DavidAnson/markdownlint), [Prettier](https://prettier.io/)
 
-- 🪝 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
+- 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
 - ⚙️ Component and E2E Testing with [Cypress](https://cypress.io/)
 
