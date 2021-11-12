@@ -15,7 +15,7 @@
     "lint:css": "stylelint --fix \"**/*.{css,scss,vue}\"",
     "lint:js": "eslint --fix --ext \"**/*.{js,ts,vue}\"",
     "lint:imports": "pnpm import-sort --write \"src/**/*{.js,.ts,.vue}\"",
-    "lint:md": "markdownlint --config .markdownlint.js --fix \"**/*.md\"",
+    "lint:md": "markdownlint --config .markdownlint.json --fix \"**/*.md\"",
     "lint:prettier": "prettier --write --loglevel error \"**/*.{js,ts,json,css,scss,vue,html,md}\"",
     "postinstall": "husky install && chmod ug+x .husky/*",
     "preinstall": "npx only-allow pnpm",
