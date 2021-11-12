@@ -5,3 +5,4 @@ dist/
 locales/
 node_modules/
 **/coverage/
+**/*.md
