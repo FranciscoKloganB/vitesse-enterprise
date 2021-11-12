@@ -31,23 +31,17 @@ export default defineConfig({
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ['vue', 'md'],  
+      extensions: ['vue', 'md'],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
-      defaultLayout: 'DefaultLayout'
+      defaultLayout: 'DefaultLayout',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-        'vue-i18n',
-        '@vueuse/head',
-        '@vueuse/core',
-      ],
+      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
     }),
 
@@ -158,14 +152,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-      '@vueuse/core',
-      '@vueuse/head',
-    ],
-    exclude: [
-      'vue-demi',
-    ],
+    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    exclude: ['vue-demi'],
   },
 })

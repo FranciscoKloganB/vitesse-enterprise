@@ -1,9 +1,6 @@
 {
   "cSpell.words": ["Vitesse"],
   "css.validate": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-  },
   "editor.formatOnSave": false,
   "editor.quickSuggestions": {
     "strings": true
@@ -16,11 +13,12 @@
     ".importsortrc": "json",
     ".markdownlintignore": "ignore"
   },
+
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
   "material-icon-theme.activeIconPack": "vue_vuex",
   "prettier.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "material-icon-theme"
 }

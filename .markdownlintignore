@@ -1,6 +1,7 @@
 .github/
 .husky/
 .vscode/
-cypress/
 dist/
+locales/
 node_modules/
+**/coverage/

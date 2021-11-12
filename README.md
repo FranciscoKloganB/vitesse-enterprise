@@ -1,22 +1,9 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
-
-<p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-</p>
-
-<br>
-
-<p align='center'>
-<a href="https://vitesse.netlify.app/">Live Demo</a>
-</p>
-
-<br>
+# Vitesse Enterprise Starter
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
+  - [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
 
 - 🗂 [File based routing](./src/pages)
 
@@ -28,7 +15,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
+- 🎨 [Windi CSS](https://github.com/windicss/windicss)
 
 - 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
 
@@ -38,25 +25,34 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import)
 
 - 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
+- 🦾 [TypeScript](https://www.typescriptlang.org/), of course
+
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 
-- 🦾 TypeScript, of course
+- 🖌️ [SCSS](https://sass-lang.com/) support
 
-- ⚙️ E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+- 👮🏻 Format and Lint with VSCode and CLI
+  - [Eslint](https://eslint.org/), [Stylelint](https://stylelint.io/),
+  [Markdownlint](https://github.com/DavidAnson/markdownlint), [Prettier](https://prettier.io/)
 
-- ☁️ Deploy on Netlify, zero-config
+- 🪝 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
-<br>
+- ⚙️ Component and E2E Testing with [Cypress](https://cypress.io/)
+
+- 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
+
+- ☁️ Deploy on [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/), zero-config
+
 
 ## Pre-packed
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of additional features!
+- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/))
   - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
 
 ### Icons
@@ -67,25 +63,20 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router)
-  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
-  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
-- [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
-- [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
-  - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
-  - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
-- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
-  - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
-
-### Coding Style
-
-- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
+  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
+  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- [Pinia](https://pinia.esm.dev)
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
+- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
+- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss)
+- [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md)
+  - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
+  - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
+- [Vue I18n](https://github.com/intlify/vue-i18n-next)
+  - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n)
+- [VueUse](https://github.com/antfu/vueuse)
+- [`@vueuse/head`](https://github.com/vueuse/head)
 
 ### Dev tools
 
@@ -94,33 +85,26 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
   - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [Netlify](https://www.netlify.com/) - zero-config deployment
-- [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
-  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [VS Code Extensions](./.vscode/extensions.json) - IDE-like experience on VSCode
 
 ## Variations
 
-As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!
+As this template is strongly opinionated, the following provides a curated list for
+community-maintained variations with different preferences and feature sets. Check them
+out as well. PR to add yours is also welcome!
 
-###### Official
+### Community
 
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse for Nuxt 3
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-###### Community
-
-- [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by [@johncampionjr](https://github.com/johncampionjr) - additional options for integrations, including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
-- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
-- [vitespa](https://github.com/ctholho/vitespa) by [@ctholho](https://github.com/ctholho) - Like Vitesse but without SSG/SSR
-- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17) - Like Vitesse but with TailwindCSS
-- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext) by [@xiaoluoboding](https://github.com/xiaoluoboding) - ⚡️ Modernized Chrome Extension Manifest V3 Vite Starter Template
+- [vitesse](https://github.com/antfu/vitesse) - The original project by [@antfu](https://github.com/antfu)!
+- [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by
+[@johncampionjr](https://github.com/johncampionjr) - additional options for integrations,
+including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
+- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template)
+by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
+- [vitespa](https://github.com/ctholho/vitespa) by [@ctholho](https://github.com/ctholho)
+- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17)
+- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext)
+by [@xiaoluoboding](https://github.com/xiaoluoboding)
 
 ## Try it now
 
@@ -166,17 +150,21 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build
+pnpm build:ssg
 ```
 
 And you will see the generated file in `dist` that ready to be served.
 
 ### Deploy on Netlify
 
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way,
+and your App will be live in a minute.
 
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
+I have created several Vite apps recently. Setting the configs up is kinda the bottleneck
+for me to make the ideas simply come true within a very short time.
 
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
+So I made this starter template for myself to create apps more easily, along with some good
+practices that I have learned from making those apps. It's strongly opinionated, but feel
+free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)

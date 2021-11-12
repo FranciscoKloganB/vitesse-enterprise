@@ -44,14 +44,14 @@ jobs:
 
       - run: pnpm install
 
-      - name: Lint
-        run: pnpm run lint
+      - name: Lint all files
+        run: pnpm lint
 
       - name: Type Check
-        run: pnpm run typecheck
+        run: pnpm typecheck
 
       - name: Build Distribution
-        run: pnpm build
+        run: pnpm build:ssg
 
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json

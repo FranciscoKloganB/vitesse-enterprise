@@ -11,22 +11,22 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
-    '@typescript-eslint/no-namespace': ['error', { 'allowDeclarations': true }],
+    '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true }],
     '@typescript-eslint/no-explicit-any': rulesSeverityOff,
     '@typescript-eslint/no-unused-vars': [
-      'error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      'error',
+      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
-    'no-unused-vars': [
-      'error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
-    ],
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
-    'comma-dangle': ['error', 'only-multiline'
-    ],
-    'max-len': ['error',
-      { 
-        code: 100, tabWidth: 2
-      }
+    'comma-dangle': ['error', 'only-multiline'],
+    'max-len': [
+      'error',
+      {
+        code: 100,
+        tabWidth: 2,
+      },
     ],
   },
   globals: {

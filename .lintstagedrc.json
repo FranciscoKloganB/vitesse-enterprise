@@ -1,0 +1,10 @@
+{
+  "*.{js,jsx,ts,tsx}": ["pnpm lint:js", "pnpm lint:prettier", "pnpm lint:imports"],
+  "*.vue": ["pnpm lint:css", "pnpm lint:js", "pnpm lint:prettier", "pnpm lint:imports"],
+  "*.(s)?css": ["pnpm lint:css", "pnpm lint:prettier"],
+  "*.md": ["pnpm lint:md", "pnpm lint:prettier"],
+  "*.{png,jpeg,jpg,gif,svg}": ["imagemin-lint-staged"],
+  "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
+    "pnpm prettier --write --loglevel warn --parser json"
+  ]
+}

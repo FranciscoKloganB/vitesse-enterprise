@@ -4,10 +4,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": false,
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],
+    "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
     "module": "ESNext",
     "noUnusedLocals": false,
@@ -32,12 +29,7 @@
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
-    ],
+    ]
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-    "public",
-    "tests"
-  ],
+  "exclude": ["dist", "node_modules", "public", "tests"]
 }
