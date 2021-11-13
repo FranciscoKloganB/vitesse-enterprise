@@ -11,8 +11,8 @@
 <br>
 
 <p align='center'>
-  <a href="https://vitesse.netlify.app/">Live netlify demo</a>
-  <a href="https://vitesse.netlify.app/">Live vercel demo</a>
+  <a href="https://vitesse-enterprise.netlify.app/">Live Netlify demo</a>
+  <a href="https://vitesse-enterprise.vercel.app//">Live Vercel demo</a>
 </p>
 
 <br>
@@ -62,8 +62,8 @@
 
 - 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
 
-- ☁️ Deploy on [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/), zero-config
-
+- ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config See [Netlify Deployment](#deploy-on-netlify)
+- ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
 
 ## Pre-packed
 
@@ -177,25 +177,32 @@ And you will see the generated file in `dist` that ready to be served.
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way,
 and your App will be live in a minute.
 
+### Deploy on Vercel
+
+Vercel has some short-commings regarding `pnpm` based projects. After creating
+and importing the project on [Vercel dashboard](https://vercel.com/dashboard) you will
+need to navigate to the project settings and override the `Build Command` and `Install Command`
+respectively, with the following bash commands:
+  
+  ```bash
+    # Build Command
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build
+    # Install Command
+    npm i -g pnpm && pnpm -i
+  ```
+
+Alternatevely, for zero configuration on import you need to alter `package.json` scripts to have
+a `build` and `install` entries with the commands above.
+
 ## Why
 
-### Antfu
-
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck
-for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good
-practices that I have learned from making those apps. It's strongly opinionated, but feel
-free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
-
-### Francisco Barros statement
-
-Working in conjunction with others often requires strict styling rules. Setting up these tools,
-such that they work seamlessly across VSCode, CLI and pipeline consumes alot of time. Vue, Vite and,
-Vitesse, are amazing tools for web development and are now my go to choices for development when I
-do not wish to use Nuxt (can't wait for Nuxt3 💖). To avoid repeating myself over and over again for
-to get this configurations going, I decided to fork Vitesse repository and create a baseline project
-for my own (or other people) use, enabling us to be _vite_. Pun intended.
+On top of what was mentioned by [Anthony Fu](https://github.com/antfu/), working in conjunction with
+others often requires strict styling rules. Creating a seamless developer experience across VSCode,
+CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for web development and are
+now my go to choices for development when I do not wish to use Nuxt (can't wait for Nuxt3 💖). To
+avoid repeating myself over and over again for to get this configurations going, I decided to fork
+Vitesse repository and create a baseline project for my own (or other people) use, enabling us to
+be _vite_. Pun intended.
 
 If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look into it
 when I have some time.
