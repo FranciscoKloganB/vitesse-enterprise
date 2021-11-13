@@ -145,9 +145,8 @@ When you use this template, try follow the checklist to update your info properl
 
 - Select your git repository of choice
   - [ ] Using [GitHub](https://github.com)?
-    - Remove the `.github/funding.yml` which contains the funding info
-    - Remove `.gitlab` folder
-    - Remove `.gitlab-ci.yml` file from the root directory
+    - Remove `.github/funding.yml` file which contains the funding info
+    - Remove `.gitlab` folder and `.gitlab-ci.yml` file
   - [ ] Using [GitLab](https://gitlab.com)?
     - Remove the `.github` folder
   - Using neither? Perform both steps.
