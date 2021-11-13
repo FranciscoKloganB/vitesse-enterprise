@@ -143,14 +143,20 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 When you use this template, try follow the checklist to update your info properly
 
+- Select your git repository of choice
+  - [ ] Using [GitHub](https://github.com)?
+    - Remove the `.github/funding.yml` which contains the funding info
+    - Remove `.gitlab` folder
+    - Remove `.gitlab-ci.yml` file from the root directory
+  - [ ] Using [GitLab](https://gitlab.com)?
+    - Remove the `.github` folder
+  - Using neither? Perform both steps.
+- Remove `vercel.json` or `netlify.yml` depending on your deployment provider.
 - [ ] Rename `name` field in `package.json`
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the title in `App.vue`
 - [ ] Change the favicon in `public`
-- [ ] Remove the `.github` folder which contains the funding info
 - [ ] Clean up the READMEs and remove routes
-
-And, enjoy :)
 
 ## Usage
 
@@ -196,7 +202,7 @@ a `build` and `install` entries with the commands above.
 
 ## Why
 
-On top of what was mentioned by [Anthony Fu](https://github.com/antfu/) [here](https://github.com/antfu/),
+On top of what was mentioned by [Anthony Fu](https://github.com/antfu/) in the original [post](https://github.com/antfu/vitesse#why),
 working in conjunction with others often requires strict styling rules. Creating a seamless developer
 experience across VSCode, CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for
 web development and are now my go to choices for development when I do not wish to use Nuxt (can't
