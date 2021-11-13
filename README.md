@@ -182,20 +182,21 @@ and your App will be live in a minute.
 ### Antfu
 
 I have created several Vite apps recently. Setting the configs up is kinda the bottleneck
-for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good
-practices that I have learned from making those apps. It's strongly opinionated, but feel
-free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
+for me to make the ideas simply come true within a very short time. So I made this starter
+template for myself to create apps more easily, along with some good practices that I
+have learned from making those apps. It's strongly opinionated, but feel free to tweak it
+or even maintains your own forks. [(see community maintained variation forks)](#variations)
 
 ### Francisco Barros
 
 Working in conjunction with others often requires strict styling rules. Setting up these tools,
-such that they work seamlessly across VSCode, CLI and pipeline consumes alot of time. Vue, Vite and,
-Vitesse, are amazing tools for web development and are now my go to choices for development when I
-do not wish to use Nuxt (can't wait for Nuxt3 💖). To avoid repeating myself over and over again for
-to get this configurations going, I decided to fork Vitesse repository and create a baseline project
-for my own (or other people) use, enabling us to be _vite_. Pun intended.
+such that they work seamlessly across VSCode, CLI and Pipeline consumes time. Vue, Vite and,
+Vitesse, are amazing tools for web development and are now my go to choices for Vue development
+when I do not wish to use Nuxt (can't wait for Nuxt3 💖). To avoid repeating myself over and
+over again for to get this configurations going, I decided to fork Vitesse repository and
+create a baseline project for my own (or other people) use, enabling us to be _vite_. Pun intended.
 
-If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look into it
-when I have some time.
+## Disclaimer
+
+If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look
+into it when I have some time.
