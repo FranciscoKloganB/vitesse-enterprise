@@ -1,5 +1,22 @@
 # Vitesse Enterprise Starter
 
+<p align='center'>
+  <img
+    src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png'
+    alt='Vitesse - Opinionated Vite Starter Template'
+    width='600'
+  />
+</p>
+
+<br>
+
+<p align='center'>
+  <a href="https://vitesse-enterprise.netlify.app/">Live Netlify demo</a>
+  <a href="https://vitesse-enterprise.vercel.app//">Live Vercel demo</a>
+</p>
+
+<br>
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
@@ -45,8 +62,8 @@
 
 - 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
 
-- ☁️ Deploy on [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/), zero-config
-
+- ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config See [Netlify Deployment](#deploy-on-netlify)
+- ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
 
 ## Pre-packed
 
@@ -110,15 +127,15 @@ by [@xiaoluoboding](https://github.com/xiaoluoboding)
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/FranciscoKloganB/vitesse-enterprise/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
+npx degit FranciscoKloganB/vitesse-enterprise my-vitesse-enterprise-app
+cd my-vitesse-enterprise-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
@@ -150,7 +167,7 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build:ssg
+pnpm build:prod
 ```
 
 And you will see the generated file in `dist` that ready to be served.
@@ -160,11 +177,32 @@ And you will see the generated file in `dist` that ready to be served.
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way,
 and your App will be live in a minute.
 
+### Deploy on Vercel
+
+Vercel has some short-commings regarding `pnpm` based projects. After creating
+and importing the project on [Vercel dashboard](https://vercel.com/dashboard) you will
+need to navigate to the project settings and override the `Build Command` and `Install Command`
+respectively, with the following bash commands:
+  
+  ```bash
+    # Build Command
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build
+    # Install Command
+    npm i -g pnpm && pnpm -i
+  ```
+
+Alternatevely, for zero configuration on import you need to alter `package.json` scripts to have
+a `build` and `install` entries with the commands above.
+
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck
-for me to make the ideas simply come true within a very short time.
+On top of what was mentioned by [Anthony Fu](https://github.com/antfu/), working in conjunction with
+others often requires strict styling rules. Creating a seamless developer experience across VSCode,
+CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for web development and are
+now my go to choices for development when I do not wish to use Nuxt (can't wait for Nuxt3 💖). To
+avoid repeating myself over and over again for to get this configurations going, I decided to fork
+Vitesse repository and create a baseline project for my own (or other people) use, enabling us to
+be _vite_. Pun intended.
 
-So I made this starter template for myself to create apps more easily, along with some good
-practices that I have learned from making those apps. It's strongly opinionated, but feel
-free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
+If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look into it
+when I have some time.

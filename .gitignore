@@ -48,3 +48,4 @@ dist-ssr
 # Vite
 .vite-ssg-dist
 .vite-ssg-temp
+.vercel

@@ -1,16 +1,18 @@
 {
   "recommendations": [
     "andrew-codes.cypress-snippets",
+    "antfu.iconify",
     "csstools.postcss",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
     "hwencc.html-tag-wrapper",
-    "pkief.material-icon-theme",
     "johnsoncodehk.volar",
     "lokalise.i18n-ally",
-    "antfu.iconify",
-    "dbaeumer.vscode-eslint",
+    "pkief.material-icon-theme",
+    "stylelint.vscode-stylelint",
     "voorjaar.windicss-intellisense",
-    "wix.vscode-import-cost"
+    "wix.vscode-import-cost",
   ]
 }
