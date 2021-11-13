@@ -188,7 +188,7 @@ So I made this starter template for myself to create apps more easily, along wit
 practices that I have learned from making those apps. It's strongly opinionated, but feel
 free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
 
-### Francisco Barros statement
+### Francisco Barros
 
 Working in conjunction with others often requires strict styling rules. Setting up these tools,
 such that they work seamlessly across VSCode, CLI and pipeline consumes alot of time. Vue, Vite and,
