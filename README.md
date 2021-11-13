@@ -127,14 +127,14 @@ by [@xiaoluoboding](https://github.com/xiaoluoboding)
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/FranciscoKloganB/vitesse-enterprise-starter/generate).
+[Create a repo from this template on GitHub](https://github.com/FranciscoKloganB/vitesse-enterprise/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit FranciscoKloganB/vitesse-enterprise-starter my-vitesse-enterprise-app
+npx degit FranciscoKloganB/vitesse-enterprise my-vitesse-enterprise-app
 cd my-vitesse-enterprise-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
