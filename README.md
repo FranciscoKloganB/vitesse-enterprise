@@ -196,13 +196,13 @@ a `build` and `install` entries with the commands above.
 
 ## Why
 
-On top of what was mentioned by [Anthony Fu](https://github.com/antfu/), working in conjunction with
-others often requires strict styling rules. Creating a seamless developer experience across VSCode,
-CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for web development and are
-now my go to choices for development when I do not wish to use Nuxt (can't wait for Nuxt3 💖). To
-avoid repeating myself over and over again for to get this configurations going, I decided to fork
-Vitesse repository and create a baseline project for my own (or other people) use, enabling us to
-be _vite_. Pun intended.
+On top of what was mentioned by [Anthony Fu](https://github.com/antfu/) [here](https://github.com/antfu/),
+working in conjunction with others often requires strict styling rules. Creating a seamless developer
+experience across VSCode, CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for
+web development and are now my go to choices for development when I do not wish to use Nuxt (can't
+wait for Nuxt3 💖). To avoid repeating myself over and over again for to get this configurations
+going, I decided to fork Vitesse repository and create a baseline project for my own (or other people)
+use, enabling us to be _vite_. Pun intended.
 
 If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look into it
 when I have some time.
