@@ -1,5 +1,22 @@
 # Vitesse Enterprise Starter
 
+<p align='center'>
+  <img
+    src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png'
+    alt='Vitesse - Opinionated Vite Starter Template'
+    width='600'
+  />
+</p>
+
+<br>
+
+<p align='center'>
+  <a href="https://vitesse.netlify.app/">Live netlify demo</a>
+  <a href="https://vitesse.netlify.app/">Live vercel demo</a>
+</p>
+
+<br>
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
@@ -110,15 +127,15 @@ by [@xiaoluoboding](https://github.com/xiaoluoboding)
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/FranciscoKloganB/vitesse-enterprise-starter/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
+npx degit FranciscoKloganB/vitesse-enterprise-starter my-vitesse-enterprise-app
+cd my-vitesse-enterprise-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
@@ -150,7 +167,7 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build:ssg
+pnpm build:prod
 ```
 
 And you will see the generated file in `dist` that ready to be served.
@@ -162,9 +179,23 @@ and your App will be live in a minute.
 
 ## Why
 
+### Antfu
+
 I have created several Vite apps recently. Setting the configs up is kinda the bottleneck
 for me to make the ideas simply come true within a very short time.
 
 So I made this starter template for myself to create apps more easily, along with some good
 practices that I have learned from making those apps. It's strongly opinionated, but feel
 free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)
+
+### Francisco Barros statement
+
+Working in conjunction with others often requires strict styling rules. Setting up these tools,
+such that they work seamlessly across VSCode, CLI and pipeline consumes alot of time. Vue, Vite and,
+Vitesse, are amazing tools for web development and are now my go to choices for development when I
+do not wish to use Nuxt (can't wait for Nuxt3 💖). To avoid repeating myself over and over again for
+to get this configurations going, I decided to fork Vitesse repository and create a baseline project
+for my own (or other people) use, enabling us to be _vite_. Pun intended.
+
+If you notice any bug or inconsistent feel free to open a PR to fix it, otherwise, I will look into it
+when I have some time.

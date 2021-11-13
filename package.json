@@ -9,7 +9,7 @@
     "audit:prod": "pnpm audit --json --prod",
     "audit:force:fix": "pnpm audit --fix",
     "build": "vite build",
-    "build:ssg": "cross-env NODE_ENV=production vite-ssg build",
+    "build:prod": "cross-env NODE_ENV=production vite-ssg build",
     "dev": "vite --open --host --port 4000",
     "lint": "run-s lint:*",
     "lint:types": "vue-tsc --noEmit",
