@@ -1,39 +1,53 @@
-image: node:14
+image: node:16.13.0-buster
 
-stages:
-  - test
-
-variables:
-  npm_config_cache: '$CI_PROJECT_DIR/.npm'
-  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
-  pnpm_CACHE_FOLDER: '/root/.cache/pnpm'
+before_script: &global_before_script
+  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6
+  - cd -- "$CI_PROJECT_DIR"
+  - pnpm config set store-dir .pnpm-store
+  - pnpm install
 
 cache:
-  paths:
-    - /root/.cache/
-    - cache/Cypress
-    - $CI_PROJECT_DIR/node_modules/
   key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - /root/.cache/Cypress
+    - .pnpm-store
+    - .npmrc
+    - node_modules/
+    
+variables:
+  CYPRESS_CACHE_FOLDER: '/root/.cache/Cypress'
+  PNPM_CACHE_FOLDER: '$CI_PROJECT_DIR/.pnpm-store'
+
+stages:
+  - build
+  - static-analysis
+  - test
+
+build:
+  stage: build
+  script:
+    - pnpm build
+  
+static-analysis:
+  stage: static-analysis
+  script:
+    - pnpm lint
 
 test:
   stage: test
-  image:
+  image: # cypress/browsers:node14.17.0-chrome91-ff89
     name: cypress/included:8.7.0
     entrypoint: ['']
   script:
-    - pnpm cache dir
-    - cd -- "$CI_PROJECT_DIR"
-    - pnpm --frozen-lockfile
-    - pnpm lint
-    - pnpm test:ci:components
-    - pnpm build
-    - pnpm preview --host --port=4000
+    # - pnpm test:ci:components
+    - pnpm vite preview --port=4000 &
     - pnpm test:ci:e2e
   coverage: '/Lines\s+:\s(\d+.?\d+)%/'
   artifacts:
+    when: on_failure
     paths:
-      - '$CI_PROJECT_DIR/tests/e2e/videos/*.mp4'
+      - '$CI_PROJECT_DIR/tests/common/videos/*.mp4'
+      - '$CI_PROJECT_DIR/tests/screenshots/**/*.png'
       - '$CI_PROJECT_DIR/coverage'
     expire_in: 1 weeks
-    when: on_failure
   timeout: 15m
