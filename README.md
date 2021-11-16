@@ -62,7 +62,7 @@
 
 - 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
 
-- ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config See [Netlify Deployment](#deploy-on-netlify)
+- ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config - See [Netlify Deployment](#deploy-on-netlify)
 - ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
 
 ## Pre-packed
