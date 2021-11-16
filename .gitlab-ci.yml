@@ -21,7 +21,8 @@ variables:
 stages:
   - build
   - static-analysis
-  - test
+  # - ct-test
+  - e2e-test
 
 build:
   stage: build
@@ -33,14 +34,19 @@ static-analysis:
   script:
     - pnpm lint
 
-test:
-  stage: test
-  image: # cypress/browsers:node14.17.0-chrome91-ff89
+# ct-test:
+#   stage: ct-test
+#   script:
+#     - pnpm test:ci:components
+
+e2e-test:
+  stage: e2e-test
+  image:
     name: cypress/included:8.7.0
     entrypoint: ['']
   script:
-    # - pnpm test:ci:components
-    - pnpm vite preview --port=4000 &
+    - pnpm build
+    - pnpm vite preview --port 4000 &
     - pnpm test:ci:e2e
   coverage: '/Lines\s+:\s(\d+.?\d+)%/'
   artifacts:
