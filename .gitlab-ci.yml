@@ -32,7 +32,7 @@ static-analysis:
 e2e-test:
   stage: e2e-test
   image:
-    name: cypress/included:9.0.0
+    name: cypress/included:8.7.0
     entrypoint: ['']
   script:
     - pnpm build:prod
