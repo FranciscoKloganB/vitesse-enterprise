@@ -33,8 +33,13 @@
   "prettier.enable": true,
   "prettier.configPath": ".prettierrc.js",
   "sort-imports.languages": [
-    "typescript",
     "javascript",
+    "typescript",
+    "vue"
+  ],
+  "stylelint.validate": [
+    "javascript",
+    "typescript",
     "vue"
   ],
   "typescript.tsdk": "node_modules/typescript/lib",

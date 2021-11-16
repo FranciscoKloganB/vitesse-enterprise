@@ -1,4 +1,5 @@
 module.exports = {
+  customSyntax: 'postcss-html',
   extends: [
     // Enables parsing of vue files. Required since Stylelint 14 (along with postcss-html)
     'stylelint-config-html/vue',

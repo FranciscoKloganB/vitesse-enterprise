@@ -1,19 +1,19 @@
-import path from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Markdown from 'vite-plugin-md'
-import WindiCSS from 'vite-plugin-windicss'
-import { VitePWA } from 'vite-plugin-pwa'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
-import Prism from 'markdown-it-prism'
+import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
+import Markdown from 'vite-plugin-md'
+import Pages from 'vite-plugin-pages'
+import Prism from 'markdown-it-prism'
+import { VitePWA } from 'vite-plugin-pwa'
+import Vue from '@vitejs/plugin-vue'
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import WindiCSS from 'vite-plugin-windicss'
+import { defineConfig } from 'vite'
+import path from 'path'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -83,9 +83,7 @@ export default defineConfig({
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        // @ts-expect-error types mismatch
         md.use(Prism)
-        // @ts-expect-error types mismatch
         md.use(LinkAttributes, {
           pattern: /^https?:\/\//,
           attrs: {
