@@ -15,37 +15,27 @@ cache:
     - node_modules/
     
 variables:
+  npm_config_cache: '$CI_PROJECT_DIR/.npm'
   CYPRESS_CACHE_FOLDER: '/root/.cache/Cypress'
   PNPM_CACHE_FOLDER: '$CI_PROJECT_DIR/.pnpm-store'
 
 stages:
-  - build
   - static-analysis
-  # - ct-test
   - e2e-test
+  - ct-test
 
-build:
-  stage: build
-  script:
-    - pnpm build
-  
 static-analysis:
   stage: static-analysis
   script:
     - pnpm lint
 
-# ct-test:
-#   stage: ct-test
-#   script:
-#     - pnpm test:ci:components
-
 e2e-test:
   stage: e2e-test
   image:
-    name: cypress/included:8.7.0
+    name: cypress/included:9.0.0
     entrypoint: ['']
   script:
-    - pnpm build
+    - pnpm build:prod
     - pnpm vite preview --port 4000 &
     - pnpm test:ci:e2e
   coverage: '/Lines\s+:\s(\d+.?\d+)%/'
@@ -57,3 +47,8 @@ e2e-test:
       - '$CI_PROJECT_DIR/coverage'
     expire_in: 1 weeks
   timeout: 15m
+
+ct-test:
+  stage: ct-test
+  script:
+    - pnpm test:ci:components
