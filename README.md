@@ -107,7 +107,7 @@
 
 ## Variations
 
-This template is strongly opinionated with my personal preferences and feature sets. It is a fork of the original template created by [@antfu](https://github.com/antfu) and also takes inspiration from [vitesse-stackter](https://github.com/shamscorner/vitesse-stackter-clean-architect) made by [@shamscorner](https://github.com/shamscorner).
+This template is strongly opinionated with my personal preferences and feature sets. It is a fork of the [original template](https://github.com/antfu/vitesse) created by [@antfu](https://github.com/antfu) and also takes inspiration from [vitesse-stackter](https://github.com/shamscorner/vitesse-stackter-clean-architect) made by [@shamscorner](https://github.com/shamscorner).
 
 For an up-to-date list of official and community contributions to the `vitesse ecosystem` we recommend checking the official repository's [variations section](https://github.com/antfu/vitesse#variations).
 
