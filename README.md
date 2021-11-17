@@ -112,7 +112,7 @@ the [original template](https://github.com/antfu/vitesse) created by [@antfu](ht
 and also takes inspiration from [vitesse-stackter](https://github.com/shamscorner/vitesse-stackter-clean-architect)
 made by [@shamscorner](https://github.com/shamscorner).
 
-For an up-to-date list of official and community contributions to the `vitesse ecosystem` we recommend
+For an up-to-date list of official and community contributions to the `vitesse ecosystem`, we recommend
 checking the official repository's [variations section](https://github.com/antfu/vitesse#variations).
 
 ## Try it now
