@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
+import { useUserStore } from '~/users/stores/user'
 
 const props = defineProps<{ name: string }>()
 const router = useRouter()
@@ -29,7 +29,7 @@ watchEffect(() => {
         <span class="opacity-75">{{ t('intro.aka') }}:</span>
         <ul>
           <li v-for="otherName in user.otherNames" :key="otherName">
-            <router-link :to="`/hi/${otherName}`" replace>
+            <router-link :to="`/users/greet/${otherName}`" replace>
               {{ otherName }}
             </router-link>
           </li>

@@ -201,5 +201,5 @@ wait for Nuxt3 💖). To avoid repeating myself over and over again for to get t
 going, I decided to fork Vitesse repository and create a baseline project for my own (or other people)
 use, enabling us to be _vite_. Pun intended.
 
-If you notice any bug or inconsistency feel free to open a PR to fix it, otherwise, I will look into it
-when I have some time.
+If you notice any bug or inconsistency feel free to open a PR to fix it, otherwise,
+I will look into it when I have some time.

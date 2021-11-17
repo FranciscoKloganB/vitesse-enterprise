@@ -5,7 +5,7 @@ import 'virtual:windi-devtools'
 // windicss utilities should be the last style import
 import 'virtual:windi-utilities.css'
 // your custom styles here
-import './styles/main.css'
+import './assets/styles/main.css'
 
 import App from './App.vue'
 // register vue composition api globally
@@ -18,6 +18,6 @@ const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(App, { routes }, (ctx) => {
-  // install all modules under `modules/`
-  Object.values(import.meta.globEager('./modules/*.ts')).map((i) => i.install?.(ctx))
+  // install all modules under `**/modules/`
+  Object.values(import.meta.globEager('./**/modules/*.ts')).map((i) => i.install?.(ctx))
 })

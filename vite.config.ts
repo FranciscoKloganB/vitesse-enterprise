@@ -32,11 +32,13 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
+      pagesDir: [{ dir: 'src/**/pages', baseRoute: '' }],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
       defaultLayout: 'DefaultLayout',
+      layoutsDir: 'src/core/layouts',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -151,7 +153,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    include: ['vue', 'vue-router', '@vueuse/core'],
     exclude: ['vue-demi'],
   },
 })
