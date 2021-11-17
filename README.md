@@ -107,22 +107,9 @@
 
 ## Variations
 
-As this template is strongly opinionated, the following provides a curated list for
-community-maintained variations with different preferences and feature sets. Check them
-out as well. PR to add yours is also welcome!
+This template is strongly opinionated with my personal preferences and feature sets. It is a fork of the original template created by [@antfu](https://github.com/antfu) and also takes inspiration from [vitesse-stackter](https://github.com/shamscorner/vitesse-stackter-clean-architect) made by [@shamscorner](https://github.com/shamscorner).
 
-### Community
-
-- [vitesse](https://github.com/antfu/vitesse) - The original project by [@antfu](https://github.com/antfu)!
-- [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by
-[@johncampionjr](https://github.com/johncampionjr) - additional options for integrations,
-including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
-- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template)
-by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
-- [vitespa](https://github.com/ctholho/vitespa) by [@ctholho](https://github.com/ctholho)
-- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17)
-- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext)
-by [@xiaoluoboding](https://github.com/xiaoluoboding)
+For an up-to-date list of official and community contributions to the `vitesse ecosystem` we recommend checking the official repository's [variations section](https://github.com/antfu/vitesse#variations).
 
 ## Try it now
 
