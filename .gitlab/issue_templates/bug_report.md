@@ -1,14 +1,13 @@
 <!--- Provide a general summary of the issue in the Title above -->
-# Bug report
+## Context (Environment)
+<!--- How has this issue affected you? What are you trying to accomplish? -->
+<!--- Providing context helps us come up with a solution that is most useful in the real world -->
 
 ## Expected Behavior
 <!--- Tell us what should happen -->
 
 ## Current Behavior
 <!--- Tell us what happens instead of the expected behavior -->
-
-## Possible Solution
-<!--- Not obligatory, but suggest a fix/reason for the bug, -->
 
 ## Steps to Reproduce
 <!--- Provide a link to a live example, or an unambiguous set of steps to reproduce this bug.-->
@@ -19,14 +18,13 @@
 3.
 4.
 
-## Context (Environment)
-<!--- How has this issue affected you? What are you trying to accomplish? -->
-<!--- Providing context helps us come up with a solution that is most useful in the real world -->
+## Possible Solution
+<!--- Not obligatory, but suggest a fix/reason for the bug, -->
 
-<!--- Provide a general summary of the issue in the Title above -->
+## Acceptance criteria
 
-## Detailed Description
-<!--- Provide a detailed description of the change or addition you are proposing -->
-
-## Possible Implementation
-<!--- Not obligatory, but suggest an idea for implementing addition or change -->
+**Scenario** the name for the behavior that will be describe
+**Given** the beginning state of the scenario
+**When** specific action that the user makes
+**Then** the outcome of the action in “When”
+**And** used to continue any of three previous statements
