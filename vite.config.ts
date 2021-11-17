@@ -47,12 +47,15 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
+      // relative paths to the directory to search for components
+      dirs: ['src/**/components'],
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
-
+      // search for subdirectories
+      deep: true,
+      dts: 'src/components.d.ts',
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-
       // custom resolvers
       resolvers: [
         // auto import icons
@@ -62,8 +65,6 @@ export default defineConfig({
           // enabledCollections: ['carbon']
         }),
       ],
-
-      dts: 'src/components.d.ts',
     }),
 
     // https://github.com/antfu/unplugin-icons
