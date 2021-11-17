@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-# User story
-
 ## Description
 
 **As a** ..., **I want to** ..., **so I can** ...
@@ -17,7 +15,11 @@ _Ideally, this is in the issue title, but if not, you can put it here. If so, de
 
 ## Acceptance criteria
 
-**Scenario** the name for the behavior that will be described **Given** the beginning state of the scenario **When** specific action that the user makes **Then** the outcome of the action in “When” **And** used to continue any of three previous statements
+**Scenario** the name for the behavior that will be describe
+**Given** the beginning state of the scenario
+**When** specific action that the user makes
+**Then** the outcome of the action in “When”
+**And** used to continue any of three previous statements
 
 ## Sprint Ready Checklist
 
