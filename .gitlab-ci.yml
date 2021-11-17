@@ -1,7 +1,7 @@
 image: node:16.13.0-buster
 
 before_script: &global_before_script
-  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6
+  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6.22.2
   - cd -- "$CI_PROJECT_DIR"
   - pnpm config set store-dir .pnpm-store
   - pnpm install
@@ -21,15 +21,23 @@ variables:
 
 stages:
   - static-analysis
+  # - ct-test
   - e2e-test
-  - ct-test
 
 static-analysis:
   stage: static-analysis
   script:
     - pnpm lint
 
-e2e-test:
+# ct-test:
+#   stage: ct-test
+#   image:
+#     name: cypress/included:8.7.0
+#     entrypoint: ['']
+#   script:
+#     - pnpm cypress run-ct --browser=chrome
+
+test:
   stage: e2e-test
   image:
     name: cypress/included:8.7.0
@@ -47,8 +55,3 @@ e2e-test:
       - '$CI_PROJECT_DIR/coverage'
     expire_in: 1 weeks
   timeout: 15m
-
-ct-test:
-  stage: ct-test
-  script:
-    - pnpm test:ci:components
