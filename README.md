@@ -3,7 +3,7 @@
 <p align='center'>
   <img
     src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png'
-    alt='Vitesse - Opinionated Vite Starter Template'
+    alt='Vitesse - Opinionated Vite starter template with rigorous linting'
     width='600'
   />
 </p>
@@ -21,15 +21,15 @@
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
-  - [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
+  -🏃 [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
 
-- 🗂 [File based routing](./src/pages)
+- 🗂 [File based routing](./src/core/pages)
 
-- 📦 [Components auto importing](./src/components)
+- 📦 [Components auto importing](./src/core/components)
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
-- 📑 [Layout system](./src/layouts)
+- 📑 [Layout system](./src/core/layouts)
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
@@ -54,7 +54,7 @@
 - 🖌️ [SCSS](https://sass-lang.com/) support
 
 - 👮🏻 Format and Lint with VSCode and CLI
-  - [Eslint](https://eslint.org/), [Stylelint](https://stylelint.io/),
+  - 💾 [Eslint](https://eslint.org/), [Stylelint](https://stylelint.io/),
   [Markdownlint](https://github.com/DavidAnson/markdownlint), [Prettier](https://prettier.io/)
 
 - 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
