@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
+import { isDark, toggleDark } from '~/core/composables'
 
 const { t, availableLocales, locale } = useI18n()
 
@@ -42,7 +42,7 @@ const toggleLocales = () => {
     <a
       class="icon-btn mx-2"
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse"
+      href="https://github.com/FranciscoKloganB/vitesse-enterprise"
       target="_blank"
       title="GitHub"
     >

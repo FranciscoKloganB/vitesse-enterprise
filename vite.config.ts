@@ -32,11 +32,13 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
+      pagesDir: [{ dir: 'src/**/pages', baseRoute: '' }],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
       defaultLayout: 'DefaultLayout',
+      layoutsDir: 'src/core/layouts',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -47,12 +49,15 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
+      // relative paths to the directory to search for components
+      dirs: ['src/**/components'],
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
-
+      // search for subdirectories
+      deep: true,
+      dts: 'src/components.d.ts',
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-
       // custom resolvers
       resolvers: [
         // auto import icons
@@ -62,8 +67,6 @@ export default defineConfig({
           // enabledCollections: ['carbon']
         }),
       ],
-
-      dts: 'src/components.d.ts',
     }),
 
     // https://github.com/antfu/unplugin-icons
@@ -150,7 +153,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    include: ['vue', 'vue-router', '@vueuse/core'],
     exclude: ['vue-demi'],
   },
 })

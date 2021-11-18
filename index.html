@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#ffffff" />
     <script>
       ;(function () {
-        const prefersDark =
-          window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const query = '(prefers-color-scheme: dark)'
+        const prefersDark = window.matchMedia && window.matchMedia(query).matches
         const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
         if (setting === 'dark' || (prefersDark && setting !== 'light'))
           document.documentElement.classList.toggle('dark', true)
