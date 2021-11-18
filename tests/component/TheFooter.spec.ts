@@ -1,6 +1,6 @@
+import TheFooter from '~/core/components/TheFooter.vue'
+import { i18n } from '~/core/modules/i18n'
 import { mount } from '@cypress/vue'
-import { i18n } from '@/src/modules/i18n'
-import TheFooter from '~/components/TheFooter.vue'
 
 describe('TheFooter', () => {
   beforeEach(() => {

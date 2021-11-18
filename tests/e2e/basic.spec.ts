@@ -8,7 +8,10 @@ context('Basic', () => {
 
     cy.contains('[Home Layout]').should('exist')
 
-    cy.get('#input').type('Vitesse{Enter}').url().should('eq', 'http://localhost:4000/user/Vitesse')
+    cy.get('#input')
+      .type('Vitesse{Enter}')
+      .url()
+      .should('eq', 'http://localhost:4000/users/Vitesse')
 
     cy.contains('[Default Layout]').should('exist')
 
