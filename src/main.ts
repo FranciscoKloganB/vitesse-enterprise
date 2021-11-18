@@ -5,7 +5,7 @@ import 'virtual:windi-devtools'
 // windicss utilities should be the last style import
 import 'virtual:windi-utilities.css'
 // your custom styles here
-import './assets/styles/main.css'
+import './core/assets/styles/main.css'
 
 import App from './App.vue'
 // register vue composition api globally

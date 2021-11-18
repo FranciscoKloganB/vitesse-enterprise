@@ -8,8 +8,13 @@ title: About
   <h3>About</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite)
-starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly.
+[Vitesse Enterprise](FranciscoKloganB/vitesse-enterprise) is an opinionated
+[Vite](https://github.com/vitejs/vite) starter templated forked from
+starter template made by [@FranciscoKloganB](franciscokloganb.github.io/)
+which builds on top of [@antfu's](https://github.com/antfu) original
+[Vitesse](https://github.com/antfu/vitesse) template. It foccuses on
+team-developer-experience by adding tools that enforce code quality and readability!
+
 With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA
 and uses **WindiCSS** for UI.
 
@@ -21,4 +26,4 @@ function vitesse() {
 }
 ```
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+Check out the [GitHub repo](FranciscoKloganB/vitesse-enterprise) for more details.

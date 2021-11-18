@@ -178,7 +178,7 @@ And you will see the generated file in `dist` that ready to be served.
   - `pages/`
   - `stores/`
 - Place all the layouts in the `core/layouts` folder
-- Place all the custom styles in the `assets/styles` folder and import them into `main.{css,scss}`
+- Place all the custom styles in the `core/assets/styles` folder and import them into `main.{css,scss}`
 
 ### Deploy on Netlify
 
