@@ -13,7 +13,7 @@
 <p align='center'>
   <a href="https://vitesse-enterprise.netlify.app/">Live Netlify demo</a>
   <br>
-  <a href="https://vitesse-enterprise.vercel.app//">Live Vercel demo</a>
+  <a href="https://vitesse-enterprise.vercel.app/">Live Vercel demo</a>
 </p>
 
 <br>
@@ -55,56 +55,59 @@
 - 🖌️ [SCSS](https://sass-lang.com/) support
 
 - 👮🏻 Format and Lint with VSCode and CLI
-  - 💾 [Eslint](https://eslint.org/), [Stylelint](https://stylelint.io/),
+  - 💾 [Eslint](https://eslint.org/), [Import Sort*](https://github.com/renke/import-sort),
   [Markdownlint](https://github.com/DavidAnson/markdownlint), [Prettier](https://prettier.io/)
+  and, [Stylelint](https://stylelint.io/).
 
 - 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
-- ⚙️ Component and E2E Testing with [Cypress](https://cypress.io/)
+- ⚙️ Component and end-to-end testing with [Cypress](https://cypress.io/)
 
 - 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
 
 - ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config - See [Netlify Deployment](#deploy-on-netlify)
 - ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
 
+**CLI only. VSCode plugin does not support configuration files.*
+
 ## Pre-packed
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/))
-  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [`windicss`](https://github.com/windicss/windicss)
+  - [`typography`](https://windicss.org/plugins/official/typography.html)
 
 ### Icons
 
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [`iconify`](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [`unplugin-icons`](https://github.com/antfu/unplugin-icons) - icons as Vue components
 
 ### Plugins
 
-- [Vue Router](https://github.com/vuejs/vue-router)
+- [`pinia`](https://pinia.esm.dev)
+- [`vue-router`](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- [Pinia](https://pinia.esm.dev)
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
 - [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss)
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md)
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
-- [Vue I18n](https://github.com/intlify/vue-i18n-next)
+- [`vue-i18n-next`](https://github.com/intlify/vue-i18n-next)
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n)
-- [VueUse](https://github.com/antfu/vueuse)
-- [`@vueuse/head`](https://github.com/vueuse/head)
+- [`vueuse`](https://github.com/antfu/vueuse)
+  - [`@vueuse/head`](https://github.com/vueuse/head)
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
 
 ### Dev tools
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [Cypress](https://cypress.io/) - E2E Testing
-- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [`typescript`](https://www.typescriptlang.org/)
+- [`cypress`](https://cypress.io/) - E2E Testing
+- [`pnpm`](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
-  - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [VS Code Extensions](./.vscode/extensions.json) - IDE-like experience on VSCode
+  - [`critters`](https://github.com/GoogleChromeLabs/critters) - Critical CSS
+- [`recommended vscode extensions`](./.vscode/extensions.json) - Near IDE experience on VSCode
 
 ## Variations
 
@@ -154,21 +157,44 @@ When you use this template, try follow the checklist to update your info properl
 
 ### Development
 
-Just run and visit <http://localhost:4000>
+Run and visit <http://localhost:4000>
 
 ```bash
 pnpm dev
 ```
 
-### Build
-
-To build the App, run
+### Code formatting
 
 ```bash
+pnpm lint
+```
+
+### Testing
+
+```bash
+# Interactive test run
+pnpm test:components
+pnpm test:e2e
+# Headless ( can run both in one step with: pnpm test:ci )
+pnpm test:ci:components
+pnpm test:ci:e2e
+```
+
+### Build for production
+
+```bash
+# Ouputs generated files to dist folder. Ready to be served.
 pnpm build:prod
 ```
 
-And you will see the generated file in `dist` that ready to be served.
+### Previewing
+
+```bash
+# Runs project locally with files from dist folder
+pnpm preview
+# Can also run locally with HTTPS (may require sudo)
+pnpm preview:https
+```
 
 ### Separation of Concerns
 
@@ -205,13 +231,16 @@ a `build` and `install` entries with the commands above.
 
 ## Why
 
-On top of what was mentioned by [Anthony Fu](https://github.com/antfu/) in the original [post](https://github.com/antfu/vitesse#why),
-working in conjunction with others often requires strict styling rules. Creating a seamless developer
-experience across VSCode, CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for
-web development and are now my go to choices for development when I do not wish to use Nuxt (can't
-wait for Nuxt3 💖). To avoid repeating myself over and over again for to get this configurations
-going, I decided to fork Vitesse repository and create a baseline project for my own (or other people)
-use, enabling us to be _vite_. Pun intended.
+On top of what was mentioned by [Anthony Fu](https://github.com/antfu/) in the original
+[post](https://github.com/antfu/vitesse#why), working in conjunction with others often
+requires strict styling rules. Creating a seamless developer experience across VSCode,
+CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for web developmen
+and are now my go to choices for development. To avoid repeating myself over and over
+again for to get this configurations going, I decided to fork Vitesse repository and
+create a baseline project for my own (or other people) use, enabling us to be _vite_.
+Pun intended.
 
-If you notice any bug or inconsistency feel free to open a PR to fix it, otherwise,
-I will look into it when I have some time.
+## Feedback
+
+If you notice any bug, inconsistency or change for improvement, feel free to either create
+an issue so that I may try to fix it later or to propose a pull request with the changes.
