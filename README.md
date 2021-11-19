@@ -13,7 +13,7 @@
 <p align='center'>
   <a href="https://vitesse-enterprise.netlify.app/">Live Netlify demo</a>
   <br>
-  <a href="https://vitesse-enterprise.vercel.app//">Live Vercel demo</a>
+  <a href="https://vitesse-enterprise.vercel.app/">Live Vercel demo</a>
 </p>
 
 <br>
@@ -61,7 +61,7 @@
 
 - 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
-- ⚙️ Component and E2E Testing with [Cypress](https://cypress.io/)
+- ⚙️ Component and end-to-end testing with [Cypress](https://cypress.io/)
 
 - 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
 
