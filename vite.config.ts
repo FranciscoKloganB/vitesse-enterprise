@@ -14,6 +14,12 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import WindiCSS from 'vite-plugin-windicss'
 import { defineConfig } from 'vite'
 import path from 'path'
+import pkg from './package.json'
+
+process.env.VITE_APP_VERSION = pkg.version
+if (process.env.NODE_ENV === 'production') {
+  process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
+}
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
