@@ -30,7 +30,7 @@
     "test:ci": "run-s test:ci:*"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.5",
+    "@pinia/testing": "^0.0.6",
     "@vueuse/core": "^6.8.0",
     "@vueuse/head": "^0.7.2",
     "axios": "^0.24.0",
@@ -45,8 +45,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@cypress/vite-dev-server": "^2.2.0",
     "@cypress/vue": "^3.0.3",
     "@iconify-json/carbon": "^1.0.9",
