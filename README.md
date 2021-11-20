@@ -100,6 +100,14 @@
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
 
+### Nice to haves
+
+- Alias `@` to `<rootDir>`
+- Alias `~` to `<rootDir>/src` a.k.a. `<srcDir>`
+- Predefined and fully typed global variables:
+  - `VITE_APP_VERSION` is read from `package.json` version at build time
+  - `VITE_APP_BUILD_EPOCH` is populated as `new Date().getTime()` at build time
+
 ### Dev tools
 
 - [`typescript`](https://www.typescriptlang.org/)
@@ -152,6 +160,8 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Change the title in `App.vue`
 - [ ] Change the favicon in `public`
 - [ ] Clean up the READMEs and remove routes
+- [ ] Bump project dependencies (e.g.: dependabot) - We update them on a
+best-effort-basis, every now and then.
 
 ## Usage
 
