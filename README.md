@@ -160,6 +160,8 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Change the title in `App.vue`
 - [ ] Change the favicon in `public`
 - [ ] Clean up the READMEs and remove routes
+- [ ] Bump project dependencies (e.g.: dependabot) - We update them on a
+best-effort-basis, every now and then.
 
 ## Usage
 
