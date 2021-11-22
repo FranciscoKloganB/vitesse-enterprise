@@ -4,13 +4,9 @@
     "style": "eslint",
     "options": {}
   },
-  ".ts, .tsx": {
+  ".ts, .tsx, .vue": {
     "parser": "typescript",
     "style": "eslint",
     "options": {}
-  },
-  ".vue": {
-    "parser": "import-sort-parser-babel-vue",
-    "style": "eslint"
   }
 }

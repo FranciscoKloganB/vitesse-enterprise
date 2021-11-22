@@ -34,7 +34,6 @@ specifiers:
   import-sort: ^6.0.0
   import-sort-cli: ^6.0.0
   import-sort-config: ^6.0.0
-  import-sort-parser-babel-vue: ^1.0.6
   import-sort-parser-babylon: ^6.0.0
   import-sort-parser-typescript: ^6.0.0
   import-sort-style-eslint: ^6.0.0
@@ -118,7 +117,6 @@ devDependencies:
   import-sort: 6.0.0
   import-sort-cli: 6.0.0
   import-sort-config: 6.0.0
-  import-sort-parser-babel-vue: 1.0.6
   import-sort-parser-babylon: 6.0.0
   import-sort-parser-typescript: 6.0.0
   import-sort-style-eslint: 6.0.0
@@ -6221,20 +6219,6 @@ packages:
       resolve-from: 4.0.0
     dev: true
 
-  /import-sort-parser-babel-vue/1.0.6:
-    resolution: {integrity: sha512-cXtwv2Pd1knEfvrSjwIaZ9VaCGVe9VniJyRdNnGD5583VcQlU3iEPz4MjyD5fkFUVau3zXLg9xJ5d76GyFeDSw==}
-    dependencies:
-      '@babel/core': 7.16.0
-      '@babel/parser': 7.16.3
-      '@babel/traverse': 7.16.3
-      '@babel/types': 7.16.0
-      find-line-column: 0.5.2
-      import-sort-parser: 6.0.0
-      vue-parser: 1.1.6
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /import-sort-parser-babylon/6.0.0:
     resolution: {integrity: sha512-NyShTiNhTh4Vy7kJUVe6CuvOaQAzzfSIT72wtp3CzGjz8bHjNj59DCAjncuviicmDOgVAgmLuSh1WMcLYAMWGg==}
     dependencies:
@@ -8208,12 +8192,6 @@ packages:
     resolution: {integrity: sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==}
     dependencies:
       parse5: 6.0.1
-    dev: true
-
-  /parse5/3.0.3:
-    resolution: {integrity: sha512-rgO9Zg5LLLkfJF9E6CCmXlSE4UVceloys8JrFqCcHloC3usd/kJCyPDwH2SOlzix2j3xaP9sUX3e8+kvkuleAA==}
-    dependencies:
-      '@types/node': 16.11.7
     dev: true
 
   /parse5/6.0.1:
@@ -11033,13 +11011,6 @@ packages:
       '@vue/devtools-api': 6.0.0-beta.20.1
       vue: 3.2.22
     dev: false
-
-  /vue-parser/1.1.6:
-    resolution: {integrity: sha512-v3/R7PLbaFVF/c8IIzWs1HgRpT2gN0dLRkaLIT5q+zJGVgmhN4VuZJF4Y9N4hFtFjS4B1EHxAOP6/tzqM4Ug2g==}
-    engines: {node: '>= 4.0.0', npm: '>= 3.0.0'}
-    dependencies:
-      parse5: 3.0.3
-    dev: true
 
   /vue-router/4.0.12_vue@3.2.22:
     resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==}
