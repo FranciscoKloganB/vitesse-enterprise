@@ -1,5 +1,7 @@
 {
   "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true,
     "source.fixAll.eslint": true,
@@ -10,7 +12,6 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  "eslint.enable": true,
   "eslint.validate": [
     "javascript",
     "typescript",
