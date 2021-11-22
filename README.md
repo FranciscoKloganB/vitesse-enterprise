@@ -195,6 +195,8 @@ pnpm test:ci:e2e
 ```bash
 # Ouputs generated files to dist folder. Ready to be served.
 pnpm build:prod
+# Outputs generated files to dist folder which passed through the Vite SSG pipeline. Ready to be served.
+pnpm build:prod:ssg
 ```
 
 ### Previewing
@@ -231,7 +233,7 @@ respectively, with the following bash commands:
   
   ```bash
     # Build Command
-    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build:prod:ssg
     # Install Command
     npm i -g pnpm && pnpm -i
   ```
