@@ -233,7 +233,7 @@ respectively, with the following bash commands:
   
   ```bash
     # Build Command
-    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build:prod:ssg
     # Install Command
     npm i -g pnpm && pnpm -i
   ```
