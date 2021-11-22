@@ -14,7 +14,7 @@ specifiers:
   '@vitejs/plugin-vue': ^1.9.4
   '@vue/compiler-sfc': ^3.2.21
   '@vue/server-renderer': ^3.2.21
-  '@vueuse/core': ^6.8.0
+  '@vueuse/core': ^7.0.0
   '@vueuse/head': ^0.7.2
   axios: ^0.24.0
   axios-case-converter: ^0.9.0
@@ -40,7 +40,7 @@ specifiers:
   lint-staged: ^12.0.3
   markdown-it-link-attributes: ^3.0.0
   markdown-it-prism: ^2.2.1
-  markdownlint-cli: ^0.29.0
+  markdownlint-cli: ^0.30.0
   npm-run-all: ^4.1.5
   nprogress: ^0.2.0
   pinia: ^2.0.2
@@ -76,7 +76,7 @@ specifiers:
 
 dependencies:
   '@pinia/testing': 0.0.6_pinia@2.0.3+vue@3.2.22
-  '@vueuse/core': 6.9.1_vue@3.2.22
+  '@vueuse/core': 7.0.1_vue@3.2.22
   '@vueuse/head': 0.7.2_vue@3.2.22
   axios: 0.24.0
   axios-case-converter: 0.9.0_axios@0.24.0
@@ -123,7 +123,7 @@ devDependencies:
   lint-staged: 12.0.3
   markdown-it-link-attributes: 3.0.0
   markdown-it-prism: 2.2.1
-  markdownlint-cli: 0.29.0
+  markdownlint-cli: 0.30.0
   npm-run-all: 4.1.5
   pnpm: 6.22.2
   postcss-html: 1.2.0
@@ -137,7 +137,7 @@ devDependencies:
   stylelint-config-recommended-vue: 1.0.0_ac89f3e65c9a1d8d711cc3db898969a8
   stylelint-config-standard-scss: 2.0.1_stylelint@14.1.0
   typescript: 4.4.4
-  unplugin-auto-import: 0.4.14_@vueuse+core@6.9.1+vite@2.6.14
+  unplugin-auto-import: 0.4.14_@vueuse+core@7.0.1+vite@2.6.14
   unplugin-icons: 0.12.18_744c3dc4f4777e47e76c501a561da7bf
   unplugin-vue-components: 0.17.2_vite@2.6.14+vue@3.2.22
   vite: 2.6.14_sass@1.43.4
@@ -2288,8 +2288,8 @@ packages:
       vue: 3.2.22
     dev: true
 
-  /@vueuse/core/6.9.1_vue@3.2.22:
-    resolution: {integrity: sha512-msa36DxnnbIu41bUTvfSudF6TL4wo0+Yrpw6yr1bFtwtYTOo8GZXYWPKyvXUVGhBBqrTVNTqsTtD0eXXHJ3roA==}
+  /@vueuse/core/7.0.1_vue@3.2.22:
+    resolution: {integrity: sha512-xWA1o+pQK2uqm6yewjnP8JvrFCPKokTQfTzF/7f74iCgGwPmyPVgPLLGlKLE7NZz32DlWEiGvF43E14X4a19zQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -2299,7 +2299,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vueuse/shared': 6.9.1_vue@3.2.22
+      '@vueuse/shared': 7.0.1_vue@3.2.22
       vue: 3.2.22
       vue-demi: 0.12.1_vue@3.2.22
     dev: false
@@ -2312,8 +2312,8 @@ packages:
       vue: 3.2.22
     dev: false
 
-  /@vueuse/shared/6.9.1_vue@3.2.22:
-    resolution: {integrity: sha512-nQh+ayxkeCKUU9MZjyQpE7KfOb18e/QOHolOE2ZK5dpoHzCZK7MSXzgDtvb9omGkgK0mjXlLSJsVdGhG+QW7Aw==}
+  /@vueuse/shared/7.0.1_vue@3.2.22:
+    resolution: {integrity: sha512-sZWV8Mq4R5oCO4Db/jN6OB3VS6enL7XieLbvKVggk73wFaVEMlEF140gOmp8u6K70ZbqPKwMuNntm1rjuPOrmg==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -3373,11 +3373,6 @@ packages:
   /commander/5.1.0:
     resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /commander/8.2.0:
-    resolution: {integrity: sha512-LLKxDvHeL91/8MIyTAD5BFMNtoIwztGPMiM/7Bl8rIPmHCZXRxmSWr91h57dpOpnQ6jIUqEWdXE/uBYMfiVZDA==}
-    engines: {node: '>= 12'}
     dev: true
 
   /commander/8.3.0:
@@ -7393,12 +7388,12 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdownlint-cli/0.29.0:
-    resolution: {integrity: sha512-SEXRUT1ri9sXV8xQK88vjGAgmz2X9rxEG2tXdDZMljzW8e++LNTO9zzBBStx3JQWrTDoGTPHNrcurbuiyF97gw==}
+  /markdownlint-cli/0.30.0:
+    resolution: {integrity: sha512-NiG8iERjwsRZtJAIyLMDdYL2O3bJVn3fUxzDl+6Iv61/YYz9H9Nzgke/v0/cW9HfGvgZHhbfI19LFMp6gbKdyw==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
-      commander: 8.2.0
+      commander: 8.3.0
       deep-extend: 0.6.0
       get-stdin: 8.0.0
       glob: 7.2.0
@@ -10428,7 +10423,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-auto-import/0.4.14_@vueuse+core@6.9.1+vite@2.6.14:
+  /unplugin-auto-import/0.4.14_@vueuse+core@7.0.1+vite@2.6.14:
     resolution: {integrity: sha512-ui+M+E30xrdbXGt0+MMEM4fKhDqoBlv+xVKiYllVqUplqg/sFuXe28DBxM2xi2zAbwd/Vw3KUcLdvSmjzpA7+A==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -10439,7 +10434,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.3.0
       '@rollup/pluginutils': 4.1.1
-      '@vueuse/core': 6.9.1_vue@3.2.22
+      '@vueuse/core': 7.0.1_vue@3.2.22
       local-pkg: 0.1.0
       magic-string: 0.25.7
       resolve: 1.20.0

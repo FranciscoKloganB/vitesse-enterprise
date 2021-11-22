@@ -43,7 +43,7 @@ test:
     name: cypress/included:8.7.0
     entrypoint: ['']
   script:
-    - pnpm build:prod
+    - pnpm build:prod:ssg
     - pnpm vite preview --port 4000 &
     - pnpm test:ci:e2e
   coverage: '/Lines\s+:\s(\d+.?\d+)%/'
