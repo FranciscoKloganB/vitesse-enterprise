@@ -48,7 +48,7 @@ jobs:
         run: pnpm lint
 
       - name: Build Distribution
-        run: pnpm build:prod
+        run: pnpm build:prod:ssg
 
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json
