@@ -30,7 +30,7 @@
     "test:ci": "run-s test:ci:*"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.6",
+    "@pinia/testing": "^0.0.8",
     "@vueuse/core": "^7.0.0",
     "@vueuse/head": "^0.7.2",
     "axios": "^0.24.0",
