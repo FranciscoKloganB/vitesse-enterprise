@@ -193,9 +193,9 @@ pnpm test:ci:e2e
 ### Build for production
 
 ```bash
-# Ouputs generated files to dist folder. Ready to be served.
+# Ouputs files to dist folder. Ready to be served in SPA mode.
 pnpm build:prod
-# Outputs generated files to dist folder which passed through the Vite SSG pipeline. Ready to be served.
+# Outputs files to dist folder which passed through the Vite SSG pipeline. Ready to be served.
 pnpm build:prod:ssg
 ```
 
