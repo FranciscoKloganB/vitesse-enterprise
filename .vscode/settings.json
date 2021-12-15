@@ -32,7 +32,7 @@
   "i18n-ally.sortKeys": true,
   "material-icon-theme.activeIconPack": "vue_vuex",
   "prettier.enable": true,
-  "prettier.configPath": ".prettierrc.js",
+  "prettier.configPath": ".prettierrc.json",
   "sort-imports.languages": [
     "javascript",
     "typescript",
