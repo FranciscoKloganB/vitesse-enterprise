@@ -1,4 +1,5 @@
 {
+  "nodeVersion": "bundled",
   "baseUrl": "http://localhost:4000",
   "chromeWebSecurity": false,
   "fixturesFolder": "tests/common/cypress/fixtures",
