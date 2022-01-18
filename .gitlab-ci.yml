@@ -1,7 +1,7 @@
 image: node:16.13.0-buster
 
 before_script: &global_before_script
-  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6.22.2
+  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6.25.1
   - cd -- "$CI_PROJECT_DIR"
   - pnpm config set store-dir .pnpm-store
   - pnpm install
