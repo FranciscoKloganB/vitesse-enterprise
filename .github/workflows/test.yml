@@ -23,17 +23,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-  
+
       - uses: actions/cache@v2
         with:
           path: |
             ~/.cache
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
-          
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.22.2
+          version: 6.29.1
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -52,7 +52,7 @@ jobs:
 
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json
-        
+
       - name: Cypress Component Test Runner
         run: pnpm test:ci:components
 
