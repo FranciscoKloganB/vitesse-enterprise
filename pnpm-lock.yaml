@@ -12,10 +12,8 @@ specifiers:
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
   '@vitejs/plugin-vue': ^2.0.0
-  '@vue/compiler-sfc': ^3.2.21
-  '@vue/server-renderer': ^3.2.21
   '@vueuse/core': ^7.0.0
-  '@vueuse/head': ^0.7.2
+  '@vueuse/head': ^0.7.5
   axios: ^0.25.0
   axios-case-converter: ^0.9.0
   critters: ^0.0.16
@@ -77,7 +75,7 @@ specifiers:
 dependencies:
   '@pinia/testing': 0.0.9_pinia@2.0.3+vue@3.2.22
   '@vueuse/core': 7.0.1_vue@3.2.22
-  '@vueuse/head': 0.7.2_vue@3.2.22
+  '@vueuse/head': 0.7.5_vue@3.2.22
   axios: 0.25.0
   axios-case-converter: 0.9.0_axios@0.25.0
   nprogress: 0.2.0
@@ -99,8 +97,6 @@ devDependencies:
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/nprogress': 0.2.0
   '@vitejs/plugin-vue': 2.0.1_vite@2.6.14+vue@3.2.22
-  '@vue/compiler-sfc': 3.2.22
-  '@vue/server-renderer': 3.2.22_vue@3.2.22
   critters: 0.0.16
   cross-env: 7.0.3
   cypress: 9.3.1
@@ -138,16 +134,16 @@ devDependencies:
   stylelint-config-standard-scss: 3.0.0_stylelint@14.1.0
   typescript: 4.4.4
   unplugin-auto-import: 0.5.1_@vueuse+core@7.0.1+vite@2.6.14
-  unplugin-icons: 0.13.0_744c3dc4f4777e47e76c501a561da7bf
+  unplugin-icons: 0.13.0_vite@2.6.14
   unplugin-vue-components: 0.17.2_vite@2.6.14+vue@3.2.22
   vite: 2.6.14_sass@1.43.4
   vite-plugin-inspect: 0.3.10_vite@2.6.14
   vite-plugin-md: 0.11.4_vite@2.6.14
-  vite-plugin-pages: 0.20.0_744c3dc4f4777e47e76c501a561da7bf
+  vite-plugin-pages: 0.20.0_vite@2.6.14
   vite-plugin-pwa: 0.11.5_vite@2.6.14
   vite-plugin-vue-layouts: 0.5.0_b70f61998c11042dd8e7e2e03509762f
   vite-plugin-windicss: 1.5.1_vite@2.6.14
-  vite-ssg: 0.17.2_738d66d15e09f4643579e1a8945387ea
+  vite-ssg: 0.17.2_6a30d2f7385f73283f7babe5940d8152
   vue-tsc: 0.31.1_typescript@4.4.4
 
 packages:
@@ -2356,6 +2352,7 @@ packages:
       '@vue/compiler-ssr': 3.2.22
       '@vue/shared': 3.2.22
       vue: 3.2.22
+    dev: false
 
   /@vue/shared/3.2.22:
     resolution: {integrity: sha512-qWVav014mpjEtbWbEgl0q9pEyrrIySKum8UVYjwhC6njrKzknLZPvfuYdQyVbApsqr94tf/3dP4pCuZmmjdCWQ==}
@@ -2388,8 +2385,8 @@ packages:
       vue-demi: 0.12.1_vue@3.2.22
     dev: false
 
-  /@vueuse/head/0.7.2_vue@3.2.22:
-    resolution: {integrity: sha512-97RxYbIYwB9yFuRbdDbktsjKS0k12wYNksYV/UtYLOFNx+GAflK2kQ63b+sx09MJllEozD3GLeXV7O8rzMskeQ==}
+  /@vueuse/head/0.7.5_vue@3.2.22:
+    resolution: {integrity: sha512-L+XQ5Act0nT/ZyO8Qo10J4FyM1qPOyQb6MT4MMn6+AITzrStpmKs/nUDDLJKD/rCcNWl/65XbdQm4T2vKp3VOQ==}
     peerDependencies:
       vue: '>=3'
     dependencies:
@@ -10625,7 +10622,7 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-icons/0.13.0_744c3dc4f4777e47e76c501a561da7bf:
+  /unplugin-icons/0.13.0_vite@2.6.14:
     resolution: {integrity: sha512-CyAl0HV3bZUGT7ut9agpPRhEYXCvufr80Fh72yrkD57BVCTZ7ze10Rt63ZrvPXiJQpd+aI/Bizm2aqOf3WPSfg==}
     peerDependencies:
       '@svgr/core': ^5.5.0
@@ -10645,7 +10642,6 @@ packages:
       '@antfu/install-pkg': 0.1.0
       '@antfu/utils': 0.4.0
       '@iconify/utils': 1.0.20
-      '@vue/compiler-sfc': 3.2.22
       debug: 4.3.3
       kolorist: 1.5.1
       local-pkg: 0.4.0
@@ -10874,7 +10870,7 @@ packages:
       vite: 2.6.14_sass@1.43.4
     dev: true
 
-  /vite-plugin-pages/0.20.0_744c3dc4f4777e47e76c501a561da7bf:
+  /vite-plugin-pages/0.20.0_vite@2.6.14:
     resolution: {integrity: sha512-yM+8ORpssLknR59HL26kz2g7BU79CGkgyw28rLpsbpjX7GgYBDgTHp4llMrpRD8JAeJBndP7CdUmpBM3ReG4Sw==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3'
@@ -10883,7 +10879,6 @@ packages:
       '@vue/compiler-sfc':
         optional: true
     dependencies:
-      '@vue/compiler-sfc': 3.2.22
       debug: 4.3.3
       deep-equal: 2.0.5
       fast-glob: 3.2.11
@@ -10945,7 +10940,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.17.2_738d66d15e09f4643579e1a8945387ea:
+  /vite-ssg/0.17.2_6a30d2f7385f73283f7babe5940d8152:
     resolution: {integrity: sha512-+cpU8GGT7eQknUgiSEYSKXsZyuKVxyLI/SB3c1FU9R/h/qJBdJXK1phHEQraohVcHuPo1/OFi45RbU8ktunqdw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -10959,7 +10954,7 @@ packages:
       critters:
         optional: true
     dependencies:
-      '@vueuse/head': 0.7.2_vue@3.2.22
+      '@vueuse/head': 0.7.5_vue@3.2.22
       chalk: 4.1.2
       critters: 0.0.16
       fs-extra: 10.0.0

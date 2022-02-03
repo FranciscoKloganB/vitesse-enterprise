@@ -25,7 +25,7 @@
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
-  
+
   - 🏃 [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
 
 - 🗂 [File based routing](./src/core/pages)
@@ -50,7 +50,7 @@
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import)
 
-- 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
+- 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/), of course
 
@@ -117,7 +117,7 @@
 - [`typescript`](https://www.typescriptlang.org/)
 - [`cypress`](https://cypress.io/) - E2E Testing
 - [`pnpm`](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
+- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
   - [`critters`](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [`recommended vscode extensions`](./.vscode/extensions.json) - Near IDE experience on VSCode
 
@@ -234,7 +234,7 @@ Vercel has some short-commings regarding `pnpm` based projects. After creating
 and importing the project on [Vercel dashboard](https://vercel.com/dashboard) you will
 need to navigate to the project settings and override the `Build Command` and `Install Command`
 respectively, with the following bash commands:
-  
+
   ```bash
     # Build Command
     npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build:prod:ssg
