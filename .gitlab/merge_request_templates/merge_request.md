@@ -33,8 +33,8 @@ echo $bar
 - [ ] Chore (a task that doesn't add or fixes existing code or tests)
 - [ ] Test (add or update existing tests without implementation changes)
 - [ ] Refactor (a non-breaking change that restructures existing code)
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Bug fix (non-breaking change that fixes an issue)
+- [ ] New feature (non-breaking change that adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 
 ## References
