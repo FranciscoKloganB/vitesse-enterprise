@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/cli': ^16.0.0
   '@commitlint/config-conventional': ^16.0.0
   '@cypress/vite-dev-server': ^2.2.0
-  '@cypress/vue': ^3.0.3
+  '@cypress/vue': ^3.1.1
   '@iconify-json/carbon': ^1.0.9
   '@intlify/vite-plugin-vue-i18n': ^3.0.0
   '@pinia/testing': ^0.0.9
@@ -93,7 +93,7 @@ devDependencies:
   '@commitlint/cli': 16.0.0_@types+node@17.0.19
   '@commitlint/config-conventional': 16.0.0
   '@cypress/vite-dev-server': 2.2.0_vite@2.6.14
-  '@cypress/vue': 3.0.5_cypress@9.5.0+vue@3.2.31
+  '@cypress/vue': 3.1.1_cypress@9.5.0+vue@3.2.31
   '@iconify-json/carbon': 1.0.10
   '@intlify/vite-plugin-vue-i18n': 3.1.0_vite@2.6.14+vue-i18n@9.1.9
   '@types/markdown-it-link-attributes': 3.0.1
@@ -1606,8 +1606,8 @@ packages:
       - supports-color
     dev: true
 
-  /@cypress/vue/3.0.5_cypress@9.5.0+vue@3.2.31:
-    resolution: {integrity: sha512-v6uVMEP04mCJGfc9/oH2ZIYPZ3fRwiOSzjtQ7jT0O2Lt2+SkoEWbDymG0pUFMRM1W8oc7Ep1hqEgZjIop7RXgw==}
+  /@cypress/vue/3.1.1_cypress@9.5.0+vue@3.2.31:
+    resolution: {integrity: sha512-wD1vunuPFPLC8FZtgwdq+mcSEOs27qquuJJdGcY8aAN0y38rqYuuaj+N4UxKoAjhkSwthaOeZehjBtvDvv9C6w==}
     engines: {node: '>=8'}
     peerDependencies:
       '@cypress/webpack-dev-server': '*'
