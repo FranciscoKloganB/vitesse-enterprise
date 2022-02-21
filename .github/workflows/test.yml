@@ -61,4 +61,4 @@ jobs:
         with:
           install-command: echo
           build: pnpm run build:prod:ssg
-          start: npx vite preview --host --port 4000
+          start: pnpm vite preview --host --port 4000
