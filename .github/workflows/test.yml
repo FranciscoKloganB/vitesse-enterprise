@@ -12,7 +12,8 @@ on:
       - master
 
 jobs:
-  build:
+  test:
+    name: Test
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -50,15 +51,11 @@ jobs:
       - name: Build Distribution
         run: pnpm build:prod:ssg
 
-      - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
+      - name: Start preview server
+        run: pnpm vite preview --host --port 4000
 
       - name: Cypress Component Test Runner
         run: pnpm test:ci:components
 
-      - name: Cypress E2E Test Runner
-        uses: cypress-io/github-action@v2
-        with:
-          install-command: echo
-          build: pnpm run build:prod:ssg
-          start: pnpm vite preview --host --port 4000
+      - name: Cypress End-To-End Test Runner
+        run: pnpm test:ci:e2e
