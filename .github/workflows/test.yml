@@ -48,14 +48,23 @@ jobs:
       - name: Static Analysis
         run: pnpm lint
 
-      - name: Build Distribution
+      - name: Build SPA Distribution
+        run: pnpm build:prod
+
+      - name: Build Static Distribution
         run: pnpm build:prod:ssg
 
-      - name: Start preview server
-        run: pnpm vite preview --host --port 4000
-
+      - name: Cypress PNPM Patch
+        run: cp pnpm-lock.yaml package-lock.json
+        
       - name: Cypress Component Test Runner
         run: pnpm test:ci:components
 
-      - name: Cypress End-To-End Test Runner
-        run: pnpm test:ci:e2e
+      - name: Cypress End-to-End Test Runner
+        uses: cypress-io/github-action@v2
+        with:
+          build: pnpm build:prod:ssg
+          command: pnpm test:e2e:ci
+          install-command: echo
+          start: pnpm vite preview --host --port 4000
+          wait-on: http://localhost:4000
