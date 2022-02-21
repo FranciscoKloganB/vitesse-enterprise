@@ -253,7 +253,7 @@ requires strict styling rules. Creating a seamless developer experience across V
 CLI and CI/CD consumes time. Vue, Vite and, Vitesse, are amazing tools for web developmen
 and are now my go to choices for development. To avoid repeating myself over and over
 again for to get this configurations going, I decided to fork Vitesse repository and
-create a baseline project for my own (or other people) use, enabling us to be _vite_.
+create a baseline project for my own (or other people) use, enabling us to be *vite*.
 Pun intended.
 
 ## Feedback
