@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.19.x, 16.14.x]
+        node-version: [14.19.0, 16.14.0]
         os: [ubuntu-latest]
       fail-fast: false
 
@@ -34,7 +34,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.1.0
         with:
-          version: 6.31.0
+          version: latest
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -42,7 +42,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
           cache: "pnpm"
-      - run: pnpm install
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Static Analysis
         run: pnpm lint
@@ -53,16 +55,8 @@ jobs:
       - name: Build Static Distribution
         run: pnpm build:prod:ssg
 
-      - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
-
       - name: Cypress Component Test Runner
         run: pnpm test:ci:components
 
       - name: Cypress End-to-End Test Runner
-        uses: cypress-io/github-action@v2
-        with:
-          install-command: echo
-          build: pnpm build:prod:ssg
-          start: npx vite preview --host --port 4000
-          wait-on: 'http://localhost:4000'
+        run: pnpm test:ci:e2e
