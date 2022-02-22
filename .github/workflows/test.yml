@@ -59,4 +59,4 @@ jobs:
         run: pnpm test:ci:components
 
       - name: Cypress End-to-End Test Runner
-        run: pnpm test:ci:e2e
+        run: pnpm test:ci:e2e:ss
