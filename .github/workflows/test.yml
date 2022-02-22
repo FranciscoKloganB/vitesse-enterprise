@@ -42,7 +42,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
           cache: "pnpm"
-      - run: pnpm install -g
+      - run: pnpm install
 
       - name: Static Analysis
         run: pnpm lint
@@ -54,7 +54,9 @@ jobs:
         run: pnpm build:prod:ssg
 
       - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
+        run: |
+          cp pnpm-lock.yaml package-lock.json \
+            && cp package.json package.json
 
       - name: Cypress Component Test Runner
         run: pnpm test:ci:components
