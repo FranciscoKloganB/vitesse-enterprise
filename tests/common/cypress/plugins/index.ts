@@ -1,7 +1,15 @@
+import path from 'path'
 import { startDevServer } from '@cypress/vite-dev-server'
 
-module.exports = (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
-  on('dev-server:start', async (options) => startDevServer({ options }))
+export default (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
+  on('dev-server:start', async (options) =>
+    startDevServer({
+      options,
+      viteConfig: {
+        configFile: path.resolve(__dirname, '..', '..', '..', '..', 'vite.config.ts'),
+      },
+    })
+  )
 
   return config
 }
