@@ -7,6 +7,6 @@ declare namespace Cypress {
      * @example cy.mountWithPinia(TheNavbar)
      * @example cy.mountWithPinia(TheNavbar, { propsData: { msg: 'hello world' } })
      */
-    mountWithPinia(component, options?)
+    mountWithPinia(component: any, options?: any): any
   }
 }
