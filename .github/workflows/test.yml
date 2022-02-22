@@ -63,5 +63,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install-command: echo
-          start: npx vite --host --port 4000
+          build: pnpm build:prod:ssg
+          start: npx vite preview --host --port 4000
           wait-on: 'http://localhost:4000'
