@@ -62,10 +62,7 @@ jobs:
       - name: Cypress End-to-End Test Runner
         uses: cypress-io/github-action@v2
         with:
-          install: false
+          install-command: echo
           build: pnpm build:prod:ssg
-          start: pnpm vite preview --port 4000
+          start: npx vite preview --host --port 4000
           wait-on: 'http://localhost:4000'
-          command: npx test:e2e:ci
-          headless: true
-
