@@ -66,7 +66,8 @@
 
 - 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
-- ⚙️ Component and end-to-end testing with [Cypress](https://cypress.io/)
+- ⚙️ Component and E2E testing with [Cypress](https://cypress.io/), plus
+Unit Testing with [Vitest](https://github.com/vitest-dev/vitest).
 
 - 📤 [GitHub Actions](https://github.com/features/actions)
 
@@ -117,7 +118,8 @@
 ### Dev tools
 
 - [`typescript`](https://www.typescriptlang.org/)
-- [`cypress`](https://cypress.io/) - E2E Testing
+- [`cypress`](https://cypress.io/) - Component and E2E Testing
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit Testing
 - [`pnpm`](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
   - [`critters`](https://github.com/GoogleChromeLabs/critters) - Critical CSS
