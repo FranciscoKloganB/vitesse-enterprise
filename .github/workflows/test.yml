@@ -58,6 +58,9 @@ jobs:
           pnpm prebuild \
             && pnpm build:prod:spa
 
+      - name: Vitest Unit and Integration Test Runner
+        run: pnpm run test:unit:ci
+
       - name: Cypress Component Test Runner
         run: pnpm test:components:ci
 
