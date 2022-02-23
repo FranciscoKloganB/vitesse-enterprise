@@ -15,10 +15,10 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': rulesSeverityOff,
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      { argsIgnorePattern: '^_', varsIgnorePattern: '^(_|Cypress)' },
     ],
     'comma-dangle': ['error', 'only-multiline'],
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^(_|Cypress)' }],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
     'max-len': [

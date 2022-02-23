@@ -2,10 +2,15 @@
 // https://on.cypress.io/configuration
 
 import './commands'
-import './types'
+import './cy-e2e'
 
 Cypress.on('window:before:load', (win: any) => {
-  win.handleFromCypress = function (request) {
+  win.handleFromCypress = function (request: {
+    url: RequestInfo
+    method: any
+    requestHeaders: any
+    requestBody: any
+  }) {
     return fetch(request.url, {
       method: request.method,
       headers: request.requestHeaders,
@@ -14,7 +19,7 @@ Cypress.on('window:before:load', (win: any) => {
       const content =
         res.headers.map['content-type'] === 'application/json' ? res.json() : res.text()
       return new Promise((resolve) => {
-        content.then((body) => resolve([res.status, res.headers, body]))
+        content.then((body: any) => resolve([res.status, res.headers, body]))
       })
     })
   }
