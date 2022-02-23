@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
@@ -50,7 +52,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core'],
+      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core', 'vitest'],
       dts: 'src/auto-imports.d.ts',
     }),
 
@@ -146,7 +148,6 @@ export default defineConfig({
       enabled: false,
     }),
   ],
-
   server: {
     fs: {
       strict: true,
@@ -163,7 +164,16 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core'],
+    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
     exclude: ['vue-demi'],
+  },
+
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['tests/unit/**/*.test.ts'],
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi'],
+    },
   },
 })
