@@ -160,6 +160,7 @@ When you use this template, try follow the checklist to update your info properl
   - Using neither? Perform both steps.
 - Remove `vercel.json` or `netlify.yml` depending on your deployment provider.
 - [ ] Rename `name` field in `package.json`
+- [ ] Rename `projectId` field in `cypress.json`
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the title in `App.vue`
 - [ ] Change the favicon in `public`

@@ -5,7 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": false,
     "lib": ["DOM", "ESNext"],
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "module": "ESNext",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
