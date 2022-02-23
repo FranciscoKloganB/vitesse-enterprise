@@ -8,8 +8,8 @@
   "screenshotsFolder": "tests/common/cypress/screenshots",
   "videosFolder": "tests/common/cypress/videos",
   "component": {
-    "componentFolder": "tests/component",
-    "supportFile": "tests/component/cypress/support/index.ts",
+    "componentFolder": "tests/ct",
+    "supportFile": "tests/ct/cypress/support/index.ts",
     "testFiles": "*.spec.{js,jsx,ts,tsx}"
   },
   "e2e": {
