@@ -43,13 +43,10 @@ declare global {
   const isDefined: typeof import('@vueuse/core')['isDefined']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
-<<<<<<< HEAD
   const logicAnd: typeof import('@vueuse/core')['logicAnd']
   const logicNot: typeof import('@vueuse/core')['logicNot']
   const logicOr: typeof import('@vueuse/core')['logicOr']
-=======
   const it: typeof import('vitest')['it']
->>>>>>> 9bd2cbb... chore: configure vitest, have a vite key warn
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
