@@ -2,15 +2,15 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': ^0.20.7
-  '@commitlint/cli': ^16.0.0
-  '@commitlint/config-conventional': ^16.0.0
-  '@cypress/vite-dev-server': ^2.2.0
+  '@commitlint/cli': ^16.2.1
+  '@commitlint/config-conventional': ^16.2.1
+  '@cypress/vite-dev-server': ^2.2.2
   '@cypress/vue': ^3.1.1
   '@iconify-json/carbon': ^1.1.3
-  '@intlify/vite-plugin-vue-i18n': ^3.0.0
+  '@intlify/vite-plugin-vue-i18n': ^3.3.0
   '@pinia/testing': ^0.0.11
   '@types/markdown-it-link-attributes': ^3.0.1
-  '@types/node': ^17.0.19
+  '@types/node': ^17.0.21
   '@types/nprogress': ^0.2.0
   '@vitejs/plugin-vue': ^2.3.1
   '@vue/test-utils': ^2.0.0-rc.21
@@ -20,15 +20,15 @@ specifiers:
   axios-case-converter: ^0.9.0
   critters: ^0.0.16
   cross-env: ^7.0.3
-  cypress: ^9.5.4
+  cypress: 9.6.0
   eslint: ^8.11.0
-  eslint-config-prettier: ^8.3.0
+  eslint-config-prettier: ^8.4.0
   eslint-plugin-cypress: ^2.12.1
-  eslint-plugin-import: ^2.25.2
+  eslint-plugin-import: ^2.25.4
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.0.0
-  eslint-plugin-vue: ^8.0.3
-  https-localhost: ^4.7.0
+  eslint-plugin-vue: ^8.5.0
+  https-localhost: ^4.7.1
   husky: ^7.0.4
   imagemin-lint-staged: ^0.4.0
   import-sort: ^6.0.0
@@ -37,26 +37,27 @@ specifiers:
   import-sort-parser-babylon: ^6.0.0
   import-sort-parser-typescript: ^6.0.0
   import-sort-style-eslint: ^6.0.0
-  lint-staged: ^12.0.3
+  lint-staged: ^12.3.4
   markdown-it-link-attributes: ^4.0.0
-  markdown-it-prism: ^2.2.1
-  markdownlint-cli: ^0.31.0
+  markdown-it-prism: ^2.2.3
+  markdownlint-cli: ^0.31.1
   npm-run-all: ^4.1.5
   nprogress: ^0.2.0
   pinia: ^2.0.13
-  postcss: ^8.3.3
-  postcss-html: ^1.2.0
-  prettier: ^2.4.1
+  pnpm: 6.32.0
+  postcss: ^8.4.7
+  postcss-html: ^1.3.0
+  prettier: ^2.5.1
   prettier-plugin-import-sort: ^0.0.7
   prism-theme-vars: ^0.2.2
   rimraf: ^3.0.2
-  sass: ^1.43.4
+  sass: ^1.49.9
   start-server-and-test: ^1.14.0
-  stylelint: ^14.0.1
+  stylelint: ^14.5.3
   stylelint-config-css-modules: ^4.1.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-recess-order: 3.0.0
-  stylelint-config-recommended-vue: ^1.0.0
+  stylelint-config-recommended-vue: ^1.3.0
   stylelint-config-standard-scss: ^3.0.0
   typescript: ^4.6.2
   unplugin-auto-import: ^0.7.1
@@ -72,7 +73,7 @@ specifiers:
   vite-ssg: ^0.19.0
   vite-ssg-sitemap: ^0.2.4
   vitest: ^0.10.0
-  vue: ^3.2.25
+  vue: ^3.2.31
   vue-demi: ^0.12.5
   vue-i18n: ^9.1.9
   vue-router: ^4.0.14
@@ -111,10 +112,10 @@ devDependencies:
   eslint: 8.11.0
   eslint-config-prettier: 8.5.0_eslint@8.11.0
   eslint-plugin-cypress: 2.12.1_eslint@8.11.0
-  eslint-plugin-import: 2.25.4_eslint@8.11.0
+  eslint-plugin-import: 2.26.0_eslint@8.11.0
   eslint-plugin-node: 11.1.0_eslint@8.11.0
   eslint-plugin-prettier: 4.0.0_68edcf5670f37721baf5d2cac6124e4d
-  eslint-plugin-vue: 8.5.0_eslint@8.11.0
+  eslint-plugin-vue: 8.7.1_eslint@8.11.0
   https-localhost: 4.7.1
   husky: 7.0.4
   imagemin-lint-staged: 0.4.0
@@ -129,6 +130,7 @@ devDependencies:
   markdown-it-prism: 2.2.3
   markdownlint-cli: 0.31.1
   npm-run-all: 4.1.5
+  pnpm: 6.32.0
   postcss: 8.4.12
   postcss-html: 1.3.0
   prettier: 2.6.0
@@ -1806,7 +1808,7 @@ packages:
     dependencies:
       '@intlify/bundle-utils': 3.0.0_vue-i18n@9.1.9
       '@intlify/shared': 9.2.0-beta.35
-      '@rollup/pluginutils': 4.2.0
+      '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
       fast-glob: 3.2.11
       source-map: 0.6.1
@@ -4767,28 +4769,6 @@ packages:
       htmlparser2: 7.2.0
     dev: true
 
-  /eslint-plugin-import/2.25.4_eslint@8.11.0:
-    resolution: {integrity: sha512-/KJBASVFxpu0xg1kIBn9AUa8hQVnszpwgE7Ld0lKAlx7Ie87yzEzCgSkekt+le/YVhiaosO4Y14GDAOc41nfxA==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
-    dependencies:
-      array-includes: 3.1.4
-      array.prototype.flat: 1.2.5
-      debug: 2.6.9
-      doctrine: 2.1.0
-      eslint: 8.11.0
-      eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.3
-      has: 1.0.3
-      is-core-module: 2.8.1
-      is-glob: 4.0.3
-      minimatch: 3.1.2
-      object.values: 1.1.5
-      resolve: 1.22.0
-      tsconfig-paths: 3.14.1
-    dev: true
-
   /eslint-plugin-import/2.26.0_eslint@8.11.0:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
     engines: {node: '>=4'}
@@ -4937,21 +4917,6 @@ packages:
       safe-regex: 2.1.1
       semver: 7.3.5
       strip-indent: 3.0.0
-    dev: true
-
-  /eslint-plugin-vue/8.5.0_eslint@8.11.0:
-    resolution: {integrity: sha512-i1uHCTAKOoEj12RDvdtONWrGzjFm/djkzqfhmQ0d6M/W8KM81mhswd/z+iTZ0jCpdUedW3YRgcVfQ37/J4zoYQ==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      eslint: 8.11.0
-      eslint-utils: 3.0.0_eslint@8.11.0
-      natural-compare: 1.4.0
-      semver: 7.3.5
-      vue-eslint-parser: 8.3.0_eslint@8.11.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /eslint-plugin-vue/8.7.1_eslint@8.11.0:
@@ -8724,6 +8689,12 @@ packages:
   /pluralize/8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /pnpm/6.32.0:
+    resolution: {integrity: sha512-04KwsfhUfc6+at4gQVD848R7/bj2lvweh1ZcE0BDlDvBNlvxpYz+ZbRRkS+lInG5vz95cOybnyNO55dxvsARWA==}
+    engines: {node: '>=12.17'}
+    hasBin: true
     dev: true
 
   /posix-character-classes/0.1.1:
