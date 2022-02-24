@@ -1,9 +1,13 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+<<<<<<< HEAD
     "baseUrl": "../",
     "isolatedModules": false,
     "types": ["cypress"]
+=======
+    "types": ["cypress", "vitest/globals"]
+>>>>>>> 9e05636... feat: configure vitest in separate file
   },
   "exclude": [],
   "include": ["**/*.ts", "**/*.spec.ts"]
