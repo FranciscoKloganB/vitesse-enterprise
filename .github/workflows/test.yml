@@ -32,7 +32,7 @@ jobs:
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.0
+        uses: pnpm/action-setup@v2.2.1
         with:
           version: latest
 
