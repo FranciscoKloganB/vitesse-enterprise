@@ -1,8 +1,16 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["cypress", "vitest/globals"]
+    "types": ["cypress", "vitest/globals"],
+    "paths": {
+      "@/*": ["../*"],
+      "~/*": ["../src/*"]
+    }
   },
   "exclude": [],
+<<<<<<< HEAD
   "include": ["**/*.ts", "**/*.spec.ts"]
+=======
+  "include": ["**/*.ts"],
+>>>>>>> 8e15526... fix: version configurations
 }
