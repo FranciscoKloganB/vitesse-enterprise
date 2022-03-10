@@ -1,12 +1,14 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "../",
+    "isolatedModules": false,
     "types": ["cypress"]
   },
   "exclude": [],
-  "include": ["**/*.ts"],
   "paths": {
     "@/*": ["../*"],
     "~/*": ["../src/*"]
-  }
+  },
+  "include": ["**/*.spec.ts"]
 }
