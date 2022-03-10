@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
-// https://on.cypress.io/configuration
 
 import './commands-ct'
-import './command-declarations-ct'
 
 Cypress.on('window:before:load', (win: any) => {
   win.handleFromCypress = function (request: {
