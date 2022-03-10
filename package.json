@@ -25,10 +25,10 @@
     "test:components": "cypress open-ct",
     "test:components:ci": "cypress run-ct",
     "test:e2e": "cypress open",
-    "test:e2e:headless": "cypress open --headless",
+    "test:e2e:headless": "cypress run",
     "test:e2e:ci": "npm run preview:ci 'cypress run'",
-    "test:unit": "",
-    "test:unit:ci": ""
+    "test:unit": "echo 'vitest not set up just yet'",
+    "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
     "@pinia/testing": "^0.0.9",
