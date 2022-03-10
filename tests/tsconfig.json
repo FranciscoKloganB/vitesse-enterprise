@@ -6,5 +6,5 @@
     "types": ["cypress"]
   },
   "exclude": [],
-  "include": ["**/*.spec.ts"]
+  "include": ["**/*.ts", "**/*.spec.ts"]
 }
