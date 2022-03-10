@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="../../../common/cypress" />
 
 /**
  * For more comprehensive examples of custom commands please read more here:

@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "../",
     "isolatedModules": false,
-    "types": ["cypress"]
+    "types": ["cypress", "tests/common/cypress/index.d.ts"]
   },
   "exclude": [],
   "paths": {
