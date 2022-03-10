@@ -1,4 +1,5 @@
 #!/bin/sh
 
-pnpm test:ci:components
-pnpm test:ci:e2e
+pnpm test:unit:ci
+pnpm test:components:ci
+pnpm test:e2e:ci

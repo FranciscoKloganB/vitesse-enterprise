@@ -13,7 +13,7 @@ cache:
     - .pnpm-store
     - .npmrc
     - node_modules/
-    
+
 variables:
   npm_config_cache: '$CI_PROJECT_DIR/.npm'
   CYPRESS_CACHE_FOLDER: '/root/.cache/Cypress'
@@ -45,7 +45,7 @@ test:
   script:
     - pnpm build:prod:ssg
     - pnpm vite preview --port 4000 &
-    - pnpm test:ci:e2e
+    - pnpm test:e2e:ci
   coverage: '/Lines\s+:\s(\d+.?\d+)%/'
   artifacts:
     when: on_failure

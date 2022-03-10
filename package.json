@@ -7,7 +7,6 @@
     "audit": "run-s audit:*",
     "audit:dev": "pnpm audit --json --dev",
     "audit:prod": "pnpm audit --json --prod",
-    "audit:force:fix": "pnpm audit --fix",
     "build:prod": "cross-env NODE_ENV=production vite build",
     "build:prod:ssg": "cross-env NODE_ENV=production vite-ssg build",
     "dev": "vite --open --host --port 4000",
@@ -21,15 +20,15 @@
     "postinstall": "husky install && chmod ug+x .husky/*",
     "preinstall": "npx only-allow pnpm",
     "preview": "vite preview --port 4000",
+    "preview:ci": "start-server-and-test preview http://localhost:4000",
     "preview:https": "serve dist",
-    "preview:test": "start-server-and-test preview http://localhost:4000",
-    "test": "cypress open",
-    "test:e2e": "cypress open",
     "test:components": "cypress open-ct",
-    "test:ci:e2e": "cypress run --headless",
-    "test:ci:e2e:ss": "pnpm preview:test 'cypress run'",
-    "test:ci:components": "cypress run-ct",
-    "test:ci": "run-s test:ci:*"
+    "test:components:ci": "cypress run-ct",
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress open --headless",
+    "test:e2e:ci": "npm run preview:ci 'cypress run'",
+    "test:unit": "",
+    "test:unit:ci": ""
   },
   "dependencies": {
     "@pinia/testing": "^0.0.9",
@@ -106,6 +105,7 @@
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.17.2",
+    "vite-ssg-sitemap": "^0.1.7",
     "vue-tsc": "^0.31.1"
   },
   "engines": {

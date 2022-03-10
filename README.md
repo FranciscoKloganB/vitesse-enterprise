@@ -101,6 +101,7 @@
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n)
 - [`vueuse`](https://github.com/antfu/vueuse)
   - [`@vueuse/head`](https://github.com/vueuse/head)
+- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap)
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
 
@@ -163,6 +164,7 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Rename `projectId` field in `cypress.json`
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the title in `App.vue`
+- [ ] Change the hostname in `vite.config.ts`
 - [ ] Change the favicon in `public`
 - [ ] Clean up the READMEs and remove routes
 - [ ] Bump project dependencies (e.g.: dependabot) - We update them on a
@@ -190,9 +192,7 @@ pnpm lint
 # Interactive test run
 pnpm test:components
 pnpm test:e2e
-# Headless ( can run both in one step with: pnpm test:ci )
-pnpm test:ci:components
-pnpm test:ci:e2e
+pnpm test:unit
 ```
 
 ### Build for production

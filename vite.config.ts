@@ -13,6 +13,7 @@ import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import WindiCSS from 'vite-plugin-windicss'
 import { defineConfig } from 'vite'
+import generateSitemap from 'vite-ssg-sitemap'
 import path from 'path'
 import pkg from './package.json'
 
@@ -106,7 +107,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
         name: 'Vitesse',
         short_name: 'Vitesse',
@@ -156,6 +157,9 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    onFinished() {
+      generateSitemap()
+    },
   },
 
   optimizeDeps: {
