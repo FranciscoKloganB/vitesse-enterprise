@@ -56,7 +56,7 @@ jobs:
         run: pnpm build:prod:ssg
 
       - name: Cypress Component Test Runner
-        run: pnpm test:ci:components
+        run: pnpm test:components:ci
 
       - name: Cypress End-to-End Test Runner
-        run: pnpm test:ci:e2e:ss
+        run: pnpm test:e2e:ci

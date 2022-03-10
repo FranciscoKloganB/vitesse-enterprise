@@ -7,7 +7,6 @@
     "audit": "run-s audit:*",
     "audit:dev": "pnpm audit --json --dev",
     "audit:prod": "pnpm audit --json --prod",
-    "audit:force:fix": "pnpm audit --fix",
     "build:prod": "cross-env NODE_ENV=production vite build",
     "build:prod:ssg": "cross-env NODE_ENV=production vite-ssg build",
     "dev": "vite --open --host --port 4000",
@@ -21,15 +20,15 @@
     "postinstall": "husky install && chmod ug+x .husky/*",
     "preinstall": "npx only-allow pnpm",
     "preview": "vite preview --port 4000",
+    "preview:ci": "start-server-and-test preview http://localhost:4000",
     "preview:https": "serve dist",
-    "preview:test": "start-server-and-test preview http://localhost:4000",
-    "test": "cypress open",
-    "test:e2e": "cypress open",
     "test:components": "cypress open-ct",
-    "test:ci:e2e": "cypress run --headless",
-    "test:ci:e2e:ss": "pnpm preview:test 'cypress run'",
-    "test:ci:components": "cypress run-ct",
-    "test:ci": "run-s test:ci:*"
+    "test:components:ci": "cypress run-ct",
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress run",
+    "test:e2e:ci": "npm run preview:ci 'cypress run'",
+    "test:unit": "echo 'vitest not set up just yet'",
+    "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
     "@pinia/testing": "^0.0.9",
@@ -59,7 +58,7 @@
     "@vitejs/plugin-vue": "^2.0.0",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "cypress": "9.5.0",
+    "cypress": "^9.5.1",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.12.1",
@@ -81,7 +80,6 @@
     "markdown-it-prism": "^2.2.1",
     "markdownlint-cli": "^0.31.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "6.32.0",
     "postcss": "^8.3.3",
     "postcss-html": "^1.2.0",
     "prettier": "^2.4.1",
@@ -99,17 +97,18 @@
     "unplugin-icons": "^0.13.0",
     "unplugin-vue-components": "^0.17.2",
     "vite": "^2.6.13",
-    "vite-plugin-inspect": "^0.3.10",
+    "vite-plugin-inspect": "^0.4.3",
     "vite-plugin-md": "^0.11.4",
-    "vite-plugin-pages": "^0.20.0",
+    "vite-plugin-pages": "^0.21.4",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.17.2",
-    "vue-tsc": "^0.31.1"
+    "vite-ssg-sitemap": "^0.1.7",
+    "vue-tsc": "^0.32.1"
   },
   "engines": {
     "node": ">=14.17.0",
-    "pnpm": ">=6.21.1"
+    "pnpm": "^6.32.1"
   }
 }
