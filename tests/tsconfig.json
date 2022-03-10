@@ -3,12 +3,8 @@
   "compilerOptions": {
     "baseUrl": "../",
     "isolatedModules": false,
-    "types": ["cypress", "tests/common/cypress/index.d.ts"]
+    "types": ["cypress"]
   },
   "exclude": [],
-  "paths": {
-    "@/*": ["../*"],
-    "~/*": ["../src/*"]
-  },
   "include": ["**/*.spec.ts"]
 }
