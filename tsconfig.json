@@ -23,7 +23,13 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "es2016",
-    "types": ["vite/client", "vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
+    "types": [
+      "cypress",
+      "vite/client",
+      "vitest/globals",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ]
   },
   "exclude": ["dist", "node_modules", "public", "tests"]
 }

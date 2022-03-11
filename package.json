@@ -23,6 +23,8 @@
     "preview": "vite preview --port 4000",
     "preview:ci": "start-server-and-test preview http://localhost:4000",
     "preview:https": "serve dist",
+    "run:build": "run-s prebuild 'build:prod:spa' preview",
+    "run:test": "run-s 'test:unit:ci' 'test:components:ci' 'test:e2e:headless'",
     "test:components": "cypress open-ct",
     "test:components:ci": "cypress run-ct",
     "test:e2e": "cypress open",
