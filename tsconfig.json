@@ -3,7 +3,6 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "incremental": false,
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "Node",
     "module": "ESNext",
@@ -24,12 +23,7 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "es2016",
-    "types": [
-      "cypress",
-      "vite/client",
-      "vite-plugin-pages/client",
-      "vite-plugin-vue-layouts/client"
-    ]
+    "types": ["vite/client", "vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
   },
   "exclude": ["dist", "node_modules", "public", "tests"]
 }

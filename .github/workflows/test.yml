@@ -49,11 +49,14 @@ jobs:
       - name: Static Analysis
         run: pnpm lint
 
-      - name: Build SPA Distribution
-        run: pnpm build:prod
-
       - name: Build Static Distribution
         run: pnpm build:prod:ssg
+
+      # Need to test with SPA distribution due to Cypress flakiness ¯\_(ツ)_/¯
+      - name: Build SPA Distribution
+        run: |
+          pnpm prebuild \
+            && pnpm build:prod:spa
 
       - name: Cypress Component Test Runner
         run: pnpm test:components:ci

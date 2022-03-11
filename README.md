@@ -1,24 +1,25 @@
 # Vitesse Enterprise Starter
 
-<p align='center'>
+<div align='center'>
   <img
     src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png'
     alt='Vitesse - Opinionated Vite starter template with rigorous linting'
     width='600'
   />
-</p>
+</div>
 
 <br>
 
-<p align='center'>
-  <a href="https://vitesse-enterprise.netlify.app/">Live Netlify demo</a>
+<div align='center'>
+  <h3>Demonstrations</h3>
+  <a href="https://vitesse-enterprise.netlify.app/">Live on Netlify</a>
   <br>
-  <a href="https://vitesse-enterprise.vercel.app/">Live Vercel demo</a>
+  <a href="https://vitesse-enterprise.vercel.app/">Live on Vercel</a>
   <br>
-  <a href="https://stackblitz.com/github/DaYePython/vitesse-enterprise?file=.stackblitzrc">
-    👉 Demo on StackBlitz
+  <a href="https://stackblitz.com/fork/github/FranciscoKloganB/vitesse-enterprise?file=.stackblitzrc">
+    Playground on Stackblitz
   </a>
-</p>
+</div>
 
 <br>
 
