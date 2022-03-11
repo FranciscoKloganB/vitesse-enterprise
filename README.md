@@ -119,7 +119,7 @@ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest).
 
 - [`typescript`](https://www.typescriptlang.org/)
 - [`cypress`](https://cypress.io/) - Component and E2E Testing
-- [Vitest](https://github.com/vitest-dev/vitest) - Unit Testing
+- [`vitest`](https://github.com/vitest-dev/vitest) - Unit Testing
 - [`pnpm`](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
   - [`critters`](https://github.com/GoogleChromeLabs/critters) - Critical CSS
