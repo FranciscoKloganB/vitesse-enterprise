@@ -67,7 +67,7 @@
 
 - ⚙️ Component and end-to-end testing with [Cypress](https://cypress.io/)
 
-- 📤 [GitHub Actions](https://github.com/features/actions) and [GitLab CI (wip)](https://github.com/features/actions)
+- 📤 [GitHub Actions](https://github.com/features/actions)
 
 - ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config - See [Netlify Deployment](#deploy-on-netlify)
 - ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
@@ -152,13 +152,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 When you use this template, try follow the checklist to update your info properly
 
-- Select your git repository of choice
-  - [ ] Using [GitHub](https://github.com)?
-    - Remove `.github/funding.yml` file which contains the funding info
-    - Remove `.gitlab` folder and `.gitlab-ci.yml` file
-  - [ ] Using [GitLab](https://gitlab.com)?
-    - Remove the `.github` folder
-  - Using neither? Perform both steps.
+- [ ] Remove `.github/funding.yml` file which contains the funding info
 - Remove `vercel.json` or `netlify.yml` depending on your deployment provider.
 - [ ] Rename `name` field in `package.json`
 - [ ] Rename `projectId` field in `cypress.json`
