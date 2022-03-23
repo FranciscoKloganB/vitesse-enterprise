@@ -32,8 +32,8 @@
     "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
+    "@vueuse/core": "^8.1.2",
     "@pinia/testing": "^0.0.10",
-    "@vueuse/core": "^7.0.0",
     "@vueuse/head": "^0.7.5",
     "axios": "^0.26.0",
     "axios-case-converter": "^0.9.0",
@@ -46,7 +46,7 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.16.0",
+    "@antfu/eslint-config": "^0.18.9",
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@cypress/vite-dev-server": "^2.2.0",
@@ -89,25 +89,25 @@
     "sass": "^1.43.4",
     "start-server-and-test": "^1.14.0",
     "stylelint": "^14.0.1",
-    "stylelint-config-css-modules": "^3.0.0",
+    "stylelint-config-css-modules": "^4.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-recommended-vue": "^1.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "typescript": "^4.6.2",
     "unplugin-auto-import": "^0.6.0",
-    "unplugin-icons": "^0.13.0",
-    "unplugin-vue-components": "^0.17.2",
+    "unplugin-icons": "^0.14.0",
+    "unplugin-vue-components": "^0.18.3",
     "vite": "^2.6.13",
     "vite-plugin-inspect": "^0.4.3",
     "vite-plugin-md": "^0.11.4",
-    "vite-plugin-pages": "^0.21.4",
+    "vite-plugin-pages": "^0.22.0",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
-    "vite-ssg": "^0.17.2",
+    "vite-ssg": "^0.19.0",
     "vite-ssg-sitemap": "^0.2.0",
-    "vue-tsc": "^0.33.7"
+    "vue-tsc": "^0.33.7" 
   },
   "engines": {
     "node": ">=14.17.0",
