@@ -32,7 +32,7 @@
     "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.9",
+    "@pinia/testing": "^0.0.10",
     "@vueuse/core": "^7.0.0",
     "@vueuse/head": "^0.7.5",
     "axios": "^0.26.0",
@@ -97,16 +97,16 @@
     "typescript": "^4.6.2",
     "unplugin-auto-import": "^0.6.0",
     "unplugin-icons": "^0.13.0",
-    "unplugin-vue-components": "^0.17.2",
+    "unplugin-vue-components": "^0.18.3",
     "vite": "^2.6.13",
     "vite-plugin-inspect": "^0.4.3",
     "vite-plugin-md": "^0.11.4",
-    "vite-plugin-pages": "^0.21.4",
+    "vite-plugin-pages": "^0.22.0",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.17.2",
-    "vite-ssg-sitemap": "^0.1.7",
+    "vite-ssg-sitemap": "^0.2.0",
     "vue-tsc": "^0.33.3"
   },
   "engines": {
