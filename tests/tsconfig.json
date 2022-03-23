@@ -8,9 +8,5 @@
     }
   },
   "exclude": [],
-<<<<<<< HEAD
-  "include": ["**/*.ts", "**/*.spec.ts"]
-=======
   "include": ["**/*.ts"],
->>>>>>> 8e15526... fix: version configurations
 }
