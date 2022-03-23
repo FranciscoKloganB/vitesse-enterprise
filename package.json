@@ -32,8 +32,8 @@
     "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
+    "@vueuse/core": "^8.1.2",
     "@pinia/testing": "^0.0.10",
-    "@vueuse/core": "^7.0.0",
     "@vueuse/head": "^0.7.5",
     "axios": "^0.26.0",
     "axios-case-converter": "^0.9.0",
