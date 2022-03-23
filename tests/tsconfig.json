@@ -8,5 +8,5 @@
     }
   },
   "exclude": [],
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts"]
 }
