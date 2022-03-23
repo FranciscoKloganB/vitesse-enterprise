@@ -107,7 +107,7 @@
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.17.2",
     "vite-ssg-sitemap": "^0.2.0",
-    "vue-tsc": "^0.32.1"
+    "vue-tsc": "^0.33.7"
   },
   "engines": {
     "node": ">=14.17.0",
