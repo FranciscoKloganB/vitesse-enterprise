@@ -100,7 +100,7 @@
     "unplugin-vue-components": "^0.18.3",
     "vite": "^2.6.13",
     "vite-plugin-inspect": "^0.4.3",
-    "vite-plugin-md": "^0.11.4",
+    "vite-plugin-md": "^0.12.4",
     "vite-plugin-pages": "^0.22.0",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-vue-layouts": "^0.6.0",
