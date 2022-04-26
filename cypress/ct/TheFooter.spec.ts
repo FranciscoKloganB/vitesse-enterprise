@@ -1,4 +1,4 @@
-import TheFooter from '~/core/components/TheFooter.vue'
+import TheFooter from '../src/core/components/TheFooter'
 import { i18n } from '~/core/modules/i18n'
 import { mount } from '@cypress/vue'
 

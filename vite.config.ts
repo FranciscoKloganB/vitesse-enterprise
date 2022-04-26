@@ -174,7 +174,7 @@ export default defineConfig({
     },
     environment: 'jsdom',
     globals: true,
-    include: ['tests/unit/**/*.test.ts'],
+    include: ['tests/unit/**/*.test.ts', 'tests/integration/**/*.test.ts'],
     transformMode: {
       web: [/\.[jt]sx$/],
     },
