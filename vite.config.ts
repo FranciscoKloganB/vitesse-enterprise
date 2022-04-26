@@ -1,5 +1,3 @@
-/// <reference types="vitest" />
-
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
@@ -14,7 +12,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import WindiCSS from 'vite-plugin-windicss'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import generateSitemap from 'vite-ssg-sitemap'
 import path from 'path'
 import pkg from './package.json'
