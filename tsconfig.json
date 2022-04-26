@@ -3,10 +3,11 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "Node",
     "module": "ESNext",
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noUnusedParameters": false,
     "paths": {
       "@/*": ["./*"],
@@ -22,14 +23,13 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es2016",
+    "target": "ESNext",
     "types": [
-      "cypress",
       "vite/client",
       "vitest/globals",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ]
   },
-  "exclude": ["dist", "node_modules", "public", "tests"]
+  "exclude": ["cypress", "dist", "node_modules", "public"]
 }
