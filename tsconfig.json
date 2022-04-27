@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "Node",
     "module": "ESNext",
@@ -22,7 +23,7 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es2016",
+    "target": "ESNext",
     "types": ["vite/client", "vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
   },
   "exclude": ["dist", "node_modules", "public", "tests"]
