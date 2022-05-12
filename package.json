@@ -32,21 +32,21 @@
     "test:unit:ci": "echo 'vitest not set up just yet'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.11",
-    "@vueuse/core": "^8.3.0",
+    "@pinia/testing": "^0.0.12",
+    "@vueuse/core": "^8.4.2",
     "@vueuse/head": "^0.7.5",
-    "axios": "^0.26.0",
+    "axios": "^0.27.2",
     "axios-case-converter": "^0.9.0",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.13",
+    "pinia": "^2.0.14",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.25",
     "vue-demi": "^0.12.5",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.20.7",
+    "@antfu/eslint-config": "^0.23.0",
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@cypress/vite-dev-server": "^2.2.0",
@@ -56,12 +56,12 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/node": "^17.0.19",
     "@types/nprogress": "^0.2.0",
-    "@vitejs/plugin-vue": "^2.3.1",
+    "@vitejs/plugin-vue": "^2.3.2",
     "@vue/test-utils": "^2.0.0-rc.21",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "cypress": "^9.5.4",
-    "eslint": "^8.11.0",
+    "cypress": "^9.6.1",
+    "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.2",
@@ -69,7 +69,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "https-localhost": "^4.7.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "imagemin-lint-staged": "^0.4.0",
     "import-sort": "^6.0.0",
     "import-sort-cli": "^6.0.0",
@@ -98,20 +98,20 @@
     "typescript": "^4.6.2",
     "unplugin-auto-import": "^0.7.1",
     "unplugin-icons": "^0.14.0",
-    "unplugin-vue-components": "^0.19.3",
+    "unplugin-vue-components": "^0.19.5",
     "vite": "^2.9.5",
     "vite-plugin-inspect": "^0.5.0",
-    "vite-plugin-md": "^0.13.0",
+    "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",
     "vite-plugin-pwa": "^0.12.0",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
-    "vite-ssg": "^0.19.0",
+    "vite-ssg": "^0.20.0",
     "vite-ssg-sitemap": "^0.2.4",
-    "vue-tsc": "^0.34.10"
+    "vue-tsc": "^0.34.12"
   },
   "engines": {
     "node": ">=14.17.0",
-    "pnpm": "^6.32.1"
+    "pnpm": "^7.0.0"
   }
 }
