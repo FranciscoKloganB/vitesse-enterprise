@@ -48,7 +48,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
     "@commitlint/cli": "^16.0.0",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/config-conventional": "^16.2.4",
     "@cypress/vite-dev-server": "^2.2.0",
     "@cypress/vue": "^3.1.1",
     "@iconify-json/carbon": "^1.1.3",
