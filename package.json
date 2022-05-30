@@ -39,7 +39,7 @@
     "axios-case-converter": "^0.9.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
-    "prism-theme-vars": "^0.2.2",
+    "prism-theme-vars": "^0.2.3",
     "vue": "^3.2.25",
     "vue-demi": "^0.12.5",
     "vue-i18n": "^9.1.9",
