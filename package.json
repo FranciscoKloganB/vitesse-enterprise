@@ -107,7 +107,7 @@
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-windicss": "^1.5.1",
     "vite-ssg": "^0.20.0",
-    "vite-ssg-sitemap": "^0.2.4",
+    "vite-ssg-sitemap": "^0.2.7",
     "vue-tsc": "^0.34.12"
   },
   "engines": {
