@@ -23,6 +23,7 @@
 
 <br>
 
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
@@ -74,6 +75,7 @@
 - ☁️ Deploy on [Vercel](https://vercel.com/) - See [Vercel Deployment](#deploy-on-vercel)
 
 **CLI only. VSCode plugin does not support configuration files.*
+
 
 ## Pre-packed
 

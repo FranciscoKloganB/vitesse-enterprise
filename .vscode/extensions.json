@@ -2,15 +2,19 @@
   "recommendations": [
     "andrew-codes.cypress-snippets",
     "antfu.iconify",
+    "antfu.vite",
+    "antfu.goto-alias",
+    "csstools.postcss",
     "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
     "formulahendry.auto-rename-tag",
     "hwencc.html-tag-wrapper",
-    "johnsoncodehk.volar",
     "lokalise.i18n-ally",
     "pkief.material-icon-theme",
     "streetsidesoftware.code-spell-checker",
     "stylelint.vscode-stylelint",
     "voorjaar.windicss-intellisense",
+    "vue.volar",
     "wix.vscode-import-cost"
   ]
 }
