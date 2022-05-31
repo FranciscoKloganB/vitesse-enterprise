@@ -33,7 +33,11 @@ assignees: ''
 ## Acceptance criteria
 
 **Scenario** the name for the behavior that will be describe
+
 **Given** the beginning state of the scenario
+
 **When** specific action that the user makes
+
 **Then** the outcome of the action in “When”
+
 **And** used to continue any of three previous statements
