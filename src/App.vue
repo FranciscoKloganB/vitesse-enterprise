@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { isDark, preferredDark } from '~/core/hooks/dark'
 
 /**
