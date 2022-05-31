@@ -2,10 +2,7 @@
   "recommendations": [
     "andrew-codes.cypress-snippets",
     "antfu.iconify",
-    "csstools.postcss",
     "davidanson.vscode-markdownlint",
-    "dbaeumer.vscode-eslint",
-    "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
     "hwencc.html-tag-wrapper",
     "johnsoncodehk.volar",
@@ -14,6 +11,6 @@
     "streetsidesoftware.code-spell-checker",
     "stylelint.vscode-stylelint",
     "voorjaar.windicss-intellisense",
-    "wix.vscode-import-cost",
+    "wix.vscode-import-cost"
   ]
 }
