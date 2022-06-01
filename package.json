@@ -46,8 +46,8 @@
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.24.3",
-    "@commitlint/cli": "^17.0.1",
+    "@antfu/eslint-config": "^0.25.0",
+    "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^16.2.4",
     "@cypress/vite-dev-server": "^2.2.3",
     "@cypress/vue": "^3.1.2",
@@ -67,7 +67,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.7.1",
+    "eslint-plugin-vue": "^9.0.1",
     "https-localhost": "^4.7.1",
     "husky": "^8.0.1",
     "imagemin-lint-staged": "^0.4.0",
@@ -108,7 +108,7 @@
     "vite-plugin-windicss": "^1.8.4",
     "vite-ssg": "^0.20.0",
     "vite-ssg-sitemap": "^0.2.7",
-    "vue-tsc": "^0.34.17"
+    "vue-tsc": "^0.35.2"
   },
   "engines": {
     "node": ">=14.17.0",
