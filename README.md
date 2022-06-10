@@ -2,7 +2,7 @@
 
 <div align='center'>
   <img
-    src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png'
+    src='https://user-images.githubusercontent.com/11247099/154486432-9f424d8a-088a-47ab-92c5-b24a0e7c147e.png'
     alt='Vitesse - Opinionated Vite starter template with rigorous linting'
     width='600'
   />
@@ -40,9 +40,9 @@
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss)
+- 🎨 [UnoCSS](https://github.com/antfu/unocss)
 
-- 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
+- 😃 [Use icons from any icon sets with classes](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 - 🌍 [I18n ready](./locales)
 
@@ -81,13 +81,12 @@
 
 ### UI Frameworks
 
-- [`windicss`](https://github.com/windicss/windicss)
-  - [`typography`](https://windicss.org/plugins/official/typography.html)
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
 ### Icons
 
-- [`iconify`](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [`unplugin-icons`](https://github.com/antfu/unplugin-icons) - icons as Vue components
+- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 ### Plugins
 
@@ -96,7 +95,6 @@
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
-- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss)
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md)
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
