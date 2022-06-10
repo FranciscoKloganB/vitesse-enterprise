@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const inProductionEnv = process.env.NODE_ENV === 'production'
 const rulesSeverityOff = inProductionEnv ? 'warn' : 'off'
 
@@ -18,13 +19,16 @@ module.exports = {
       { argsIgnorePattern: '^_', varsIgnorePattern: '^(_|Cypress)' },
     ],
     'comma-dangle': ['error', 'only-multiline'],
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^(_|Cypress)' }],
+    'no-unused-vars': [
+      'error',
+      { argsIgnorePattern: '^_', varsIgnorePattern: '^(_|Cypress)' },
+    ],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
     'max-len': [
       'error',
       {
-        code: 100,
+        code: 88,
         tabWidth: 2,
       },
     ],

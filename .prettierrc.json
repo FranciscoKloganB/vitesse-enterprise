@@ -4,7 +4,7 @@
   "endOfLine": "auto",
   "htmlWhitespaceSensitivity": "strict",
   "jsxSingleQuote": true,
-  "printWidth": 100,
+  "printWidth": 88,
   "proseWrap": "never",
   "quoteProps": "as-needed",
   "semi": false,
