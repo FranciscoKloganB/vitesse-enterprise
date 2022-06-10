@@ -4,7 +4,7 @@ title: About
 
 <div class="text-center">
   <!-- You can use Vue components inside markdown -->
-  <carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
+  <div i-carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
   <h3>About</h3>
 </div>
 
@@ -12,11 +12,10 @@ title: About
 [Vite](https://github.com/vitejs/vite) starter templated forked from
 starter template made by [@FranciscoKloganB](franciscokloganb.github.io/)
 which builds on top of [@antfu's](https://github.com/antfu) original
-[Vitesse](https://github.com/antfu/vitesse) template. It foccuses on
-team-developer-experience by adding tools that enforce code quality and readability!
-
-With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA
-and uses **WindiCSS** for UI.
+[Vitesse](https://github.com/antfu/vitesse) template. It focuses on
+team-developer-experience by adding tools that enforce code quality and
+readability! With **file-based routing**, **components auto importing**,
+**markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
 
 ```js
 // syntax highlighting example
