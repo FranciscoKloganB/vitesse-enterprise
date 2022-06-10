@@ -1,17 +1,15 @@
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
 import Inspect from 'vite-plugin-inspect'
 import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages'
 import Prism from 'markdown-it-prism'
+import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import WindiCSS from 'vite-plugin-windicss'
 import { defineConfig } from 'vite'
 import generateSitemap from 'vite-ssg-sitemap'
 import path from 'path'
@@ -65,25 +63,6 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      // custom resolvers
-      resolvers: [
-        // auto import icons
-        // https://github.com/antfu/unplugin-icons
-        IconsResolver({
-          prefix: '',
-          // enabledCollections: ['carbon']
-        }),
-      ],
-    }),
-
-    // https://github.com/antfu/unplugin-icons
-    Icons({
-      autoInstall: true,
-    }),
-
-    // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS({
-      safelist: markdownWrapperClasses,
     }),
 
     // https://github.com/antfu/vite-plugin-md
@@ -104,6 +83,10 @@ export default defineConfig({
         })
       },
     }),
+
+    // https://github.com/antfu/unocss
+    // see unocss.config.ts for config
+    Unocss(),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
@@ -147,12 +130,6 @@ export default defineConfig({
       enabled: false,
     }),
   ],
-
-  server: {
-    fs: {
-      strict: true,
-    },
-  },
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {

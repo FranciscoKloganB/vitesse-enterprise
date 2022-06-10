@@ -16,7 +16,7 @@ context('Basic', () => {
 
     cy.contains('[Default Layout]').should('exist')
 
-    cy.get('.btn').should('be.visible').click().url().should('eq', 'http://localhost:4000/')
+    cy.get('[btn]').should('be.visible').click().url().should('eq', 'http://localhost:4000/')
   })
 
   it('markdown', () => {
