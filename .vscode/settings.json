@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "antfu",
+    "attributify",
     "browserslist",
     "commitlint",
     "demi",
@@ -14,14 +15,14 @@
     "prebuild",
     "preinstall",
     "stylelint",
+    "unocss",
     "unplugin",
     "vite",
     "vitejs",
     "vitesse",
     "vitest",
     "vuedx",
-    "vueuse",
-    "unocss"
+    "vueuse"
   ],
   "css.validate": false,
   "less.validate": false,
