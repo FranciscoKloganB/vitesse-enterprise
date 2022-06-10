@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const inProductionEnv = process.env.NODE_ENV === 'production'
 const rulesSeverityOff = inProductionEnv ? 'warn' : 'off'
 
