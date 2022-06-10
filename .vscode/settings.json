@@ -15,13 +15,13 @@
     "preinstall",
     "stylelint",
     "unplugin",
-    "Vite",
+    "vite",
     "vitejs",
-    "Vitesse",
+    "vitesse",
     "vitest",
     "vuedx",
     "vueuse",
-    "windicss"
+    "unocss"
   ],
   "css.validate": false,
   "less.validate": false,
@@ -55,20 +55,15 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
+  "i18n-ally.sourceLanguage": "en",
   "material-icon-theme.activeIconPack": "vue_vuex",
   "prettier.enable": true,
   "prettier.configPath": ".prettierrc.json",
-  "sort-imports.languages": [
-    "javascript",
-    "typescript",
-    "vue"
-  ],
   "stylelint.validate": [
     "javascript",
     "typescript",
     "vue"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib",
   "workbench.iconTheme": "material-icon-theme",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
