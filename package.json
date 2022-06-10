@@ -14,7 +14,6 @@
     "lint": "run-s lint:*",
     "lint:types": "vue-tsc --noEmit",
     "lint:css": "stylelint --fix \"**/*.{css,scss,vue}\"",
-    "lint:js": "eslint --fix --ext \"**/*.{js,ts,vue}\"",
     "lint:imports": "import-sort --write \"src/**/*{.js,.ts,.vue}\"",
     "lint:md": "markdownlint --config .markdownlint.json --fix \"**/*.md\"",
     "lint:prettier": "prettier --write --loglevel error \"**/*.{js,ts,json,css,scss,vue,html,md}\"",
