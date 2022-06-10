@@ -16,6 +16,10 @@ describe('TheFooter', () => {
   })
 
   it('It a language selector', () => {
-    cy.get('[data-cy=language-selector]').should('have.attr', 'title', 'Change languages')
+    cy.get('[data-cy=language-selector]').should(
+      'have.attr',
+      'title',
+      'Change languages'
+    )
   })
 })

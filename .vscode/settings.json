@@ -39,6 +39,7 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  "editor.rulers": [88],
   "eslint.validate": [
     "javascript",
     "typescript",

@@ -24,7 +24,11 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "ESNext",
-    "types": ["vite/client", "vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ]
   },
   "exclude": ["dist", "node_modules", "public", "tests"]
 }
