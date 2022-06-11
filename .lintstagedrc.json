@@ -1,6 +1,6 @@
 {
-  "*.{js,jsx,ts,tsx}": ["pnpm lint:imports", "pnpm lint:prettier"],
-  "*.vue": ["pnpm lint:css", "pnpm lint:imports", "pnpm lint:prettier"],
+  "*.{js,jsx,ts,tsx}": ["pnpm lint:js", "pnpm lint:imports", "pnpm lint:prettier"],
+  "*.vue": ["pnpm lint:css", "pnpm lint:js", "pnpm lint:imports", "pnpm lint:prettier"],
   "*.(s)?css": ["pnpm lint:css", "pnpm lint:prettier"],
   "*.md": ["pnpm lint:md"],
   "*.{png,jpeg,jpg,gif,svg}": ["imagemin-lint-staged"],
