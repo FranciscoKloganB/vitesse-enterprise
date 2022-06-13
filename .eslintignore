@@ -2,6 +2,7 @@
 .husky/
 .vscode/
 **/coverage/
+cypress/
 dist/
 locales/
 node_modules/
