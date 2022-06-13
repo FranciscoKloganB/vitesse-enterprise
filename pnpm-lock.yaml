@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.0.0
-  eslint-plugin-vue: ^9.1.0
+  eslint-plugin-vue: ^9.1.1
   https-localhost: ^4.7.1
   husky: ^8.0.1
   imagemin-lint-staged: ^0.4.0
@@ -114,7 +114,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_eslint@8.17.0
   eslint-plugin-node: 11.1.0_eslint@8.17.0
   eslint-plugin-prettier: 4.0.0_ucegkljdju7q4zmvwxzqoprf3y
-  eslint-plugin-vue: 9.1.0_eslint@8.17.0
+  eslint-plugin-vue: 9.1.1_eslint@8.17.0
   https-localhost: 4.7.1
   husky: 8.0.1
   imagemin-lint-staged: 0.4.0
@@ -231,7 +231,7 @@ packages:
     dependencies:
       '@antfu/eslint-config-ts': 0.25.1_ud6rd4xtew5bv4yhvkvu24pzm4
       eslint: 8.17.0
-      eslint-plugin-vue: 9.1.0_eslint@8.17.0
+      eslint-plugin-vue: 9.1.1_eslint@8.17.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -256,7 +256,7 @@ packages:
       eslint-plugin-n: 15.2.2_eslint@8.17.0
       eslint-plugin-promise: 6.0.0_eslint@8.17.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.17.0
-      eslint-plugin-vue: 9.1.0_eslint@8.17.0
+      eslint-plugin-vue: 9.1.1_eslint@8.17.0
       eslint-plugin-yml: 1.0.0_eslint@8.17.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.0.1
@@ -5290,8 +5290,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue/9.1.0_eslint@8.17.0:
-    resolution: {integrity: sha512-EPCeInPicQ/YyfOWJDr1yfEeSNoFCMzUus107lZyYi37xejdOolNzS5MXGXp8+9bkoKZMdv/1AcZzQebME6r+g==}
+  /eslint-plugin-vue/9.1.1_eslint@8.17.0:
+    resolution: {integrity: sha512-W9n5PB1X2jzC7CK6riG0oAcxjmKrjTF6+keL1rni8n57DZeilx/Fulz+IRJK3lYseLNAygN0I62L7DvioW40Tw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -12286,7 +12286,7 @@ packages:
     dev: true
 
   /yallist/2.1.2:
-    resolution: {integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=}
+    resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==}
     dev: true
 
   /yallist/4.0.0:
