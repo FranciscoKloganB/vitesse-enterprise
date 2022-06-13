@@ -39,8 +39,8 @@ dist-ssr
 .DS_Store
 
 # Tests
-/tests/**/videos/
-/tests/**/screenshots/
+/cypress/**/videos/
+/cypress/**/screenshots/
 /instrumented
 /coverage
 .nyc_output
