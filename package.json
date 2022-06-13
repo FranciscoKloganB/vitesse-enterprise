@@ -68,7 +68,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^9.1.0",
+    "eslint-plugin-vue": "^9.1.1",
     "https-localhost": "^4.7.1",
     "husky": "^8.0.1",
     "imagemin-lint-staged": "^0.4.0",
