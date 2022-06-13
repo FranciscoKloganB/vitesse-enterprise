@@ -228,12 +228,12 @@ and your App will be live in a minute.
 
 Vercel has some short-commings regarding `pnpm` based projects. After creating
 and importing the project on [Vercel dashboard](https://vercel.com/dashboard) you will
-need to navigate to the project settings and override the `Build Command` and `Install Command`
-respectively, with the following bash commands:
+need to navigate to the project settings and override the `Build Command` and
+`Install Command` respectively, with the following bash commands:
 
   ```bash
     # Build Command
-    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build:prod:ssg
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run:build
     # Install Command
     npm i -g pnpm && pnpm -i
   ```

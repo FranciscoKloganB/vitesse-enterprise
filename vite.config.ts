@@ -10,7 +10,7 @@ import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import generateSitemap from 'vite-ssg-sitemap'
 import path from 'path'
 import pkg from './package.json'
@@ -48,7 +48,14 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core'],
+      imports: [
+        'vue',
+        'vue-router',
+        'vue-i18n',
+        '@vueuse/head',
+        '@vueuse/core',
+        'vitest',
+      ],
       dts: 'src/auto-imports.d.ts',
     }),
 
@@ -140,8 +147,22 @@ export default defineConfig({
     },
   },
 
+  // https://github.com/vitest-dev/vitest
+  test: {
+    clearMocks: true,
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi'],
+    },
+    environment: 'jsdom',
+    globals: true,
+    include: ['test/unit/**/*.test.ts', 'test/integration/**/*.test.ts'],
+    // transformMode: {
+    //   web: [/\.[jt]sx$/],
+    // },
+  },
+
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core'],
+    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
     exclude: ['vue-demi'],
   },
 })

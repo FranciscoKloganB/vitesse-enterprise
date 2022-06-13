@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/core/hooks'
+import { toggleDark } from '~/core/hooks'
 
 const { t, availableLocales, locale } = useI18n()
 

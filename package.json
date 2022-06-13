@@ -23,13 +23,18 @@
     "preview": "vite preview --port 4000",
     "preview:ci": "start-server-and-test preview http://localhost:4000",
     "preview:https": "serve dist",
+    "run:build": "run-s prebuild 'build:prod:ssg'",
+    "run:preview": "run-s 'run:build' preview",
+    "run:test": "run-s 'test:unit:ci' 'test:components:ci' 'test:e2e:headless'",
     "test:components": "cypress open-ct",
     "test:components:ci": "cypress run-ct",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run",
     "test:e2e:ci": "npm run preview:ci 'cypress run'",
-    "test:unit": "echo 'vitest not set up just yet'",
-    "test:unit:ci": "echo 'vitest not set up just yet'"
+    "test:unit": "vitest watch",
+    "test:unit:ci": "vitest run",
+    "test:unit:coverage": "vitest watch --coverage",
+    "test:unit:coverage:ci": "vitest run --coverage"
   },
   "dependencies": {
     "@pinia/testing": "^0.0.12",
@@ -49,8 +54,6 @@
     "@antfu/eslint-config": "^0.25.1",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
-    "@cypress/vite-dev-server": "^2.2.3",
-    "@cypress/vue": "^3.1.2",
     "@iconify-json/carbon": "^1.1.5",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
@@ -61,10 +64,8 @@
     "@vue/test-utils": "^2.0.0",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "cypress": "^9.7.0",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -108,10 +109,11 @@
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.20.1",
     "vite-ssg-sitemap": "^0.2.7",
+    "vitest": "^0.14.2",
     "vue-tsc": "^0.37.5"
   },
   "engines": {
-    "node": ">=14.17.0",
+    "node": ">=16.14.0",
     "pnpm": "^7.1.7"
   }
 }

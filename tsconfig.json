@@ -8,7 +8,7 @@
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "Node",
     "module": "ESNext",
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noUnusedParameters": false,
     "paths": {
       "@/*": ["./*"],
@@ -26,10 +26,11 @@
     "strictNullChecks": true,
     "target": "ESNext",
     "types": [
+      "vitest",
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ]
   },
-  "exclude": ["dist", "node_modules", "public", "tests"]
+  "exclude": ["cypress", "dist", "node_modules", "public"]
 }

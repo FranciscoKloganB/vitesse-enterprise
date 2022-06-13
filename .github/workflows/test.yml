@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.19.0, 16.14.0]
+        node-version: [16.14.0]
         os: [ubuntu-latest]
       fail-fast: false
 
@@ -41,7 +41,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
-          cache: "pnpm"
+          # https://github.com/actions/cache/issues/698 (disable cache until GH fixes this)
+          # cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install
@@ -49,17 +50,18 @@ jobs:
       - name: Static Analysis
         run: pnpm lint
 
+      - name: Vitest Unit and Integration Test Runner
+        run: pnpm run test:unit:ci
+
       - name: Build Static Distribution
         run: pnpm build:prod:ssg
 
-      # Need to test with SPA distribution due to Cypress flakiness ¯\_(ツ)_/¯
-      - name: Build SPA Distribution
-        run: |
-          pnpm prebuild \
-            && pnpm build:prod:spa
+      # May need to test with SPA distribution due to Cypress flakiness ¯\_(ツ)_/¯
+      - name: Build SSG Distribution
+        run: pnpm run:build
 
-      - name: Cypress Component Test Runner
-        run: pnpm test:components:ci
+      # - name: Cypress Component Test Runner
+      #   run: pnpm test:components:ci
 
-      - name: Cypress End-to-End Test Runner
-        run: pnpm test:e2e:ci
+      # - name: Cypress End-to-End Test Runner
+      #   run: pnpm test:e2e:ci
