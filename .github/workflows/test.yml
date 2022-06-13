@@ -49,6 +49,9 @@ jobs:
       - name: Static Analysis
         run: pnpm lint
 
+      - name: Vitest Unit and Integration Test Runner
+        run: pnpm run test:unit:ci
+        
       - name: Build Static Distribution
         run: pnpm build:prod:ssg
 

@@ -23,13 +23,17 @@
     "preview": "vite preview --port 4000",
     "preview:ci": "start-server-and-test preview http://localhost:4000",
     "preview:https": "serve dist",
+    "run:build": "run-s prebuild 'build:prod:spa' preview",
+    "run:test": "run-s 'test:unit:ci' 'test:components:ci' 'test:e2e:headless'",
     "test:components": "cypress open-ct",
     "test:components:ci": "cypress run-ct",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run",
     "test:e2e:ci": "npm run preview:ci 'cypress run'",
-    "test:unit": "echo 'vitest not set up just yet'",
-    "test:unit:ci": "echo 'vitest not set up just yet'"
+    "test:unit": "vitest",
+    "test:unit:ci": "vitest",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:unit:coverage:ci": "vitest run --coverage"
   },
   "dependencies": {
     "@pinia/testing": "^0.0.12",
