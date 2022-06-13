@@ -1,6 +1,7 @@
 [build.environment]
   NODE_VERSION = "16"
-  NPM_FLAGS = "--prefix=/dev/null"
+  # prevent Netlify from running  `npm install` when it finds `package.json`
+  NPM_FLAGS = "--version"
 
 [build]
   publish = "dist"
