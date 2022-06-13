@@ -14,6 +14,8 @@
   <h3>Demonstrations</h3>
   <a href="https://vitesse-enterprise.netlify.app/">Live on Netlify</a>
   <br>
+  <a href="https://vitesse-enterprise.vercel.app/">Live on Vercel</a>
+  <br>
   <a href="https://stackblitz.com/fork/github/FranciscoKloganB/vitesse-enterprise?file=.stackblitzrc">
     Playground on Stackblitz
   </a>
@@ -226,8 +228,8 @@ and your App will be live in a minute.
 
 Vercel has some short-commings regarding `pnpm` based projects. After creating
 and importing the project on [Vercel dashboard](https://vercel.com/dashboard) you will
-need to navigate to the project settings and override the `Build Command` and `Install Command`
-respectively, with the following bash commands:
+need to navigate to the project settings and override the `Build Command` and
+`Install Command` respectively, with the following bash commands:
 
   ```bash
     # Build Command
