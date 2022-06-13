@@ -108,7 +108,7 @@
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.20.1",
     "vite-ssg-sitemap": "^0.2.7",
-    "vue-tsc": "^0.37.3"
+    "vue-tsc": "^0.37.5"
   },
   "engines": {
     "node": ">=14.17.0",
