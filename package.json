@@ -31,7 +31,7 @@
     "test:components:ci": "run-s 'test:components:headless'",
     "test:e2e": "cypress open --e2e",
     "test:e2e:headless": "cypress run --e2e",
-    "test:e2e:ci": "run-s 'preview:ci' 'test:e2e:headless'",
+    "test:e2e:ci": "npm run 'preview:ci' 'test:e2e:headless'",
     "test:vitest": "vitest watch",
     "test:vitest:headless": "vitest run",
     "test:vitest:ci": "run-s 'test:vitest:headless'",
