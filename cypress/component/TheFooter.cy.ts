@@ -1,14 +1,13 @@
 import TheFooter from '~/core/components/TheFooter.vue'
-// import { i18n } from '~/core/modules/i18n'
+import { i18n } from '~/core/modules/i18n'
 
 describe('TheFooter.cy.ts', () => {
   beforeEach(() => {
-    // cy.mountWithPinia(TheFooter, {
-    //   global: {
-    //     plugins: [i18n],
-    //   },
-    // })
-    cy.mount(TheFooter)
+    cy.mountWithPinia(TheFooter, {
+      global: {
+        plugins: [i18n],
+      },
+    })
   })
 
   it('It contains theme toggler', () => {

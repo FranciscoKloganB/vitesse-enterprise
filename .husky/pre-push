@@ -1,5 +1,4 @@
 #!/bin/sh
 
-pnpm test:unit:ci
-# pnpm test:components:ci
-# pnpm test:e2e:headless
+pnpm test:vitest:headless
+pnpm test:components:headless
