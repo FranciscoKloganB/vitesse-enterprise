@@ -22,14 +22,4 @@ context('Basic', () => {
       .url()
       .should('eq', 'http://localhost:4000/')
   })
-
-  it('markdown', () => {
-    cy.get('[title="About"]')
-      .should('be.visible')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:4000/about')
-
-    cy.get('pre.language-js').should('exist')
-  })
 })
