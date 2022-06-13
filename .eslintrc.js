@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 const inProductionEnv = process.env.NODE_ENV === 'production'
 const rulesSeverityOff = inProductionEnv ? 'warn' : 'off'
 
@@ -25,6 +24,7 @@ module.exports = {
     ],
     'no-console': rulesSeverityOff,
     'no-debugger': rulesSeverityOff,
+    'no-unused-expressions': 'off',
     'max-len': [
       'error',
       {

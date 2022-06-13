@@ -175,7 +175,7 @@ Run and visit <http://localhost:4000>
 pnpm dev
 ```
 
-### Code formatting
+### Code formatting and linting
 
 ```bash
 pnpm lint
@@ -184,15 +184,15 @@ pnpm lint
 ### Testing
 
 ```bash
-# Interactive test run
-pnpm test:components
-pnpm test:e2e
-pnpm test:unit
+pnpm run:test
 ```
 
 ### Build for production
 
 ```bash
+# Alias for "run-s prebuild 'build:prod:ssg'"
+pnpm run:build
+# Other builds
 # Ouputs files to dist folder. Ready to be served in SPA mode.
 pnpm build:prod
 # Outputs files to dist folder which passed through the Vite SSG pipeline. Ready to be served.
@@ -203,8 +203,8 @@ pnpm build:prod:ssg
 
 ```bash
 # Runs project locally with files from dist folder
-pnpm preview
-# Can also run locally with HTTPS (may require sudo)
+pnpm run:preview
+# Can also run locally with HTTPS (may require sudo) - requires available dist/ folder
 pnpm preview:https
 ```
 

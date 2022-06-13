@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "../",
+    "esModuleInterop": true,
+    "lib": ["es5", "dom"],
+    "noUnusedLocals": false,
+    "paths": {
+      "@/*": ["../*"],
+      "~/*": ["../src/*"]
+    },
+    "target": "es5",
+    "types": ["cypress", "node"]
+  },
+  "include": ["../src/**/*.d.ts", "**/*.ts"]
+}
