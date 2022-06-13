@@ -90,7 +90,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.52.3",
     "start-server-and-test": "^1.14.0",
-    "stylelint": "^14.9.0",
+    "stylelint": "^14.9.1",
     "stylelint-config-css-modules": "^4.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "3.0.0",
