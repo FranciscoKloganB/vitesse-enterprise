@@ -14,8 +14,6 @@
   <h3>Demonstrations</h3>
   <a href="https://vitesse-enterprise.netlify.app/">Live on Netlify</a>
   <br>
-  <a href="https://vitesse-enterprise.vercel.app/">Live on Vercel</a>
-  <br>
   <a href="https://stackblitz.com/fork/github/FranciscoKloganB/vitesse-enterprise?file=.stackblitzrc">
     Playground on Stackblitz
   </a>
@@ -233,7 +231,7 @@ respectively, with the following bash commands:
 
   ```bash
     # Build Command
-    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build:prod:ssg
+    npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run:build
     # Install Command
     npm i -g pnpm && pnpm -i
   ```
