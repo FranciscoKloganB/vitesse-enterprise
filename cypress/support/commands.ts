@@ -1,38 +1,33 @@
-/* eslint-disable max-len */
 /// <reference types="cypress" />
 // ***********************************************
-// This example commands.ts shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
+// This serves to add custom functionality to Cypress and can be imported both
+// in `components.ts` and `e2e.ts` support files.
 //
 // -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// Cypress.Commands.overwrite('visit', (originalFn, url, opt) => {  })
+// -- This is a parent command --
+// Cypress.Commands.add('login', (email, password) => {  })
+// -- This is a child command --
+// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, opt) => {  })
+// -- This is a dual command --
+// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, opt) => {  })
 //
-// declare global {
-//   namespace Cypress {
-//     interface Chainable {
-//       login(email: string, password: string): Chainable<void>
-//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
-//     }
-//   }
-// }
+// For more comprehensive examples of custom commands please read more here:
+// https://on.cypress.io/custom-commands
+// ***********************************************
+export {}
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      visit(
+        originalFn: CommandOriginalFn<any>,
+        url: string,
+        options: Partial<VisitOptions>
+      ): Chainable<Element>
+      login(email: string, password: string): Chainable<void>
+      drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+      dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+    }
+  }
+}
