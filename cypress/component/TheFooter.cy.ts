@@ -11,15 +11,11 @@ describe('TheFooter.cy.ts', () => {
   })
 
   it('It contains theme toggler', () => {
-    cy.get('[data-test-id=theme-toggler]').should(
-      'have.attr',
-      'title',
-      'Toggle dark mode'
-    )
+    cy.findByTestId('theme-toggler').should('have.attr', 'title', 'Toggle dark mode')
   })
 
-  it('It a language selector', () => {
-    cy.get('[data-test-id=language-selector]').should(
+  it('It contains language selector', () => {
+    cy.findByTestId('language-selector').should(
       'have.attr',
       'title',
       'Change languages'
