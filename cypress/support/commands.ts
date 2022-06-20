@@ -1,6 +1,3 @@
-import '@testing-library/cypress/add-commands'
-import 'cypress-wait-until'
-
 // ***********************************************
 // This serves to add custom functionality to Cypress and can be imported both
 // in `components.ts` and `e2e.ts` support files.
@@ -17,9 +14,7 @@ import 'cypress-wait-until'
 // For more comprehensive examples of custom commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-import { configure } from '@testing-library/cypress'
-
-configure({ testIdAttribute: 'data-test-id' })
+export {}
 
 declare global {
   namespace Cypress {

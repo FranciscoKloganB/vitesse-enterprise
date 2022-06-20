@@ -7,12 +7,13 @@ specifiers:
   '@iconify-json/carbon': ^1.1.5
   '@intlify/vite-plugin-vue-i18n': ^3.4.0
   '@pinia/testing': ^0.0.12
-  '@testing-library/cypress': ^8.0.3
+  '@testing-library/vue': ^6.6.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': ^17.0.45
   '@types/nprogress': ^0.2.0
   '@unocss/vite': ^0.38.2
   '@vitejs/plugin-vue': ^2.3.3
+  '@vue/compiler-sfc': ^3.2.37
   '@vue/test-utils': ^2.0.0
   '@vueuse/core': ^8.7.4
   '@vueuse/head': ^0.7.6
@@ -21,7 +22,6 @@ specifiers:
   critters: ^0.0.16
   cross-env: ^7.0.3
   cypress: ^10.1.0
-  cypress-wait-until: ^1.7.2
   eslint: ^8.18.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
@@ -98,17 +98,17 @@ devDependencies:
   '@commitlint/config-conventional': 17.0.2
   '@iconify-json/carbon': 1.1.5
   '@intlify/vite-plugin-vue-i18n': 3.4.0_jg524lrp6mwbliyl7dcdb54k4a
-  '@testing-library/cypress': 8.0.3_cypress@10.1.0
+  '@testing-library/vue': 6.6.0_2yymnzrok6eda47acnj2yjm3ae
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/node': 17.0.45
   '@types/nprogress': 0.2.0
   '@unocss/vite': 0.38.2_vite@2.9.12
   '@vitejs/plugin-vue': 2.3.3_vite@2.9.12+vue@3.2.37
+  '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.0_vue@3.2.37
   critters: 0.0.16
   cross-env: 7.0.3
   cypress: 10.1.0
-  cypress-wait-until: 1.7.2
   eslint: 8.18.0
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-plugin-import: 2.26.0_eslint@8.18.0
@@ -150,7 +150,7 @@ devDependencies:
   vite: 2.9.12_sass@1.52.3
   vite-plugin-inspect: 0.5.0_vite@2.9.12
   vite-plugin-md: 0.14.2_vite@2.9.12
-  vite-plugin-pages: 0.23.0_vite@2.9.12
+  vite-plugin-pages: 0.23.0_zzjg27s3eqfbklnrwy6rdd2pii
   vite-plugin-pwa: 0.12.0_vite@2.9.12
   vite-plugin-vue-layouts: 0.6.0_rhgkriiwgt67w4tmjwulloled4
   vite-ssg: 0.20.1_ah2svnd4q4evbmcsekycrwsdcm
@@ -1988,17 +1988,6 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: true
 
-  /@testing-library/cypress/8.0.3_cypress@10.1.0:
-    resolution: {integrity: sha512-nY2YaSbmuPo5k6kL0iLj/pGPPfka3iwb3kpTx8QN/vOCns92Saz9wfACqB8FJzcR7+lfA4d5HUOWqmTddBzczg==}
-    engines: {node: '>=12', npm: '>=6'}
-    peerDependencies:
-      cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-    dependencies:
-      '@babel/runtime': 7.18.3
-      '@testing-library/dom': 8.14.0
-      cypress: 10.1.0
-    dev: true
-
   /@testing-library/dom/8.14.0:
     resolution: {integrity: sha512-m8FOdUo77iMTwVRCyzWcqxlEIk+GnopbrRI15a0EaLbpZSCinIVI4kSQzWhkShK83GogvEFJSsHF3Ws0z1vrqA==}
     engines: {node: '>=12'}
@@ -2011,6 +2000,20 @@ packages:
       dom-accessibility-api: 0.5.14
       lz-string: 1.4.4
       pretty-format: 27.5.1
+    dev: true
+
+  /@testing-library/vue/6.6.0_2yymnzrok6eda47acnj2yjm3ae:
+    resolution: {integrity: sha512-pVCYlXSc19TDe8h9KgZGRY9CrdrsN2wLOegWbyI53FDUEJOuk/3w/BeXPLTQPMYxIv4N3/ZKK2ZJcBsNCouajA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@vue/compiler-sfc': '>= 3'
+      vue: '>= 3'
+    dependencies:
+      '@babel/runtime': 7.18.3
+      '@testing-library/dom': 8.14.0
+      '@vue/compiler-sfc': 3.2.37
+      '@vue/test-utils': 2.0.0_vue@3.2.37
+      vue: 3.2.37
     dev: true
 
   /@tootallnate/once/2.0.0:
@@ -4123,10 +4126,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       array-find-index: 1.0.2
-    dev: true
-
-  /cypress-wait-until/1.7.2:
-    resolution: {integrity: sha512-uZ+M8/MqRcpf+FII/UZrU7g1qYZ4aVlHcgyVopnladyoBrpoaMJ4PKZDrdOJ05H5RHbr7s9Tid635X3E+ZLU/Q==}
     dev: true
 
   /cypress/10.1.0:
@@ -11749,7 +11748,7 @@ packages:
       - encoding
     dev: true
 
-  /vite-plugin-pages/0.23.0_vite@2.9.12:
+  /vite-plugin-pages/0.23.0_zzjg27s3eqfbklnrwy6rdd2pii:
     resolution: {integrity: sha512-KEfW6WBfACCjMXoQY0mLEzfifwCTq6FlvvtXs2XSEe9Pd4QadZTNzHOPKHDsKpVXysRzbYxE8/c/Ao9+nXsQ7w==}
     peerDependencies:
       '@vue/compiler-sfc': ^3.0.0
@@ -11759,6 +11758,7 @@ packages:
         optional: true
     dependencies:
       '@types/debug': 4.1.7
+      '@vue/compiler-sfc': 3.2.37
       debug: 4.3.4
       deep-equal: 2.0.5
       fast-glob: 3.2.11

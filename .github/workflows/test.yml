@@ -58,6 +58,7 @@ jobs:
       - name: Vitest Unit and Integration Test Runner
         run: pnpm run test:vitest:ci
 
+      # Disable Cypress CT Runner until there are stable integrations for Vue/Vite/PNPM
       # - name: Cypress Component Test Runner
       #   run: pnpm test:components:ci
 
