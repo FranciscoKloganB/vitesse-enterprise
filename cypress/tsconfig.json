@@ -11,5 +11,5 @@
     "target": "es5",
     "types": ["@testing-library/cypress", "cypress", "node"]
   },
-  "include": ["../src/**/*.d.ts", "**/*.ts"]
+  "include": ["../**/*.d.ts", "**/*.ts"]
 }
