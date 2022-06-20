@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 // ***********************************************
 // This serves to add custom functionality to Cypress and can be imported both
 // in `components.ts` and `e2e.ts` support files.

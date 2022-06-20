@@ -10,8 +10,9 @@ import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vite'
 import generateSitemap from 'vite-ssg-sitemap'
+// import { defineConfig } from 'vitest/config'
 import path from 'path'
 import pkg from './package.json'
 
@@ -159,7 +160,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    include: ['@vueuse/core', '@vueuse/head', 'vue', 'vue-router'],
     exclude: ['vue-demi'],
   },
 })

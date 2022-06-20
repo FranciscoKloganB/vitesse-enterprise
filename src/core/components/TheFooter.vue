@@ -18,7 +18,7 @@ const toggleLocales = () => {
 
     <button
       class="icon-btn mx-2 !outline-none"
-      data-cy="theme-toggler"
+      data-test-id="theme-toggler"
       :title="t('button.toggle_dark')"
       @click="toggleDark()"
     >
@@ -27,7 +27,7 @@ const toggleLocales = () => {
 
     <a
       class="icon-btn mx-2"
-      data-cy="language-selector"
+      data-test-id="language-selector"
       :title="t('button.toggle_langs')"
       @click="toggleLocales"
     >

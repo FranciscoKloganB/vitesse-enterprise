@@ -1,4 +1,5 @@
 #!/bin/sh
 
 pnpm test:vitest:headless
-pnpm test:components:headless
+# Disable Cypress CT Runner until there are stable integrations for Vue/Vite/PNPM
+# pnpm test:components:headless

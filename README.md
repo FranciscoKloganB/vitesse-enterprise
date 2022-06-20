@@ -67,7 +67,7 @@
 
 - 🤖 Standards checking with pre-commit hooks. Test validation on pre-push with [Husky](https://github.com/typicode/husky)
 
-- ⚙️ Component and end-to-end testing with [Cypress](https://cypress.io/)
+- ⚙️ E2E testing with [Cypress](https://cypress.io/)
 
 - 📤 [GitHub Actions](https://github.com/features/actions)
 
