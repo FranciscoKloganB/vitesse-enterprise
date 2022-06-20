@@ -26,7 +26,7 @@ context('Basic', () => {
   it('markdown', () => {
     cy.get('[title="About"]')
       .should('be.visible')
-      .click()
+      .click({ force: true })
       .url()
       .should('eq', 'http://127.0.0.1:4000/about')
 
