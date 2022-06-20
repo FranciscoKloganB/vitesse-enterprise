@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@pinia/testing": "^0.0.12",
-    "@vueuse/core": "^8.6.0",
+    "@vueuse/core": "^8.7.4",
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
     "axios-case-converter": "^0.9.0",
