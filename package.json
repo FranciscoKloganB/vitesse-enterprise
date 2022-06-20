@@ -83,7 +83,7 @@
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-eslint": "^6.0.0",
-    "lint-staged": "^13.0.1",
+    "lint-staged": "^13.0.2",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
     "markdownlint-cli": "^0.31.1",
