@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   e2e: {
-    baseUrl: 'http://localhost:4000',
+    baseUrl: 'http://127.0.0.1:4000',
     fileServerFolder: 'dist',
     setupNodeEvents(_on, _config) {
       // implement node event listeners here
