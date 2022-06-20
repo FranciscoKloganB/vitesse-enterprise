@@ -44,7 +44,7 @@ specifiers:
   pinia: ^2.0.14
   postcss: ^8.4.14
   postcss-html: ^1.4.1
-  prettier: ^2.6.2
+  prettier: ^2.7.1
   prettier-plugin-import-sort: ^0.0.7
   prism-theme-vars: ^0.2.3
   rimraf: ^3.0.2
@@ -108,7 +108,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.17.0
   eslint-plugin-import: 2.26.0_eslint@8.17.0
   eslint-plugin-node: 11.1.0_eslint@8.17.0
-  eslint-plugin-prettier: 4.0.0_ucegkljdju7q4zmvwxzqoprf3y
+  eslint-plugin-prettier: 4.0.0_hsbo72uvra2cjko46y2c4fgzzm
   eslint-plugin-vue: 9.1.1_eslint@8.17.0
   https-localhost: 4.7.1
   husky: 8.0.1
@@ -126,8 +126,8 @@ devDependencies:
   npm-run-all: 4.1.5
   postcss: 8.4.14
   postcss-html: 1.4.1
-  prettier: 2.6.2
-  prettier-plugin-import-sort: 0.0.7_prettier@2.6.2
+  prettier: 2.7.1
+  prettier-plugin-import-sort: 0.0.7_prettier@2.7.1
   rimraf: 3.0.2
   sass: 1.52.3
   start-server-and-test: 1.14.0
@@ -5250,7 +5250,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_ucegkljdju7q4zmvwxzqoprf3y:
+  /eslint-plugin-prettier/4.0.0_hsbo72uvra2cjko46y2c4fgzzm:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -5263,7 +5263,7 @@ packages:
     dependencies:
       eslint: 8.17.0
       eslint-config-prettier: 8.5.0_eslint@8.17.0
-      prettier: 2.6.2
+      prettier: 2.7.1
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -9441,7 +9441,7 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-import-sort/0.0.7_prettier@2.6.2:
+  /prettier-plugin-import-sort/0.0.7_prettier@2.7.1:
     resolution: {integrity: sha512-O0KlUSq+lwvh+UiN3wZDT6wWkf7TNxTVv2/XXE5KqpRNbFJq3nRg2ftzBYFFO8QGpdWIrOB0uCTCtFjIxmVKQw==}
     peerDependencies:
       prettier: '>= 2.0'
@@ -9450,13 +9450,13 @@ packages:
       import-sort-config: 6.0.0
       import-sort-parser-babylon: 6.0.0
       import-sort-parser-typescript: 6.0.0
-      prettier: 2.6.2
+      prettier: 2.7.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -11877,7 +11877,7 @@ packages:
       jsdom: 19.0.0
       kolorist: 1.5.1
       p-queue: 6.6.2
-      prettier: 2.6.2
+      prettier: 2.7.1
       vite: 2.9.12_sass@1.52.3
       vue: 3.2.37
       vue-router: 4.0.16_vue@3.2.37
