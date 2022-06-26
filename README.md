@@ -154,7 +154,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 When you use this template, try follow the checklist to update your info properly
 
 - [ ] Remove `.github/funding.yml` file which contains the funding info
-- Remove `vercel.json` or `netlify.yml` depending on your deployment provider.
+- [ ] Remove `vercel.json` or `netlify.yml` depending on your deployment provider.
 - [ ] Rename `name` field in `package.json`
 - [ ] Rename `projectId` field in `cypress.json`
 - [ ] Change the author name in `LICENSE`
