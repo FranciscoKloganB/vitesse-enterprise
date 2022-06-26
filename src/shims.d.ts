@@ -4,7 +4,7 @@
 declare interface Window {}
 
 /**
- * With vite-plugin-md, markdown files can be treated as Vue components
+ * With vite-plugin-vue-markdown, markdown files can be treated as Vue components
  */
 declare module '*.md' {
   import type { DefineComponent } from 'vue'

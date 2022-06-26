@@ -46,7 +46,7 @@
 
 - 🌍 [I18n ready](./locales)
 
-- 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
+- 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-vue-markdown)
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
@@ -95,7 +95,7 @@
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
-- [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md)
+- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown)
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
 - [`vue-i18n-next`](https://github.com/intlify/vue-i18n-next)

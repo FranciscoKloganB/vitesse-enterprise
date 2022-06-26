@@ -3,7 +3,7 @@ import Components from 'unplugin-vue-components/vite'
 import Inspect from 'vite-plugin-inspect'
 import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Markdown from 'vite-plugin-md'
+import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
 import Prism from 'markdown-it-prism'
 import Unocss from 'unocss/vite'
@@ -73,7 +73,7 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
 
-    // https://github.com/antfu/vite-plugin-md
+    // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
       wrapperClasses: markdownWrapperClasses,
