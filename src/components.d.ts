@@ -3,6 +3,8 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
+export {}
+
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     README: typeof import('./core/components/README.md')['default']
@@ -11,5 +13,3 @@ declare module '@vue/runtime-core' {
     TheFooter: typeof import('./core/components/TheFooter.vue')['default']
   }
 }
-
-export {}

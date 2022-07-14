@@ -26,15 +26,15 @@
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-core)
 
-  - 🏃 [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
+  - 🏃 [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
 
 - 🗂 [File based routing](./src/core/pages)
 
 - 📦 [Components auto importing](./src/core/components)
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+- 🍍 [State Management via Pinia](https://pinia.vuejs.org/)
 
 - 📑 [Layout system](./src/core/layouts)
 
@@ -90,7 +90,7 @@
 
 ### Plugins
 
-- [`pinia`](https://pinia.esm.dev)
+- [`pinia`](https://pinia.vuejs.org)
 - [`vue-router`](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
@@ -224,6 +224,23 @@ pnpm preview:https
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way,
 and your App will be live in a minute.
 
+### Docker Production Build
+
+First, build the vitesse image by opening the terminal in the project's root directory.
+
+```bash
+# One of either
+DOCKER_BUILDKIT=1 docker build . -t vitesse:latest
+# Docker Buildx is a CLI plugin to extend docker command and support BuildKit without the env var.
+docker buildx build . -t vitesse:latest
+```
+
+Run the image and specify port mapping with the `-p` flag.
+
+```bash
+docker run --rm -it -p 8080:80 vitesse:latest
+```
+
 ### Deploy on Vercel
 
 Vercel has some short-commings regarding `pnpm` based projects. After creating
@@ -238,8 +255,8 @@ need to navigate to the project settings and override the `Build Command` and
     npm i -g pnpm && pnpm -i
   ```
 
-Alternatevely, for zero configuration on import you need to alter `package.json` scripts to have
-a `build` and `install` entries with the commands above.
+Alternatevely, for zero configuration on import you need to alter `package.json`
+scripts to have a `build` and `install` entries with the commands above.
 
 ## Why
 

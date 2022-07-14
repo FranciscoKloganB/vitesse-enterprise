@@ -1,12 +1,13 @@
 // your custom styles here
-import './core/assets/styles/main.css'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import './core/assets/styles/main.css'
 
 import App from './App.vue'
-// register vue composition api globally
+import type { UserModule } from './types'
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
+// register vue composition api globally
 import { setupLayouts } from 'virtual:generated-layouts'
 
 const routes = setupLayouts(generatedRoutes)
@@ -17,8 +18,8 @@ export const createApp = ViteSSG(
   { routes, base: import.meta.env.BASE_URL },
   (ctx) => {
     // install all modules under `**/modules/`
-    Object.values(import.meta.globEager('./**/modules/*.ts')).forEach((i) =>
-      i.install?.(ctx)
-    )
+    Object.values(
+      import.meta.glob<{ install: UserModule }>('./**/modules/*.ts', { eager: true })
+    ).forEach((i) => i.install?.(ctx))
   }
 )

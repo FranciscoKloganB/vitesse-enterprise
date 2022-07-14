@@ -10,6 +10,7 @@ export default defineConfig({
   },
   e2e: {
     baseUrl: 'http://127.0.0.1:4000',
+    chromeWebSecurity: false,
     fileServerFolder: 'dist',
     setupNodeEvents(_on, _config) {
       // implement node event listeners here
