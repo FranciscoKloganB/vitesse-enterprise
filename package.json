@@ -44,7 +44,6 @@
     "axios-case-converter": "^0.9.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.17",
-    "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.37",
     "vue-demi": "^0.13.6",
     "vue-i18n": "^9.1.10",
@@ -85,7 +84,7 @@
     "kill-port": "^2.0.1",
     "lint-staged": "^13.0.3",
     "markdown-it-link-attributes": "^4.0.0",
-    "markdown-it-prism": "^2.2.4",
+    "markdown-it-shiki": "^0.5.1",
     "markdownlint-cli": "^0.31.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
@@ -94,6 +93,7 @@
     "prettier-plugin-import-sort": "^0.0.7",
     "rimraf": "^3.0.2",
     "sass": "^1.54.0",
+    "shiki": "^0.10.1",
     "start-server-and-test": "^1.14.0",
     "stylelint": "^14.9.1",
     "stylelint-config-css-modules": "^4.1.0",
@@ -118,6 +118,6 @@
   },
   "engines": {
     "node": ">=16.15.1",
-    "pnpm": "^7.7.1"
+    "pnpm": "^7.5.1"
   }
 }

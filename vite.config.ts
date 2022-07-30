@@ -5,14 +5,13 @@ import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
-import Prism from 'markdown-it-prism'
+import Shiki from 'markdown-it-shiki'
 import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import { defineConfig } from 'vite'
 import generateSitemap from 'vite-ssg-sitemap'
-// import { defineConfig } from 'vitest/config'
 import path from 'path'
 import pkg from './package.json'
 
@@ -20,8 +19,6 @@ process.env.VITE_APP_VERSION = pkg.version
 if (process.env.NODE_ENV === 'production') {
   process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
 }
-
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
   resolve: {
@@ -76,13 +73,17 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
-      wrapperClasses: markdownWrapperClasses,
+      wrapperClasses: 'prose prose-sm m-auto text-left',
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(Prism)
+        md.use(Shiki, {
+          theme: {
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        })
         md.use(LinkAttributes, {
-          // pattern: /^https?:\/\//,
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
             target: '_blank',

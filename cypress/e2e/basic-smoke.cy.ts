@@ -30,6 +30,6 @@ context('Basic', () => {
       .url()
       .should('eq', 'http://127.0.0.1:4000/about')
 
-    cy.get('pre.language-js').should('exist')
+    cy.get('.shiki').should('exist')
   })
 })

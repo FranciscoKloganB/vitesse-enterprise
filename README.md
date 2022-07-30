@@ -96,8 +96,8 @@
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
 - [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown)
-  - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
-  - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
+  - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki)
+    - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [`vue-i18n-next`](https://github.com/intlify/vue-i18n-next)
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n)
 - [`vueuse`](https://github.com/antfu/vueuse)
