@@ -52,9 +52,6 @@ jobs:
       - name: Build SPA Distribution
         run: pnpm build:prod:spa
 
-      - name: Build SSG Distribution
-        run: pnpm run:build
-
       - name: Vitest Unit and Integration Test Runner
         run: pnpm run test:vitest:ci
 
