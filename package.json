@@ -56,7 +56,7 @@
     "@commitlint/config-conventional": "^17.0.3",
     "@iconify-json/carbon": "^1.1.6",
     "@intlify/vite-plugin-vue-i18n": "^5.0.0",
-    "@testing-library/vue": "^6.6.0",
+    "@testing-library/vue": "^6.6.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/node": "^18.0.4",
     "@types/nprogress": "^0.2.0",
