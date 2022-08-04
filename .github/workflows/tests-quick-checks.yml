@@ -40,10 +40,10 @@ jobs:
       - name: Vitest Unit and Integration Test Runner
         run: pnpm test:vitest:ci
 
-      - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
-
       # Disabled until Cypress CT tests are added
+      # - name: Cypress PNPM Patch
+      #   run: cp pnpm-lock.yaml package-lock.json
+
       # - name: Cypress Component Test Runner
       #   uses: cypress-io/github-action@v4
       #   with:
