@@ -73,7 +73,7 @@ specifiers:
   vite-ssg-sitemap: ^0.3.1
   vitest: ^0.18.0
   vue: ^3.2.37
-  vue-demi: ^0.13.4
+  vue-demi: ^0.13.6
   vue-i18n: ^9.1.10
   vue-router: ^4.1.2
   vue-tsc: ^0.39.4
@@ -88,7 +88,7 @@ dependencies:
   pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
   prism-theme-vars: 0.2.4
   vue: 3.2.37
-  vue-demi: 0.13.4_vue@3.2.37
+  vue-demi: 0.13.6_vue@3.2.37
   vue-i18n: 9.1.10_vue@3.2.37
   vue-router: 4.1.2_vue@3.2.37
 
@@ -1915,7 +1915,7 @@ packages:
       pinia: '>=2.0.17'
     dependencies:
       pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
-      vue-demi: 0.13.4_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -2626,7 +2626,7 @@ packages:
       '@vueuse/metadata': 8.9.3
       '@vueuse/shared': 8.9.3_vue@3.2.37
       vue: 3.2.37
-      vue-demi: 0.13.4_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
 
   /@vueuse/head/0.7.8_vue@3.2.37:
     resolution: {integrity: sha512-D0lFcCgynjzTVVHM2RsQShDxKfjgbc2vhzeLqkOyH0lKEV3iv4xJ8ZSIW47V4XC6erGpnM2z2XGnwltMZFn7oA==}
@@ -2650,7 +2650,7 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.37
-      vue-demi: 0.13.4_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
 
   /JSONStream/1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}
@@ -9217,7 +9217,7 @@ packages:
       '@vue/devtools-api': 6.2.1
       typescript: 4.7.4
       vue: 3.2.37
-      vue-demi: 0.13.4_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
     dev: false
 
   /pinkie-promise/2.0.1:
@@ -11783,8 +11783,8 @@ packages:
       - terser
     dev: true
 
-  /vue-demi/0.13.4_vue@3.2.37:
-    resolution: {integrity: sha512-KP4lq9uSz0KZbaqCllRhnxMV3mYRsRWJfdsAhZyt5bV5O1RTpoeDptBRV9NOa/JgOpfaA9ane88VF7OjWNK/DA==}
+  /vue-demi/0.13.6_vue@3.2.37:
+    resolution: {integrity: sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
