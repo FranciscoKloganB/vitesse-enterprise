@@ -34,7 +34,9 @@
     "test:vitest:ci": "run-s 'test:vitest:headless'",
     "test:vitest:coverage": "vitest watch --coverage",
     "test:vitest:coverage:headless": "vitest watch --coverage",
-    "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'"
+    "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'",
+    "up": "taze major",
+    "up:install": "taze major --install"
   },
   "dependencies": {
     "@pinia/testing": "^0.0.13",
