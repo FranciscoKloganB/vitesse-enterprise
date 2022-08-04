@@ -37,7 +37,7 @@
     "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.12",
+    "@pinia/testing": "^0.0.13",
     "@vueuse/core": "^8.9.3",
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
@@ -60,7 +60,7 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/node": "^18.0.4",
     "@types/nprogress": "^0.2.0",
-    "@unocss/vite": "^0.44.2",
+    "@unocss/vite": "^0.45.3",
     "@vitejs/plugin-vue": "^3.0.0",
     "@vue/compiler-sfc": "^3.2.37",
     "@vue/test-utils": "^2.0.2",
