@@ -16,18 +16,18 @@ specifiers:
   '@vue/compiler-sfc': ^3.2.37
   '@vue/test-utils': ^2.0.2
   '@vueuse/core': ^8.9.3
-  '@vueuse/head': ^0.7.8
+  '@vueuse/head': ^0.7.9
   axios: ^0.27.2
   axios-case-converter: ^0.9.0
   critters: ^0.0.16
   cross-env: ^7.0.3
-  cypress: ^10.3.1
+  cypress: ^10.4.0
   eslint: ^8.19.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.2.0
+  eslint-plugin-vue: ^9.3.0
   https-localhost: ^4.7.1
   husky: ^8.0.1
   imagemin-lint-staged: ^0.4.0
@@ -68,7 +68,7 @@ specifiers:
   vite-plugin-pages: ^0.25.0
   vite-plugin-pwa: ^0.12.3
   vite-plugin-vue-layouts: ^0.6.0
-  vite-plugin-vue-markdown: ^0.20.1
+  vite-plugin-vue-markdown: ^0.21.1
   vite-ssg: ^0.20.2
   vite-ssg-sitemap: ^0.3.1
   vitest: ^0.18.0
@@ -81,7 +81,7 @@ specifiers:
 dependencies:
   '@pinia/testing': 0.0.13_pinia@2.0.16+vue@3.2.37
   '@vueuse/core': 8.9.3_vue@3.2.37
-  '@vueuse/head': 0.7.8_vue@3.2.37
+  '@vueuse/head': 0.7.9_vue@3.2.37
   axios: 0.27.2
   axios-case-converter: 0.9.0_axios@0.27.2
   nprogress: 0.2.0
@@ -108,13 +108,13 @@ devDependencies:
   '@vue/test-utils': 2.0.2_vue@3.2.37
   critters: 0.0.16
   cross-env: 7.0.3
-  cypress: 10.3.1
+  cypress: 10.4.0
   eslint: 8.19.0
   eslint-config-prettier: 8.5.0_eslint@8.19.0
   eslint-plugin-import: 2.26.0_eslint@8.19.0
   eslint-plugin-node: 11.1.0_eslint@8.19.0
   eslint-plugin-prettier: 4.2.1_7uxdfn2xinezdgvmbammh6ev5i
-  eslint-plugin-vue: 9.2.0_eslint@8.19.0
+  eslint-plugin-vue: 9.3.0_eslint@8.19.0
   https-localhost: 4.7.1
   husky: 8.0.1
   imagemin-lint-staged: 0.4.0
@@ -152,8 +152,8 @@ devDependencies:
   vite-plugin-pages: 0.25.0_5vhdwjrvx3yqj3k5avrlxtwoii
   vite-plugin-pwa: 0.12.3_vite@3.0.0
   vite-plugin-vue-layouts: 0.6.0_5vcanmustn365rg452uyprxay4
-  vite-plugin-vue-markdown: 0.20.1_vite@3.0.0
-  vite-ssg: 0.20.2_zwwaf5fhpnhlw2cr7kdk5ln3uy
+  vite-plugin-vue-markdown: 0.21.1_vite@3.0.0
+  vite-ssg: 0.20.2_bq7hoqqepbpese5j7yaxruxyty
   vite-ssg-sitemap: 0.3.1
   vitest: 0.18.0_sass@1.53.0
   vue-tsc: 0.39.4_typescript@4.7.4
@@ -233,7 +233,7 @@ packages:
     dependencies:
       '@antfu/eslint-config-ts': 0.25.2_4x5o4skxv6sl53vpwefgt23khm
       eslint: 8.19.0
-      eslint-plugin-vue: 9.2.0_eslint@8.19.0
+      eslint-plugin-vue: 9.3.0_eslint@8.19.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -258,7 +258,7 @@ packages:
       eslint-plugin-n: 15.2.4_eslint@8.19.0
       eslint-plugin-promise: 6.0.0_eslint@8.19.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.19.0
-      eslint-plugin-vue: 9.2.0_eslint@8.19.0
+      eslint-plugin-vue: 9.3.0_eslint@8.19.0
       eslint-plugin-yml: 1.0.0_eslint@8.19.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.0.1
@@ -1719,8 +1719,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.40
-      '@intlify/shared': 9.2.0-beta.40
+      '@intlify/message-compiler': 9.2.0
+      '@intlify/shared': 9.2.0
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.10_vue@3.2.37
@@ -1752,11 +1752,11 @@ packages:
       '@intlify/shared': 9.1.10
       source-map: 0.6.1
 
-  /@intlify/message-compiler/9.2.0-beta.40:
-    resolution: {integrity: sha512-6QWTSYewmkew4nsRqgkwTVuGFKzxVCOK8EXsPt15N+tN1g+OYjC3PfGA2dPB6cVkNxqA9mV/hNK02uHPWU9t0A==}
+  /@intlify/message-compiler/9.2.0:
+    resolution: {integrity: sha512-KGwwZsl+Nw2O26ZOKdytncxzKnMZ236KmM70u4GePgbizI+pu8yAh0apKxljSPzEJ7WECKTVc9R+laG12EJQYA==}
     engines: {node: '>= 14'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.40
+      '@intlify/shared': 9.2.0
       source-map: 0.6.1
     dev: true
 
@@ -1776,8 +1776,8 @@ packages:
     resolution: {integrity: sha512-Om54xJeo1Vw+K1+wHYyXngE8cAbrxZHpWjYzMR9wCkqbhGtRV5VLhVc214Ze2YatPrWlS2WSMOWXR8JktX/IgA==}
     engines: {node: '>= 10'}
 
-  /@intlify/shared/9.2.0-beta.40:
-    resolution: {integrity: sha512-xWz+SFjgt/LfaSbbHVn+V7gmvX4ZNP3cIFta790GWZ/tEgwJeC3tkV7i45iUbZ4ZimOerFgKH05b7qvJlKb6RQ==}
+  /@intlify/shared/9.2.0:
+    resolution: {integrity: sha512-71uObL3Sy2ZiBQBMVETbkspE4Plpy87Hvlj6FAUF3xdD+M82tuxe3MVJjaD3ucqhtHmQWBkAWEurVLdPYr8G2g==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -1797,7 +1797,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.1.0_vue-i18n@9.1.10
-      '@intlify/shared': 9.2.0-beta.40
+      '@intlify/shared': 9.2.0
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
       fast-glob: 3.2.11
@@ -1868,11 +1868,24 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@mdit-vue/plugin-component/0.1.1:
-    resolution: {integrity: sha512-DC4OEZO737FbvwZxVToO2d9jprbQEs4lor7bylEBrPDYDds8pjRBUIx2BNc54X0effIopsZhq+b4gxkOHJOPNQ==}
+  /@mdit-vue/plugin-component/0.8.1:
+    resolution: {integrity: sha512-lBkVDc4/uq93CDKBUbKZ25lpBwZ4fghHaBMV956Eb/Qp7isHzqn31qpdJT6S7nPNltt9clkWTVZeZRL7hmRKUw==}
     dependencies:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
+    dev: true
+
+  /@mdit-vue/plugin-frontmatter/0.8.0:
+    resolution: {integrity: sha512-STjTlQ+gxLBprcdyu2dH8kezgBwqS/jlPKLsy18BMSHoElGJeDJM458lwDa3MGL+Mm+g5NK0KoWTnQHj/9Uwow==}
+    dependencies:
+      '@mdit-vue/types': 0.8.0
+      '@types/markdown-it': 12.2.3
+      gray-matter: 4.0.3
+      markdown-it: 13.0.1
+    dev: true
+
+  /@mdit-vue/types/0.8.0:
+    resolution: {integrity: sha512-g6Tc8JwwJjTnx8sb66ZFCHvJ5TJpvoRnAkGT8Aq0K6UcvAOslODaU4tQ87WZ1ETTeXE9PTYPLGxngRudcyMHoQ==}
     dev: true
 
   /@mrmlnc/readdir-enhanced/2.2.1:
@@ -2628,8 +2641,8 @@ packages:
       vue: 3.2.37
       vue-demi: 0.13.6_vue@3.2.37
 
-  /@vueuse/head/0.7.8_vue@3.2.37:
-    resolution: {integrity: sha512-D0lFcCgynjzTVVHM2RsQShDxKfjgbc2vhzeLqkOyH0lKEV3iv4xJ8ZSIW47V4XC6erGpnM2z2XGnwltMZFn7oA==}
+  /@vueuse/head/0.7.9_vue@3.2.37:
+    resolution: {integrity: sha512-5wnRiH2XIUSLLXJDLDDTcpvAg5QXgTIVZl46AU7to/T91KHsdBLHSE4WhRO7kP0jbkAhlxnx64E29cQtwBrMjg==}
     peerDependencies:
       vue: '>=3'
     dependencies:
@@ -4071,8 +4084,8 @@ packages:
       array-find-index: 1.0.2
     dev: true
 
-  /cypress/10.3.1:
-    resolution: {integrity: sha512-As9HrExjAgpgjCnbiQCuPdw5sWKx5HUJcK2EOKziu642akwufr/GUeqL5UnCPYXTyyibvEdWT/pSC2qnGW/e5w==}
+  /cypress/10.4.0:
+    resolution: {integrity: sha512-OM7F8MRE01SHQRVVzunid1ZK1m90XTxYnl+7uZfIrB4CYqUDCrZEeSyCXzIbsS6qcaijVCAhqDL60SxG8N6hew==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
@@ -5264,8 +5277,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue/9.2.0_eslint@8.19.0:
-    resolution: {integrity: sha512-W2hc+NUXoce8sZtWgZ45miQTy6jNyuSdub5aZ1IBune4JDeAyzucYX0TzkrQ1jMO52sNUDYlCIHDoaNePe0p5g==}
+  /eslint-plugin-vue/9.3.0_eslint@8.19.0:
+    resolution: {integrity: sha512-iscKKkBZgm6fGZwFt6poRoWC0Wy2dQOlwUPW++CiPoQiw1enctV2Hj5DBzzjJZfyqs+FAXhgzL4q0Ww03AgSmQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -9419,7 +9432,7 @@ packages:
     dev: true
 
   /proxy-from-env/1.0.0:
-    resolution: {integrity: sha512-F2JHgJQ1iqwnHDcQjVBsq3n/uoaFL+iPW/eAeL7kVxy/2RrWaN4WroKjjvbsoRtv0ftelNyC01bjRhn/bhcf4A==}
+    resolution: {integrity: sha1-M8UDmPcOp+uW0h97gXYwpVeRx+4=}
     dev: true
 
   /ps-tree/1.2.0:
@@ -11582,7 +11595,7 @@ packages:
     dev: true
 
   /verror/1.10.0:
-    resolution: {integrity: sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==}
+    resolution: {integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=}
     engines: {'0': node >=0.6.0}
     dependencies:
       assert-plus: 1.0.0
@@ -11664,16 +11677,17 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-markdown/0.20.1_vite@3.0.0:
-    resolution: {integrity: sha512-OKWb7dtfb8SU2CLUQHWFz54eYN8Y3d3P8FpQCb7yzzh/GetTJVdY57A/orvzNJxAJqjZXx2Af1Q9ncj2wsGkiw==}
+  /vite-plugin-vue-markdown/0.21.1_vite@3.0.0:
+    resolution: {integrity: sha512-tvHtARDdNK45nSJhyCVaRhSxBAEVmgA6aD+xV1J4xXynNNxRaYXcpHS3l3S7l09j/lR3beRjTfbS+Ro6ipSHmA==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
     dependencies:
       '@antfu/utils': 0.5.2
-      '@mdit-vue/plugin-component': 0.1.1
+      '@mdit-vue/plugin-component': 0.8.1
+      '@mdit-vue/plugin-frontmatter': 0.8.0
+      '@mdit-vue/types': 0.8.0
       '@rollup/pluginutils': 4.2.1
       '@types/markdown-it': 12.2.3
-      gray-matter: 4.0.3
       markdown-it: 13.0.1
       vite: 3.0.0_sass@1.53.0
     dev: true
@@ -11682,7 +11696,7 @@ packages:
     resolution: {integrity: sha512-I/urEKBAF62r4b3jL4Usa3kpo/WQl4gC/SqQz2APHh+2ZLMbO0xstULfkVHIaRW6416vtfz2SlvysdvW+u1xkQ==}
     dev: true
 
-  /vite-ssg/0.20.2_zwwaf5fhpnhlw2cr7kdk5ln3uy:
+  /vite-ssg/0.20.2_bq7hoqqepbpese5j7yaxruxyty:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -11696,7 +11710,7 @@ packages:
       critters:
         optional: true
     dependencies:
-      '@vueuse/head': 0.7.8_vue@3.2.37
+      '@vueuse/head': 0.7.9_vue@3.2.37
       critters: 0.0.16
       fs-extra: 10.1.0
       html-minifier: 4.0.0
