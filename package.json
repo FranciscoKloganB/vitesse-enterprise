@@ -114,7 +114,7 @@
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.3.1",
     "vitest": "^0.18.0",
-    "vue-tsc": "^0.38.5"
+    "vue-tsc": "^0.39.4"
   },
   "engines": {
     "node": ">=16.15.1",
