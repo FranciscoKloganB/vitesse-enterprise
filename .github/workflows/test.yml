@@ -53,10 +53,10 @@ jobs:
         run: pnpm build:prod:spa
 
       - name: Build SSG Distribution
-        run: pnpm run:build
+        run: pnpm build:prod:ssg
 
       - name: Vitest Unit and Integration Test Runner
-        run: pnpm run test:vitest:ci
+        run: pnpm test:vitest:ci
 
       # Disable Cypress CT Runner until there are stable integrations for Vue/Vite/PNPM
       # - name: Cypress Component Test Runner
