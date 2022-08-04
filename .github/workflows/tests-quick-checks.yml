@@ -37,9 +37,6 @@ jobs:
       - name: Deep Lint
         run: pnpm lint
 
-      - name: Eslint and Prettier Format
-        run: npm run format
-
       - name: Vitest Unit and Integration Test Runner
         run: pnpm test:vitest:ci
 
