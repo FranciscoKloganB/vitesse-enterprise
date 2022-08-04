@@ -1,26 +1,16 @@
-name: Test
+name: Callable - Slow Checks
 
 on:
-  push:
-    branches:
-      - main
-      - master
-
-  pull_request:
-    branches:
-      - main
-      - master
+  workflow_call:
 
 jobs:
-  test:
-    name: Test
+  quick-checks:
+    name: Slow Checks - ${{ matrix.os }}, ${{ matrix.node }}
     runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
-        node-version: [16.15.1]
+        node: [16.15.1]
         os: [ubuntu-latest]
-      fail-fast: false
 
     steps:
       - uses: actions/checkout@v3
@@ -41,27 +31,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Static Analysis
-        run: pnpm lint
-
-      - name: Build SPA Distribution
-        run: pnpm build:prod:spa
-
-      - name: Build SSG Distribution
-        run: pnpm build:prod:ssg
-
-      - name: Vitest Unit and Integration Test Runner
-        run: pnpm test:vitest:ci
-
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json
-
-      # Disabled until Cypress CT tests are added
-      # - name: Cypress Component Test Runner
-      #   uses: cypress-io/github-action@v4
-      #   with:
-      #     component: true
-      #     install: false
 
       - name: Cypress End-to-End Test Runner
         uses: cypress-io/github-action@v4
@@ -71,3 +42,4 @@ jobs:
           build: pnpm run:build
           component: false
           start: pnpm preview
+
