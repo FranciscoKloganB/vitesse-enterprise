@@ -10,6 +10,7 @@ context('Basic', () => {
 
     cy.get('#input')
       .should('be.visible')
+      .focus()
       .type('Vitesse{Enter}')
       .url()
       .should('eq', 'http://127.0.0.1:4000/users/Vitesse')
