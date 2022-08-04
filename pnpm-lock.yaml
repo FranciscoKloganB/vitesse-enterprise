@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.0.3
   '@iconify-json/carbon': ^1.1.6
   '@intlify/vite-plugin-vue-i18n': ^5.0.0
-  '@pinia/testing': ^0.0.12
+  '@pinia/testing': ^0.0.13
   '@testing-library/vue': ^6.6.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': ^18.0.4
@@ -71,7 +71,7 @@ specifiers:
   vite-plugin-vue-markdown: ^0.20.1
   vite-ssg: ^0.20.2
   vite-ssg-sitemap: ^0.3.1
-  vitest: ^0.18.0
+  vitest: ^0.20.3
   vue: ^3.2.37
   vue-demi: ^0.13.4
   vue-i18n: ^9.1.10
@@ -79,7 +79,7 @@ specifiers:
   vue-tsc: ^0.38.5
 
 dependencies:
-  '@pinia/testing': 0.0.12_pinia@2.0.16+vue@3.2.37
+  '@pinia/testing': 0.0.13_pinia@2.0.16+vue@3.2.37
   '@vueuse/core': 8.9.3_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
   axios: 0.27.2
@@ -155,7 +155,7 @@ devDependencies:
   vite-plugin-vue-markdown: 0.20.1_vite@3.0.0
   vite-ssg: 0.20.2_zodgg63wx4ia7g264h7fi3aaae
   vite-ssg-sitemap: 0.3.1
-  vitest: 0.18.0_sass@1.53.0
+  vitest: 0.20.3_sass@1.53.0
   vue-tsc: 0.38.5_typescript@4.7.4
 
 packages:
@@ -1719,8 +1719,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.37
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/message-compiler': 9.2.0
+      '@intlify/shared': 9.2.0
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.10_vue@3.2.37
@@ -1752,11 +1752,11 @@ packages:
       '@intlify/shared': 9.1.10
       source-map: 0.6.1
 
-  /@intlify/message-compiler/9.2.0-beta.37:
-    resolution: {integrity: sha512-7V5bJ5b5OqYTOa+Pfl4ugB6p/16yB4R/37i5vIaPzNW3Lhg8hdNoo+mtLPp1VKs1zmgpSjYi/rvDobGkHJvr2g==}
+  /@intlify/message-compiler/9.2.0:
+    resolution: {integrity: sha512-KGwwZsl+Nw2O26ZOKdytncxzKnMZ236KmM70u4GePgbizI+pu8yAh0apKxljSPzEJ7WECKTVc9R+laG12EJQYA==}
     engines: {node: '>= 14'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/shared': 9.2.0
       source-map: 0.6.1
     dev: true
 
@@ -1776,8 +1776,8 @@ packages:
     resolution: {integrity: sha512-Om54xJeo1Vw+K1+wHYyXngE8cAbrxZHpWjYzMR9wCkqbhGtRV5VLhVc214Ze2YatPrWlS2WSMOWXR8JktX/IgA==}
     engines: {node: '>= 10'}
 
-  /@intlify/shared/9.2.0-beta.37:
-    resolution: {integrity: sha512-TVh69KwsY1A4Vo/ODJEp9NPW9O6zO1id4hwohaMdcibPdTp9ieX00QU9OiPRJ8Iz6W6A9xjU0Q30RAX1ba4+5g==}
+  /@intlify/shared/9.2.0:
+    resolution: {integrity: sha512-71uObL3Sy2ZiBQBMVETbkspE4Plpy87Hvlj6FAUF3xdD+M82tuxe3MVJjaD3ucqhtHmQWBkAWEurVLdPYr8G2g==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -1797,7 +1797,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.1.0_vue-i18n@9.1.10
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/shared': 9.2.0
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
       fast-glob: 3.2.11
@@ -1909,10 +1909,10 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@pinia/testing/0.0.12_pinia@2.0.16+vue@3.2.37:
-    resolution: {integrity: sha512-OGJ5kZihiuNua9trREAVLiv8wAlxT2+gZAz3Cen1L4ch51MbSgY5/nbo9htYsP2my9dhbggBhecgYWlhejhRcQ==}
+  /@pinia/testing/0.0.13_pinia@2.0.16+vue@3.2.37:
+    resolution: {integrity: sha512-OiqJzUzHrBetqYZ0IrT4MCz4WGViVLjWlsC6xhyf6t/PDUR5IxeLK3HJcP4i3y6Pq4+IVLYhu6xfy1PGfY9p5Q==}
     peerDependencies:
-      pinia: '>=2.0.14'
+      pinia: '>=2.0.17'
     dependencies:
       pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
       vue-demi: 0.13.4_vue@3.2.37
@@ -10945,13 +10945,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /tinypool/0.2.2:
-    resolution: {integrity: sha512-tp4n5OARNL3v8ntdJUyo5NsDfwvUtu8isB43USjrsQxQrADDKY6UGBkmFaw/2vNmEt8S/uSm2U5FhkiK1eAFGw==}
+  /tinypool/0.2.4:
+    resolution: {integrity: sha512-Vs3rhkUH6Qq1t5bqtb816oT+HeJTXfwt2cbPH17sWHIYKTotQIFPk3tf2fgqRrVyMDVOc1EnPgzIxfIulXVzwQ==}
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /tinyspy/0.3.3:
-    resolution: {integrity: sha512-gRiUR8fuhUf0W9lzojPf1N1euJYA30ISebSfgca8z76FOvXtVXqd5ojEIaKLWbDQhAaC3ibxZIjqbyi4ybjcTw==}
+  /tinyspy/1.0.0:
+    resolution: {integrity: sha512-FI5B2QdODQYDRjfuLF+OrJ8bjWRMCXokQPcwKm0W3IzcbUmBNv536cQc7eXGoAuXphZwgx1DFbqImwzz08Fnhw==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -11730,18 +11730,21 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.18.0_sass@1.53.0:
-    resolution: {integrity: sha512-ryAtlh5Gvg3+aLNuOQ8YOHxgQCCu46jx40X5MBL0K0/ejB9i5zsr8fV8LTGXbXex80UMHlzceI9F+ouGaiR+mQ==}
+  /vitest/0.20.3_sass@1.53.0:
+    resolution: {integrity: sha512-cXMjTbZxBBUUuIF3PUzEGPLJWtIMeURBDXVxckSHpk7xss4JxkiiWh5cnIlfGyfJne2Ii3QpbiRuFL5dMJtljw==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
+      '@vitest/browser': '*'
       '@vitest/ui': '*'
       c8: '*'
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
       '@edge-runtime/vm':
+        optional: true
+      '@vitest/browser':
         optional: true
       '@vitest/ui':
         optional: true
@@ -11758,8 +11761,8 @@ packages:
       chai: 4.3.6
       debug: 4.3.4
       local-pkg: 0.4.2
-      tinypool: 0.2.2
-      tinyspy: 0.3.3
+      tinypool: 0.2.4
+      tinyspy: 1.0.0
       vite: 3.0.0_sass@1.53.0
     transitivePeerDependencies:
       - less
