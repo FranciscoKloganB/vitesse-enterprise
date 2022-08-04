@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.0.3
   '@iconify-json/carbon': ^1.1.6
   '@intlify/vite-plugin-vue-i18n': ^5.0.0
-  '@pinia/testing': ^0.0.12
+  '@pinia/testing': ^0.0.13
   '@testing-library/vue': ^6.6.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': ^18.0.4
@@ -27,7 +27,7 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.2.0
+  eslint-plugin-vue: ^9.3.0
   https-localhost: ^4.7.1
   husky: ^8.0.1
   imagemin-lint-staged: ^0.4.0
@@ -79,7 +79,7 @@ specifiers:
   vue-tsc: ^0.38.5
 
 dependencies:
-  '@pinia/testing': 0.0.12_pinia@2.0.16+vue@3.2.37
+  '@pinia/testing': 0.0.13_pinia@2.0.16+vue@3.2.37
   '@vueuse/core': 8.9.3_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
   axios: 0.27.2
@@ -114,7 +114,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_eslint@8.19.0
   eslint-plugin-node: 11.1.0_eslint@8.19.0
   eslint-plugin-prettier: 4.2.1_7uxdfn2xinezdgvmbammh6ev5i
-  eslint-plugin-vue: 9.2.0_eslint@8.19.0
+  eslint-plugin-vue: 9.3.0_eslint@8.19.0
   https-localhost: 4.7.1
   husky: 8.0.1
   imagemin-lint-staged: 0.4.0
@@ -233,7 +233,7 @@ packages:
     dependencies:
       '@antfu/eslint-config-ts': 0.25.2_4x5o4skxv6sl53vpwefgt23khm
       eslint: 8.19.0
-      eslint-plugin-vue: 9.2.0_eslint@8.19.0
+      eslint-plugin-vue: 9.3.0_eslint@8.19.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -258,7 +258,7 @@ packages:
       eslint-plugin-n: 15.2.4_eslint@8.19.0
       eslint-plugin-promise: 6.0.0_eslint@8.19.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.19.0
-      eslint-plugin-vue: 9.2.0_eslint@8.19.0
+      eslint-plugin-vue: 9.3.0_eslint@8.19.0
       eslint-plugin-yml: 1.0.0_eslint@8.19.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.0.1
@@ -1719,8 +1719,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.37
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/message-compiler': 9.2.0
+      '@intlify/shared': 9.2.0
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.10_vue@3.2.37
@@ -1752,11 +1752,11 @@ packages:
       '@intlify/shared': 9.1.10
       source-map: 0.6.1
 
-  /@intlify/message-compiler/9.2.0-beta.37:
-    resolution: {integrity: sha512-7V5bJ5b5OqYTOa+Pfl4ugB6p/16yB4R/37i5vIaPzNW3Lhg8hdNoo+mtLPp1VKs1zmgpSjYi/rvDobGkHJvr2g==}
+  /@intlify/message-compiler/9.2.0:
+    resolution: {integrity: sha512-KGwwZsl+Nw2O26ZOKdytncxzKnMZ236KmM70u4GePgbizI+pu8yAh0apKxljSPzEJ7WECKTVc9R+laG12EJQYA==}
     engines: {node: '>= 14'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/shared': 9.2.0
       source-map: 0.6.1
     dev: true
 
@@ -1776,8 +1776,8 @@ packages:
     resolution: {integrity: sha512-Om54xJeo1Vw+K1+wHYyXngE8cAbrxZHpWjYzMR9wCkqbhGtRV5VLhVc214Ze2YatPrWlS2WSMOWXR8JktX/IgA==}
     engines: {node: '>= 10'}
 
-  /@intlify/shared/9.2.0-beta.37:
-    resolution: {integrity: sha512-TVh69KwsY1A4Vo/ODJEp9NPW9O6zO1id4hwohaMdcibPdTp9ieX00QU9OiPRJ8Iz6W6A9xjU0Q30RAX1ba4+5g==}
+  /@intlify/shared/9.2.0:
+    resolution: {integrity: sha512-71uObL3Sy2ZiBQBMVETbkspE4Plpy87Hvlj6FAUF3xdD+M82tuxe3MVJjaD3ucqhtHmQWBkAWEurVLdPYr8G2g==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -1797,7 +1797,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.1.0_vue-i18n@9.1.10
-      '@intlify/shared': 9.2.0-beta.37
+      '@intlify/shared': 9.2.0
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
       fast-glob: 3.2.11
@@ -1909,10 +1909,10 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@pinia/testing/0.0.12_pinia@2.0.16+vue@3.2.37:
-    resolution: {integrity: sha512-OGJ5kZihiuNua9trREAVLiv8wAlxT2+gZAz3Cen1L4ch51MbSgY5/nbo9htYsP2my9dhbggBhecgYWlhejhRcQ==}
+  /@pinia/testing/0.0.13_pinia@2.0.16+vue@3.2.37:
+    resolution: {integrity: sha512-OiqJzUzHrBetqYZ0IrT4MCz4WGViVLjWlsC6xhyf6t/PDUR5IxeLK3HJcP4i3y6Pq4+IVLYhu6xfy1PGfY9p5Q==}
     peerDependencies:
-      pinia: '>=2.0.14'
+      pinia: '>=2.0.17'
     dependencies:
       pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
       vue-demi: 0.13.4_vue@3.2.37
@@ -5250,8 +5250,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue/9.2.0_eslint@8.19.0:
-    resolution: {integrity: sha512-W2hc+NUXoce8sZtWgZ45miQTy6jNyuSdub5aZ1IBune4JDeAyzucYX0TzkrQ1jMO52sNUDYlCIHDoaNePe0p5g==}
+  /eslint-plugin-vue/9.3.0_eslint@8.19.0:
+    resolution: {integrity: sha512-iscKKkBZgm6fGZwFt6poRoWC0Wy2dQOlwUPW++CiPoQiw1enctV2Hj5DBzzjJZfyqs+FAXhgzL4q0Ww03AgSmQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
