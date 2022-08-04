@@ -37,7 +37,7 @@
     "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.12",
+    "@pinia/testing": "^0.0.13",
     "@vueuse/core": "^8.9.3",
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
@@ -113,7 +113,7 @@
     "vite-plugin-vue-markdown": "^0.20.1",
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.3.1",
-    "vitest": "^0.18.0",
+    "vitest": "^0.20.3",
     "vue-tsc": "^0.38.5"
   },
   "engines": {
