@@ -37,7 +37,7 @@
     "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.12",
+    "@pinia/testing": "^0.0.13",
     "@vueuse/core": "^8.9.3",
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
@@ -72,7 +72,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.2.0",
+    "eslint-plugin-vue": "^9.3.0",
     "https-localhost": "^4.7.1",
     "husky": "^8.0.1",
     "imagemin-lint-staged": "^0.4.0",
