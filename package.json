@@ -37,7 +37,7 @@
     "test:vitest:coverage:ci": "run-s 'test:vitest:coverage:headless'"
   },
   "dependencies": {
-    "@pinia/testing": "^0.0.12",
+    "@pinia/testing": "^0.0.13",
     "@vueuse/core": "^8.9.3",
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
