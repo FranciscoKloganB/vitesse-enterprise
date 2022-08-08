@@ -10,6 +10,9 @@ context('Basic', () => {
 
     cy.get('#input')
       .should('be.visible')
+      .should(($el) => {
+        expect(Cypress.dom.isDetached($el)).to.eq(false)
+      })
       .type('Vitesse{Enter}')
       .url()
       .should('eq', 'http://127.0.0.1:4000/users/Vitesse')
