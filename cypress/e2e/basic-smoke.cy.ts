@@ -9,26 +9,19 @@ context('Basic', () => {
     cy.contains('[Home Layout]').should('exist')
 
     cy.get('#input')
-      .should('be.visible')
-      .should(($el) => {
-        expect(Cypress.dom.isDetached($el)).to.eq(false)
-      })
-      .type('Vitesse{Enter}')
+      .type('john_doe{Enter}')
       .url()
-      .should('eq', 'http://127.0.0.1:4000/users/Vitesse')
+      .should('eq', 'http://127.0.0.1:4000/users/john_doe')
 
     cy.contains('[Default Layout]').should('exist')
 
-    cy.get('[btn]')
-      .should('be.visible')
-      .click()
-      .url()
-      .should('eq', 'http://127.0.0.1:4000/')
+    cy.get('[btn]').click().url().should('eq', 'http://127.0.0.1:4000/')
   })
 
   it('markdown', () => {
     cy.get('[title="About"]')
       .should('be.visible')
+      .focus()
       .click({ force: true })
       .url()
       .should('eq', 'http://127.0.0.1:4000/about')
