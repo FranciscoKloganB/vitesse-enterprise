@@ -118,7 +118,7 @@
     "vite-plugin-vue-markdown": "^0.21.1",
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.3.1",
-    "vitest": "^0.21.0",
+    "vitest": "^0.22.1",
     "vue-tsc": "^0.39.5"
   },
   "engines": {
