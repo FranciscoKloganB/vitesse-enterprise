@@ -1,0 +1,33 @@
+name: CI/CD
+
+on:
+  push:
+    paths-ignore:
+      - .vscode/
+      - .gitignore
+      - .env.example
+      - .envrc
+      - README.md
+      - CHANGELOG.md
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  # Runs Security Analysis, Linting, Formatting, Unit and Integration every activity of type [push]
+  call-quick-checks:
+    uses: ./.github/workflows/tests-quick-checks.yml
+    if: github.actor != 'dependabot[bot]'
+
+  # Runs E2E when github.ref (the branch or tag ref that triggered the workflow run is main)
+  # Also, runs when activity type is [pull_request] matching the specified event types.
+  call-slow-checks:
+    uses: ./.github/workflows/tests-slow-checks.yml
+    if: >-
+      github.actor != 'dependabot[bot]'
+      && (
+        github.ref == 'refs/heads/main'
+        || github.event_name == 'pull_request'
+      )

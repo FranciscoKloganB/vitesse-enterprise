@@ -1,0 +1,38 @@
+name: Release Vitesse App
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  build-and-release:
+    if: github.event.pull_request.merged == true && github.base_ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3.0.3
+        with:
+          path: |
+            ~/.cache
+          key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+      - uses: pnpm/action-setup@v2.2.1
+        with:
+          version: latest
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.1
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build App
+        run: pnpm build:prod:ssg
+
+      - name: Push assets to CDN
+        run: |
+          echo "TODO: Push assets to CDN"
+      - name: Push Distribution Folder to Remote Host
+        run: |
+          echo "TODO: Release App"

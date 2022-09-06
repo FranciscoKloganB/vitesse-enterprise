@@ -91,7 +91,7 @@
 ### Plugins
 
 - [`pinia`](https://pinia.vuejs.org)
-- [`vue-router`](https://github.com/vuejs/vue-router)
+- [`vue-router`](https://github.com/vuejs/router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
@@ -99,7 +99,7 @@
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
 - [`vue-i18n-next`](https://github.com/intlify/vue-i18n-next)
-  - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n)
+  - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
 - [`vueuse`](https://github.com/antfu/vueuse)
   - [`@vueuse/head`](https://github.com/vueuse/head)
 - [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap)

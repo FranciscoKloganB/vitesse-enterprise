@@ -1,15 +1,28 @@
 {
   "compilerOptions": {
-    "rootDir": "../",
+    "baseUrl": "../",
     "esModuleInterop": true,
-    "lib": ["es5", "dom"],
+    "jsx": "preserve",
+    "lib": ["es6", "dom"],
     "noUnusedLocals": false,
+    "moduleResolution": "node",
     "paths": {
-      "@/*": ["../*"],
-      "~/*": ["../src/*"]
+      "~/*": ["./*"]
     },
-    "target": "es5",
-    "types": ["@testing-library/cypress", "cypress", "node"]
+    "target": "es6",
+    "types": ["cypress", "@testing-library/cypress", "node"]
   },
-  "include": ["../**/*.d.ts", "**/*.ts"]
+  "exclude": [
+    "node_modules",
+    // Unit and Integration tests of any kind that are not owned by Cypress
+    "**/*.spec.js",
+    "**/*.spec.jsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.js",
+    "**/*.test.jsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ],
+  "include": ["**/*.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }
