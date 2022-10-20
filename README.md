@@ -34,6 +34,8 @@
 
 - 📦 [Components auto importing](./src/core/components)
 
+- 🔎 [Component previews](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview)
+
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org/)
 
 - 📑 [Layout system](./src/core/layouts)
