@@ -10,6 +10,7 @@ context('Basic', () => {
 
     cy.get('#input')
       .should('be.enabled')
+      .focus()
       .type('john_doe{Enter}')
       .url()
       .should('eq', 'http://127.0.0.1:4000/users/john_doe')
