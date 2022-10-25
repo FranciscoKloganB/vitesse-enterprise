@@ -5,6 +5,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
+import Preview from 'vite-plugin-vue-component-preview'
 import Prism from 'markdown-it-prism'
 import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -33,6 +34,7 @@ export default defineConfig({
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+      reactivityTransform: true,
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -40,6 +42,8 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       pagesDir: [{ dir: 'src/**/pages', baseRoute: '' }],
     }),
+
+    Preview(),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
