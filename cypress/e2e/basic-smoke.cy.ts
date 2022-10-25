@@ -10,9 +10,10 @@ context('Basic', () => {
 
     cy.get('#input')
       .should('be.enabled')
-      .type('john_doe{Enter}')
+      .focus()
+      .type('Vitesse{Enter}')
       .url()
-      .should('eq', 'http://127.0.0.1:4000/users/john_doe')
+      .should('eq', 'http://127.0.0.1:4000/users/Vitesse')
 
     cy.contains('[Default Layout]').should('exist')
 
