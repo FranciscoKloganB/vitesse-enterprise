@@ -16,7 +16,7 @@ specifiers:
   '@unocss/vite': ^0.45.30
   '@vitejs/plugin-vue': ^3.1.2
   '@vue/compiler-sfc': ^3.2.41
-  '@vue/test-utils': ^2.2.0
+  '@vue/test-utils': ^2.2.1
   '@vueuse/core': ^9.4.0
   '@vueuse/head': ^0.7.13
   axios: ^0.27.2
@@ -112,7 +112,7 @@ devDependencies:
   '@unocss/vite': 0.45.30_vite@3.0.4
   '@vitejs/plugin-vue': 3.1.2_vite@3.0.4+vue@3.2.41
   '@vue/compiler-sfc': 3.2.41
-  '@vue/test-utils': 2.2.0_vue@3.2.41
+  '@vue/test-utils': 2.2.1_vue@3.2.41
   critters: 0.0.16
   cross-env: 7.0.3
   cypress: 10.11.0
@@ -2189,7 +2189,7 @@ packages:
       '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.16.0
       '@vue/compiler-sfc': 3.2.41
-      '@vue/test-utils': 2.2.0_vue@3.2.41
+      '@vue/test-utils': 2.2.1_vue@3.2.41
       vue: 3.2.41
     dev: true
 
@@ -2819,8 +2819,8 @@ packages:
   /@vue/shared/3.2.41:
     resolution: {integrity: sha512-W9mfWLHmJhkfAmV+7gDjcHeAWALQtgGT3JErxULl0oz6R6+3ug91I7IErs93eCFhPCZPHBs4QJS7YWEV7A3sxw==}
 
-  /@vue/test-utils/2.2.0_vue@3.2.41:
-    resolution: {integrity: sha512-EKp5/N7ieNZdoLTkD16j/irUjIEDN63QUIc41vLUMqGvSsTQN0QxbFiQqh5v49RPfS5vZH+DhjNUEkijCMOCSg==}
+  /@vue/test-utils/2.2.1_vue@3.2.41:
+    resolution: {integrity: sha512-AkLt24wnnxedJ3NX090JYiueog184QqlR5TVNZM+lggCrK8XjeuPr274okaLqDmiRgp4XVCaGa07KqKLGQbsMQ==}
     peerDependencies:
       vue: ^3.0.1
     dependencies:
