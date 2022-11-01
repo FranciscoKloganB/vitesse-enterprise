@@ -74,7 +74,7 @@ specifiers:
   vite-plugin-vue-layouts: ^0.7.0
   vite-plugin-vue-markdown: ^0.21.1
   vite-ssg: ^0.20.2
-  vite-ssg-sitemap: ^0.3.2
+  vite-ssg-sitemap: ^0.4.3
   vitest: ^0.21.1
   vue: ^3.2.41
   vue-demi: ^0.13.11
@@ -162,7 +162,7 @@ devDependencies:
   vite-plugin-vue-layouts: 0.7.0_6ke4gbcdr75g2xdgvage3cyo7m
   vite-plugin-vue-markdown: 0.21.1_vite@3.0.4
   vite-ssg: 0.20.2_nacbeimtediymjjvzjo74ezm7i
-  vite-ssg-sitemap: 0.3.2
+  vite-ssg-sitemap: 0.4.3
   vitest: 0.21.1_sass@1.55.0
   vue-tsc: 0.39.5_typescript@4.8.4
 
@@ -12413,8 +12413,8 @@ packages:
       vite: 3.0.4_sass@1.55.0
     dev: false
 
-  /vite-ssg-sitemap/0.3.2:
-    resolution: {integrity: sha512-udsHc11VYQLSy/Zy6efKHnU/ABozGUz84Z9GqmrD8MaB2HCezqFVFAJukwZaxBzcEjy1jFXfNCIcT8J6LefpWw==}
+  /vite-ssg-sitemap/0.4.3:
+    resolution: {integrity: sha512-9ZIRBRCgM1Q4RtXXEBHIu8gotbx9LCnHZOZXtdSzR0DnjN9H5IYGY3yGoxI6VX8dScXiluxOODFlNlr7ydyI9A==}
     dev: true
 
   /vite-ssg/0.20.2_nacbeimtediymjjvzjo74ezm7i:
