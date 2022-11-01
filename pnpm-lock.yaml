@@ -29,7 +29,7 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.6.0
+  eslint-plugin-vue: ^9.7.0
   https-localhost: ^4.7.1
   husky: ^8.0.1
   imagemin-lint-staged: ^0.4.0
@@ -121,7 +121,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_eslint@8.26.0
   eslint-plugin-node: 11.1.0_eslint@8.26.0
   eslint-plugin-prettier: 4.2.1_aniwkeyvlpmwkidetuytnokvcm
-  eslint-plugin-vue: 9.6.0_eslint@8.26.0
+  eslint-plugin-vue: 9.7.0_eslint@8.26.0
   https-localhost: 4.7.1
   husky: 8.0.1
   imagemin-lint-staged: 0.4.0
@@ -241,7 +241,7 @@ packages:
     dependencies:
       '@antfu/eslint-config-ts': 0.25.2_wyqvi574yv7oiwfeinomdzmc3m
       eslint: 8.26.0
-      eslint-plugin-vue: 9.6.0_eslint@8.26.0
+      eslint-plugin-vue: 9.7.0_eslint@8.26.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -266,7 +266,7 @@ packages:
       eslint-plugin-n: 15.2.4_eslint@8.26.0
       eslint-plugin-promise: 6.0.0_eslint@8.26.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.26.0
-      eslint-plugin-vue: 9.6.0_eslint@8.26.0
+      eslint-plugin-vue: 9.7.0_eslint@8.26.0
       eslint-plugin-yml: 1.0.0_eslint@8.26.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.0.1
@@ -5552,8 +5552,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue/9.6.0_eslint@8.26.0:
-    resolution: {integrity: sha512-zzySkJgVbFCylnG2+9MDF7N+2Rjze2y0bF8GyUNpFOnT8mCMfqqtLDJkHBuYu9N/psW1A6DVbQhPkP92E+qakA==}
+  /eslint-plugin-vue/9.7.0_eslint@8.26.0:
+    resolution: {integrity: sha512-DrOO3WZCZEwcLsnd3ohFwqCoipGRSTKTBTnLwdhqAbYZtzWl0o7D+D8ZhlmiZvABKTEl8AFsqH1GHGdybyoQmw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
