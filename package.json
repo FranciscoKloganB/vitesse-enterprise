@@ -67,7 +67,7 @@
     "@types/node": "^18.11.5",
     "@types/nprogress": "^0.2.0",
     "@unocss/vite": "^0.45.30",
-    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue": "^3.2.0",
     "@vue/compiler-sfc": "^3.2.41",
     "@vue/test-utils": "^2.2.0",
     "critters": "^0.0.16",
