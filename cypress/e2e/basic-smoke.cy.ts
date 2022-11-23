@@ -8,24 +8,28 @@ context('Basic', () => {
 
     cy.contains('[Home Layout]').should('exist')
 
-    cy.get('#input').should('be.enabled').focus().type('Vitesse{Enter}')
+    cy.findByRole('textbox', { name: /what's your name\?/i })
+      .should('be.visible')
+      .focus()
+      .type('Vitesse{Enter}')
 
     cy.url().should('eq', 'http://127.0.0.1:4000/users/Vitesse')
 
     cy.contains('[Default Layout]').should('exist')
 
-    cy.get('[btn]').should('be.visible').click()
+    cy.findByRole('button', {
+      name: /back/i,
+    })
+      .should('be.visible')
+      .click()
 
     cy.url().should('eq', 'http://127.0.0.1:4000/')
   })
 
   it('markdown', () => {
-    cy.get('[title="About"]')
-      .should('be.visible')
-      .focus()
-      .click({ force: true })
-      .url()
-      .should('eq', 'http://127.0.0.1:4000/about')
+    cy.findByTestId('about-page').should('be.visible').click()
+
+    cy.url().should('eq', 'http://127.0.0.1:4000/about')
 
     cy.get('pre.language-js').should('exist')
   })
