@@ -8,16 +8,15 @@ context('Basic', () => {
 
     cy.contains('[Home Layout]').should('exist')
 
-    cy.get('#input')
-      .should('be.enabled')
-      .focus()
-      .type('Vitesse{Enter}')
-      .url()
-      .should('eq', 'http://127.0.0.1:4000/users/Vitesse')
+    cy.get('#input').should('be.enabled').focus().type('Vitesse{Enter}')
+
+    cy.url().should('eq', 'http://127.0.0.1:4000/users/Vitesse')
 
     cy.contains('[Default Layout]').should('exist')
 
-    cy.get('[btn]').click().url().should('eq', 'http://127.0.0.1:4000/')
+    cy.get('[btn]').should('be.visible').click()
+
+    cy.url().should('eq', 'http://127.0.0.1:4000/')
   })
 
   it('markdown', () => {
