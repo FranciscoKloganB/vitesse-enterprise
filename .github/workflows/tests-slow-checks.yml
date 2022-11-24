@@ -41,4 +41,4 @@ jobs:
           install-command: echo
           build: pnpm run:build
           component: false
-          start: pnpm preview
+          start: pnpm dev

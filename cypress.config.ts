@@ -7,6 +7,7 @@ export default defineConfig({
       framework: 'vue',
       bundler: 'vite',
     },
+    supportFile: './cypress/support/commands.ts',
   },
   e2e: {
     baseUrl: 'http://127.0.0.1:4000',
@@ -15,6 +16,7 @@ export default defineConfig({
     setupNodeEvents(_on, _config) {
       // implement node event listeners here
     },
+    supportFile: './cypress/support/commands.ts',
   },
   projectId: 'vitesse-enterprise',
   viewportHeight: 1080,

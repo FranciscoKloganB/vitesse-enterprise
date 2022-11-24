@@ -24,6 +24,8 @@ specifiers:
   critters: ^0.0.16
   cross-env: ^7.0.3
   cypress: ^10.11.0
+  cypress-pipe: ^2.0.0
+  cypress-wait-until: ^1.7.2
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
@@ -116,6 +118,8 @@ devDependencies:
   critters: 0.0.16
   cross-env: 7.0.3
   cypress: 10.11.0
+  cypress-pipe: 2.0.0
+  cypress-wait-until: 1.7.2
   eslint: 8.28.0
   eslint-config-prettier: 8.5.0_eslint@8.28.0
   eslint-plugin-import: 2.26.0_eslint@8.28.0
@@ -4384,6 +4388,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       array-find-index: 1.0.2
+    dev: true
+
+  /cypress-pipe/2.0.0:
+    resolution: {integrity: sha512-KW9s+bz4tFLucH3rBGfjW+Q12n7S4QpUSSyxiGrgPOfoHlbYWzAGB3H26MO0VTojqf9NVvfd5Kt0MH5XMgbfyg==}
+    dev: true
+
+  /cypress-wait-until/1.7.2:
+    resolution: {integrity: sha512-uZ+M8/MqRcpf+FII/UZrU7g1qYZ4aVlHcgyVopnladyoBrpoaMJ4PKZDrdOJ05H5RHbr7s9Tid635X3E+ZLU/Q==}
     dev: true
 
   /cypress/10.11.0:

@@ -73,6 +73,8 @@
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "cypress": "^10.11.0",
+    "cypress-pipe": "^2.0.0",
+    "cypress-wait-until": "^1.7.2",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",

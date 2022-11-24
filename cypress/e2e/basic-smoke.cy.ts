@@ -9,11 +9,14 @@ context('Basic', () => {
     cy.contains('[Home Layout]').should('exist')
 
     cy.findByRole('textbox', { name: /what's your name\?/i })
+      .should(($el) => {
+        expect(Cypress.dom.isDetached($el)).to.eq(false)
+      })
       .should('be.visible')
-      .focus()
+      .click()
       .type('Vitesse{Enter}')
 
-    cy.url().should('eq', 'http://127.0.0.1:4000/users/Vitesse')
+    cy.waitUntil(() => cy.url().should('eq', 'http://127.0.0.1:4000/users/Vitesse'))
 
     cy.contains('[Default Layout]').should('exist')
 
@@ -23,13 +26,18 @@ context('Basic', () => {
       .should('be.visible')
       .click()
 
-    cy.url().should('eq', 'http://127.0.0.1:4000/')
+    cy.waitUntil(() => cy.url().should('eq', 'http://127.0.0.1:4000/'))
   })
 
   it('markdown', () => {
-    cy.findByTestId('about-page').should('be.visible').click()
+    cy.findByTestId('about-page')
+      .should(($el) => {
+        expect(Cypress.dom.isDetached($el)).to.eq(false)
+      })
+      .should('be.visible')
+      .click()
 
-    cy.url().should('eq', 'http://127.0.0.1:4000/about')
+    cy.waitUntil(() => cy.url().should('eq', 'http://127.0.0.1:4000/about'))
 
     cy.get('pre.language-js').should('exist')
   })
