@@ -10,7 +10,7 @@
       "~/*": ["./*"]
     },
     "target": "es6",
-    "types": ["cypress", "@testing-library/cypress", "node"]
+    "types": ["cypress", "cypress-wait-until", "@testing-library/cypress", "node"]
   },
   "exclude": [
     "node_modules",

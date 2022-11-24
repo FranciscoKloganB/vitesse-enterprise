@@ -18,7 +18,7 @@ const toggleLocales = () => {
 
     <button
       class="icon-btn mx-2 !outline-none"
-      data-test-id="theme-toggler"
+      data-testid="theme-toggler"
       :title="t('button.toggle_dark')"
       @click="toggleDark()"
     >
@@ -27,14 +27,19 @@ const toggleLocales = () => {
 
     <a
       class="icon-btn mx-2"
-      data-test-id="language-selector"
+      data-testid="language-selector"
       :title="t('button.toggle_langs')"
       @click="toggleLocales"
     >
       <div i-carbon-language />
     </a>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
+    <RouterLink
+      class="icon-btn mx-2"
+      data-testid="about-page"
+      to="/about"
+      :title="t('button.about')"
+    >
       <div i-carbon-dicom-overlay />
     </RouterLink>
 

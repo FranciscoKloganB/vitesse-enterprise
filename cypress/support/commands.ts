@@ -15,6 +15,8 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 import '@testing-library/cypress/add-commands'
+// https://www.npmjs.com/package/cypress-wait-until
+import 'cypress-wait-until'
 
 declare global {
   namespace Cypress {

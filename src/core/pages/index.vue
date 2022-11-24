@@ -45,7 +45,7 @@ const { t } = useI18n()
       w="250px"
       text="center"
       bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
+      border="rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
     />
