@@ -43,7 +43,7 @@
     "@pinia/testing": "^0.0.13",
     "@unocss/reset": "^0.45.30",
     "@vueuse/core": "^9.6.0",
-    "@vueuse/head": "^0.7.13",
+    "@vueuse/head": "^1.0.18",
     "axios": "^0.27.2",
     "axios-case-converter": "^0.9.0",
     "nprogress": "^0.2.0",
