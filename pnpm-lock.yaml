@@ -20,7 +20,7 @@ specifiers:
   '@vueuse/core': ^9.6.0
   '@vueuse/head': ^0.7.13
   axios: ^0.27.2
-  axios-case-converter: ^0.9.0
+  axios-case-converter: ^0.11.1
   critters: ^0.0.16
   cross-env: ^7.0.3
   cypress: ^10.11.0
@@ -90,7 +90,7 @@ dependencies:
   '@vueuse/core': 9.6.0_vue@3.2.45
   '@vueuse/head': 0.7.13_vue@3.2.45
   axios: 0.27.2
-  axios-case-converter: 0.9.0_axios@0.27.2
+  axios-case-converter: 0.11.1_axios@0.27.2
   nprogress: 0.2.0
   pinia: 2.0.26_mgnvym7yiazkylwwogi5r767ue
   prism-theme-vars: 0.2.4
@@ -3332,10 +3332,10 @@ packages:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
     dev: true
 
-  /axios-case-converter/0.9.0_axios@0.27.2:
-    resolution: {integrity: sha512-G6tOanR1cdIrBtRyiPvR+xXyWCCZacSw8LtT8bmImvpye+XiyoOlLluz0N61IfetznNQ9BeMi5yA0rIyYDr8mQ==}
+  /axios-case-converter/0.11.1_axios@0.27.2:
+    resolution: {integrity: sha512-i5hrkBg7SE9jsm2Q+ClznR5DsKcYXChH6Cc3Rhx2p4gdIfJwvvO5/ATcAg/vN2UVzGE2B1eR1O4VuEGkICdJdQ==}
     peerDependencies:
-      axios: '>=0.23.0 <1.0.0'
+      axios: '>=0.23.0 <2.0.0'
     dependencies:
       axios: 0.27.2
       camel-case: 4.1.2
