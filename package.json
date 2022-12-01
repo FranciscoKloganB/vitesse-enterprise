@@ -66,7 +66,7 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/node": "^18.11.9",
     "@types/nprogress": "^0.2.0",
-    "@unocss/vite": "^0.45.30",
+    "@unocss/vite": "^0.47.4",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vue/compiler-sfc": "^3.2.45",
     "@vue/test-utils": "^2.2.4",
