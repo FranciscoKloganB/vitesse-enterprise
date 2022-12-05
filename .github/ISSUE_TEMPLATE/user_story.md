@@ -25,6 +25,10 @@ _Ideally, this is in the issue title, but if not, you can put it here. If so, de
 
 **And** used to continue any of three previous statements
 
+## Technical Approach
+
+Some recommendations regarding project and implementation details
+
 ## Sprint Ready Checklist
 
 1. - [ ] Acceptance criteria defined
