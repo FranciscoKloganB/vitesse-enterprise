@@ -29,6 +29,13 @@ declare global {
       login(email: string, password: string): Chainable<void>
       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+      waitAttached(): Chainable
     }
   }
 }
+
+Cypress.Commands.add('waitAttached', { prevSubject: true }, (subject) =>
+  cy.wrap(subject).should(($el) => {
+    expect(Cypress.dom.isAttached($el)).to.eq(true)
+  })
+)
