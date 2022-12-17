@@ -1,6 +1,7 @@
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Inspect from 'vite-plugin-inspect'
+import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'vite-plugin-vue-markdown'
@@ -10,7 +11,7 @@ import Prism from 'markdown-it-prism'
 import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { defineConfig } from 'vite'
 import generateSitemap from 'vite-ssg-sitemap'
 // import { defineConfig } from 'vitest/config'
@@ -129,8 +130,8 @@ export default defineConfig({
       },
     }),
 
-    // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
-    VueI18n({
+    // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
+    VueI18nPlugin({
       runtimeOnly: true,
       compositionOnly: true,
       include: [path.resolve(__dirname, 'locales/**')],
@@ -140,6 +141,11 @@ export default defineConfig({
     Inspect({
       // change this to enable inspect for debugging
       enabled: false,
+    }),
+
+    // https://github.com/webfansplz/vite-plugin-vue-inspector
+    Inspector({
+      toggleButtonVisibility: 'never',
     }),
   ],
 
