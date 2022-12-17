@@ -35,10 +35,10 @@ jobs:
         run: cp pnpm-lock.yaml package-lock.json
 
       - name: Cypress End-to-End Test Runner
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           install-command: echo
           build: pnpm run:build
           component: false
-          start: pnpm dev
+          start: pnpm preview
