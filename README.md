@@ -28,7 +28,7 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-core)
 
-  - 🏃 [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
+  - 🏃 [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [esbuild](https://github.com/evanw/esbuild)
 
 - 🗂 [File based routing](./src/core/pages)
 
@@ -85,30 +85,63 @@
 
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
-### Icons
+#### Icons
 
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-### Plugins
+#### Plugins
 
-- [`pinia`](https://pinia.vuejs.org)
-- [`vue-router`](https://github.com/vuejs/router)
+- [Vue Router](https://github.com/vuejs/router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages)
+    - File system based routing
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
-- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown)
-  - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism)
-  - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars)
-- [`vue-i18n-next`](https://github.com/intlify/vue-i18n-next)
-  - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
-- [`vueuse`](https://github.com/antfu/vueuse)
-  - [`@vueuse/head`](https://github.com/vueuse/head)
-- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap)
+    - Layouts for pages
+- [Pinia](https://pinia.vuejs.org)
+  - Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
+  - Components auto import
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
+  - Directly use Vue Composition API and others without importing
+- [`unplugin-vue-macros`](https://github.com/sxzz/unplugin-vue-macros)
+  - Explore and extend more macros and syntax sugar to Vue.
+- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa)
+  - PWA
+- [`vite-plugin-vue-component-preview`](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview)
+  - Preview single component in VSCode
+- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown)
+  - Markdown as components / components in Markdown
+  - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki)
+    - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
+- [Vue I18n](https://github.com/intlify/vue-i18n-next)
+  - Internationalization
+  - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
+    - Vite plugin for Vue I18n
+- [VueUse](https://github.com/antfu/vueuse)
+  - Collection of useful composition APIs
+- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap)
+  - Sitemap generator
+- [`@vueuse/head`](https://github.com/vueuse/head)
+  - Manipulate document head reactively
 
-### Nice to haves
+#### Coding Style
+
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/)
+
+
+#### Dev tools
+
+- [Cypress](https://cypress.io/) - E2E Testing
+- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [PNPM](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [Recommended VSCode extensions](./.vscode/extensions.json) - Near IDE experience on VSCode
+- [Typescript](https://www.typescriptlang.org/)
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
+- [Vite-ssg](https://github.com/antfu/vite-ssg) - Static-site generation
+  - [Critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
+
+#### Developer Experience
 
 - Alias `@` to `<rootDir>`
 - Alias `~` to `<rootDir>/src` a.k.a. `<srcDir>`
@@ -116,14 +149,6 @@
   - `VITE_APP_VERSION` is read from `package.json` version at build time
   - `VITE_APP_BUILD_EPOCH` is populated as `new Date().getTime()` at build time
 
-### Dev tools
-
-- [`typescript`](https://www.typescriptlang.org/)
-- [`cypress`](https://cypress.io/) - E2E Testing
-- [`pnpm`](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
-  - [`critters`](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [`recommended vscode extensions`](./.vscode/extensions.json) - Near IDE experience on VSCode
 
 ## Variations
 
