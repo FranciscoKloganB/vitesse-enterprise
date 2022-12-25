@@ -114,9 +114,7 @@
   - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki)
     - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [Vue I18n](https://github.com/intlify/vue-i18n-next)
-  - Internationalization
-  - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
-    - Vite plugin for Vue I18n
+  - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n)
 - [VueUse](https://github.com/antfu/vueuse)
   - Collection of useful composition APIs
 - [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap)

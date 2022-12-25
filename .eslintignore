@@ -1,3 +1,5 @@
+.npmrc
+.nvmrc
 .github/
 .husky/
 .vscode/
