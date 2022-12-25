@@ -127,8 +127,11 @@
     "vitest": "^0.25.8",
     "vue-tsc": "^1.0.13"
   },
+  "engineStrict": true,
   "engines": {
-    "node": ">=16.18.1",
-    "pnpm": ">=7.9.0"
+    "node": "^18.12.1",
+    "npm": "please-use-pnpm",
+    "pnpm": "^7.19.0",
+    "yarn": "please-use-pnpm"
   }
 }
