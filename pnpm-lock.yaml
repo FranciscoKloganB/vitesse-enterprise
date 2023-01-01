@@ -12,7 +12,7 @@ specifiers:
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': ^18.11.18
   '@types/nprogress': ^0.2.0
-  '@unocss/reset': ^0.47.6
+  '@unocss/reset': ^0.48.0
   '@unocss/vite': ^0.47.6
   '@vitejs/plugin-vue': ^4.0.0
   '@vue-macros/volar': ^0.5.7
@@ -88,7 +88,7 @@ specifiers:
 
 dependencies:
   '@pinia/testing': 0.0.14_pinia@2.0.28+vue@3.2.45
-  '@unocss/reset': 0.47.6
+  '@unocss/reset': 0.48.0
   '@vueuse/core': 9.9.0_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
   axios: 1.2.2
@@ -2965,6 +2965,11 @@ packages:
 
   /@unocss/reset/0.47.6:
     resolution: {integrity: sha512-bdc2dbuDg+CzgeLowEwO1URRIMdzmCE4RH4IKpCpT1Xoa+92RRubdtzK4N/9ZiSo8d4vvfWcc8fvhZko/6smPQ==}
+    dev: true
+
+  /@unocss/reset/0.48.0:
+    resolution: {integrity: sha512-i7z6Rbs7fXFD3NdlVJViFltpDJUCo5xDm5y01Xaoa4mJQHr/1335Ht0JW/emAJXf170UYSwb2rUeK1J3fty9eg==}
+    dev: false
 
   /@unocss/scope/0.47.6:
     resolution: {integrity: sha512-aI7B4Il5xYfMcr50AC90I+Igi3KB9U0JPX2yiU2/WhOaO33ZReBWJmBQ4LhBGrdgNh8vkHpeqs8ntwq/o25nbA==}
