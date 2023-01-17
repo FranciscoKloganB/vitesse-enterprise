@@ -11,10 +11,6 @@
 *.sw?
 *.suo
 
-# Editor project (shared settings) files
-!.vscode/settings.json
-!.vscode/extensions.json
-
 # Local files
 *.local
 LOCAL_NOTES.md
