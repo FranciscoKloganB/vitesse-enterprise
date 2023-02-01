@@ -102,7 +102,7 @@
     "prettier": "^2.8.1",
     "prettier-plugin-import-sort": "^0.0.7",
     "rimraf": "^3.0.2",
-    "sass": "^1.57.1",
+    "sass": "^1.58.0",
     "start-server-and-test": "^1.15.2",
     "stylelint": "^14.16.1",
     "stylelint-config-css-modules": "^4.1.0",
