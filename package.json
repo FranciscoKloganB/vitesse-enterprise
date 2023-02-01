@@ -73,7 +73,7 @@
     "@vue/test-utils": "^2.2.6",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "cypress": "^12.2.0",
+    "cypress": "^12.5.0",
     "cypress-pipe": "^2.0.0",
     "cypress-wait-until": "^1.7.2",
     "eslint": "^8.31.0",
