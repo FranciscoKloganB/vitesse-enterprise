@@ -31,8 +31,12 @@
       "vite-plugin-pwa/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-component-preview/client",
-      "vite-plugin-vue-layouts/client"
+      "vite-plugin-vue-layouts/client",
+      "unplugin-vue-macros/macros-global"
     ]
   },
-  "exclude": ["cypress", "dist", "node_modules", "public"]
+  "exclude": ["cypress", "dist", "node_modules", "public"],
+  "vueCompilerOptions": {
+    "plugins": ["@vue-macros/volar/define-model", "@vue-macros/volar/define-slots"]
+  }
 }

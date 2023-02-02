@@ -6,7 +6,7 @@ import path from 'path'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import VueMacros from 'unplugin-vue-macros'
+import VueMacros from 'unplugin-vue-macros/vite'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
@@ -33,11 +33,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue({
-      include: [/\.vue$/, /\.md$/],
-      reactivityTransform: true,
-    }),
-
     VueMacros({
       plugins: {
         vue: Vue({
