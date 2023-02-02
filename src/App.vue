@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark, preferredDark } from '~/core/hooks/dark'
+import { isDark, preferredDark } from '@/src/core/composables/dark'
 
 /**
  * https://github.com/vueuse/head
