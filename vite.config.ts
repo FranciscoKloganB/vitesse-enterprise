@@ -1,21 +1,21 @@
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import Vue from '@vitejs/plugin-vue'
+import LinkAttributes from 'markdown-it-link-attributes'
+import Prism from 'markdown-it-prism'
+import path from 'path'
+import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import VueMacros from 'unplugin-vue-macros'
+import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
+import Pages from 'vite-plugin-pages'
+import { VitePWA } from 'vite-plugin-pwa'
+import Preview from 'vite-plugin-vue-component-preview'
 import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
-import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'vite-plugin-vue-markdown'
-import Pages from 'vite-plugin-pages'
-import Preview from 'vite-plugin-vue-component-preview'
-import Prism from 'markdown-it-prism'
-import Unocss from 'unocss/vite'
-import { VitePWA } from 'vite-plugin-pwa'
-import Vue from '@vitejs/plugin-vue'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import { defineConfig } from 'vite'
 import generateSitemap from 'vite-ssg-sitemap'
-// import { defineConfig } from 'vitest/config'
-import path from 'path'
 import pkg from './package.json'
 
 process.env.VITE_APP_VERSION = pkg.version
@@ -38,6 +38,15 @@ export default defineConfig({
       reactivityTransform: true,
     }),
 
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          include: [/\.vue$/, /\.md$/],
+          reactivityTransform: true,
+        }),
+      },
+    }),
+
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
@@ -58,22 +67,25 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
+        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
         'vitest',
       ],
+      dirs: ['src/**/composables', 'src/**/stores'],
       dts: 'src/auto-imports.d.ts',
+      vueTemplate: true,
     }),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      // relative paths to the directory to search for components
-      dirs: ['src/**/components'],
-      // allow auto load markdown components under `./src/components/`
-      extensions: ['vue', 'md'],
       // search for subdirectories
       deep: true,
+      // relative paths to the directory to search for components
+      dirs: ['src/**/components'],
       dts: 'src/components.d.ts',
+      // allow auto load markdown components under `./src/components/`
+      extensions: ['vue', 'md'],
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
