@@ -64,7 +64,7 @@
     "@testing-library/cypress": "^9.0.0",
     "@testing-library/vue": "^6.6.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
-    "@types/node": "^18.15.0",
+    "@types/node": "^18.15.11",
     "@types/nprogress": "^0.2.0",
     "@unocss/vite": "^0.47.6",
     "@vitejs/plugin-vue": "^4.0.0",
