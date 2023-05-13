@@ -22,7 +22,7 @@
     "postinstall": "husky install && chmod ug+x .husky/*",
     "preinstall": "npx only-allow pnpm",
     "prepreview": "kill-port 4000",
-    "preview": "vite preview --port 4000",
+    "preview": "vite preview --host --port 4000",
     "preview:https": "serve dist",
     "run:build": "run-s 'build:prod:ssg'",
     "run:preview": "run-s 'run:build' preview",
