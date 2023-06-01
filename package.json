@@ -58,7 +58,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.2",
     "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.5",
     "@iconify-json/carbon": "^1.1.16",
     "@intlify/unplugin-vue-i18n": "^0.8.2",
     "@testing-library/cypress": "^9.0.0",
