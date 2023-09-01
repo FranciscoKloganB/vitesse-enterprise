@@ -116,7 +116,7 @@
     "unplugin-auto-import": "^0.12.2",
     "unplugin-vue-components": "^0.22.12",
     "vite": "^4.4.2",
-    "vite-plugin-inspect": "^0.7.32",
+    "vite-plugin-inspect": "^0.7.38",
     "vite-plugin-pages": "^0.28.0",
     "vite-plugin-pwa": "^0.14.7",
     "vite-plugin-vue-inspector": "^2.0.4",
