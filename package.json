@@ -70,7 +70,7 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue-macros/volar": "^0.5.15",
     "@vue/compiler-sfc": "^3.3.4",
-    "@vue/test-utils": "^2.4.0",
+    "@vue/test-utils": "^2.4.1",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "cypress": "^12.17.0",
